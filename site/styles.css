@@ -188,6 +188,7 @@ a { color: inherit; }
   scroll-behavior: smooth;
 }
 .entries::-webkit-scrollbar { display: none; }
+.entries[hidden] { display: none; }
 
 .entry-link {
   flex: none;

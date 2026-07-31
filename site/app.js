@@ -68,6 +68,9 @@ function renderChapterNav(activeChapterId) {
 
 function renderEntryNav(chapter, activeEntryId) {
   const nav = document.getElementById("entry-nav");
+  // The About page belongs to no chapter, so the strip is hidden rather than
+  // left as an empty band.
+  nav.hidden = !chapter;
   if (!chapter) {
     nav.innerHTML = "";
     return;
