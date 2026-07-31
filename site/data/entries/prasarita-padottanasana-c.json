@@ -1,0 +1,61 @@
+{
+  "id": "prasarita-padottanasana-c",
+  "number": null,
+  "title": "Prasarita Padottanasana (C)",
+  "title_as_printed": "PRASARITA PADOTTANASANA (C)",
+  "section": "standing",
+  "source_file": "chapter0012.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [3],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Place the hands on waist and stand, as in (A) and (B) above.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Lock the fingers behind the back, swell the chest, and stand.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Slowly place the head on the floor, straightening and tightening both the arms and legs, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Without unlocking the hands, lift the head up, using the strength of the waist only.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Unlock the hands from behind the back and place them on the waist.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

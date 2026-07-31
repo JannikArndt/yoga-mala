@@ -1,0 +1,94 @@
+{
+  "id": "utthita-hasta-padangushtasana",
+  "number": 7,
+  "title": "Utthita Hasta Padangushtasana",
+  "title_as_printed": "7. UTTHITA HASTA PADANGUSHTASANA",
+  "section": "standing",
+  "source_file": "chapter0015.html",
+  "vinyasa_count": 14,
+  "state_vinyasas": [2, 4, 7, 9, 11, 14],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Join the legs together, hold the arms by the sides, and stand erect.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Place the left hand on the waist, straighten the right arm, raise the right leg, catch hold of the big toe with the right hand, and straighten the knees, chest, and waist.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Holding this posture, touch the nose to the knee, which is lifted, and hold, doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly lift the head, straighten the chest and waist, and stand as in the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Bring the right leg out to the right, hold the arm, leg, waist, and chest straight, and look to the left, breathing fully and deeply as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Bring the leg back to the center, as in the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Keeping the leg lifted, touch the nose to the right knee.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head, straighten the chest and waist, and stand straight, placing the hands on the waist and keeping the raised right leg extended straight, while breathing fully and deeply as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Bring the right leg down.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Repeat the above for the left leg.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Loosens the hip joints.",
+    "Destroys defects of the testicles and male organ of generation.",
+    "Purifies and strengthens the vertebral column, waist, hips, and lower abdomen.",
+    "Eliminates constipation."
+  ],
+  "quotes": [],
+  "images": []
+}

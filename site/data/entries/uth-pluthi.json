@@ -1,0 +1,48 @@
+{
+  "id": "uth-pluthi",
+  "number": 42,
+  "title": "Uth Pluthi",
+  "title_as_printed": "42. UTH PLUTHI",
+  "section": "finishing",
+  "source_file": "chapter0052.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [],
+  "drishti": "Tip of the nose.",
+  "translation": null,
+  "notes": [
+    "While not an actual asana, Uth Pluthi is nevertheless highly beneficial."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": "free",
+      "breath_as_printed": null,
+      "action": "At the conclusion of Padmasana and without releasing the legs, press the hands firmly on the floor on either side of the thighs and, on the force of the hands alone, lift the body up off the floor. Stay, doing rechaka and puraka fully as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Jump back into the 4th vinyasa of the first Surya Namaskara and follow the vinyasas described in earlier asanas.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Jump through the arms, lie down, and rest for five minutes. This concludes the practice.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Keep the arms, spine, and neck completely straight, the chin tilted down a little."
+  ],
+  "benefits": [
+    "Strengthens the waist.",
+    "Perfects abdominal and anal control.",
+    "The three granthis, located in the sacrum, gradually open completely."
+  ],
+  "quotes": [],
+  "images": []
+}

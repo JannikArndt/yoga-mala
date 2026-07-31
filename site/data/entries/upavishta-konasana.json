@@ -1,0 +1,83 @@
+{
+  "id": "upavishta-konasana",
+  "number": 26,
+  "title": "Upavishta Konasana",
+  "title_as_printed": "26. UPAVISHTA KONASANA",
+  "section": "seated",
+  "source_file": "chapter0036.html",
+  "vinyasa_count": 15,
+  "state_vinyasas": [8, 9],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Without touching the floor, jump the legs through the arms on the strength of the arms, spread the legs as wide as possible, sit with straightened knees, take hold of the sides of the feet, and lift the head and chest.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Pull in the stomach, slowly place the head and chest on the floor, and do puraka and rechaka slowly, as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Without losing hold of the sides of the feet, prepare to come up.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Come up to sit straight on the buttocks, still holding the feet.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Hold the raised legs wide apart and straight, as in the 8th vinyasa, keep the chest, arms, and waist straight, look up, and do rechaka and puraka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Holding mula bandha and uddiyana bandha is very important.",
+    "As practice becomes firm, rest the chin on the floor in the state of this asana while holding the feet."
+  ],
+  "benefits": [
+    "Prevents the grdhrasi nadi [sciatic nerve], between the anus and the organ of generation, from weakening — its weakness otherwise decreases the strength of the waist, weakens the other nadis, and makes sitting and walking difficult.",
+    "Restores the strength of the grdhrasi nadi, along with other nadis and organs.",
+    "Resolves udara bhramana [gaseous movements in the stomach] and peristalsis.",
+    "Not appropriate for pregnant women; otherwise useful for all, men and women alike."
+  ],
+  "quotes": [],
+  "images": []
+}

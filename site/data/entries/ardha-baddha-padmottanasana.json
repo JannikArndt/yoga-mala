@@ -1,0 +1,98 @@
+{
+  "id": "ardha-baddha-padmottanasana",
+  "number": 8,
+  "title": "Ardha Baddha Padmottanasana",
+  "title_as_printed": "8. ARDHA BADDHA PADMOTTANASANA",
+  "section": "standing",
+  "source_file": "chapter0016.html",
+  "vinyasa_count": 9,
+  "state_vinyasas": [1, 2, 6, 7],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "A sadhaka, or spiritual aspirant, should practice it under the careful guidance of a Guru.",
+    "Asanas such as this one, which involve both legs, are to be performed with the left leg as with the right."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Stand erect.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Place the right foot on the left thigh, pressing the heel into the lower abdomen, circle the right arm around the back, grasp the right big toe with the right hand, and place the left hand on the waist.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly bend at the waist, press the left hand to the floor by the side of the left foot, straighten the knee, and touch the knee with the nose, doing puraka and rechaka slowly, as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head only.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka, puraka",
+      "action": "Stand up straight again, place left hand on waist.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Release the right leg, which is in the Padmasana form, and straighten it.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 6,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Place the left foot on the right thigh, bring the left arm around the back, take hold of the big toe of the left leg with the left hand, as outlined for the right, place right hand on waist, and stand.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 7,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "As for the 2nd vinyasa, bend forward, place the right hand on the floor by the right leg, which is straight, and touch the knee with the nose, doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head only.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka, puraka",
+      "action": "Place the right hand on the waist and stand up straight.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies the rectum, esophagus, and liver.",
+    "Prevents gas from occurring in the stomach.",
+    "Prevents diarrhea.",
+    "Quells the gas that arises from inappropriate food; should gas occur, it wards it off.",
+    "Can be practiced by anyone, including women of all ages, except those whose pregnancies have crossed into the fourth month."
+  ],
+  "quotes": [],
+  "images": []
+}

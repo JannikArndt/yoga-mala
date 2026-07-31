@@ -1,0 +1,69 @@
+{
+  "id": "utthita-parshvakonasana",
+  "number": 4,
+  "title": "Utthita Parshvakonasana",
+  "title_as_printed": "4. UTTHITA PARSHVAKONASANA",
+  "section": "standing",
+  "source_file": "chapter0009.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [2, 4],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the legs open to the right and stand with the legs as much as five feet apart, as in Trikonasana, stretching out the arms tightly at the level of the chest, and swelling the chest.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Turn the right foot out, bend the knee completely, place the right hand by the side of the right foot, stretch the left arm straight out over the ear, and gaze at the fingertips. Puraka and rechaka should be done as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Return to the position of the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Repeat, as with the right leg, for the left leg.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Return to the position of the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Hold the body tightly.",
+    "Rechaka and puraka slowly and as much as possible."
+  ],
+  "benefits": [
+    "Purifies the ribs.",
+    "Purifies the lower abdomen.",
+    "Dissolves the bad fat at the waist.",
+    "Softens the limbs so that subsequent asanas can be more easily practiced."
+  ],
+  "quotes": [],
+  "images": []
+}

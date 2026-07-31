@@ -1,0 +1,72 @@
+{
+  "id": "baddha-padmasana",
+  "number": 40,
+  "title": "Baddha Padmasana",
+  "title_as_printed": "40. BADDHA PADMASANA",
+  "section": "finishing",
+  "source_file": "chapter0050.html",
+  "vinyasa_count": 16,
+  "state_vinyasas": [8],
+  "drishti": "Between the eyebrows.",
+  "translation": null,
+  "notes": [
+    "To be practiced after Shirshasana.",
+    "Yoga Mudra, which occurs in Baddha Padmasana, is therapeutic for diseases."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Do the first six vinyasas of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Sit and stretch the legs out, as in Paschimattanasana, and straighten the back and chest. Do rechaka and puraka.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Place the right foot on the left thigh and the left foot on the right thigh, press the heels of both feet into the lower abdomen on either side of the navel, reach around the back, take hold of the left big toe with the left hand and the right big toe with the right hand, push the chest forward, straighten the spinal column and waist, and bend the neck forward so that the chin presses into the chest. Do rechaka and puraka deeply.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Doing rechaka slowly, place the chin on the floor, pull the navel in completely, and stiffen and push the body all the way forward. This is Yoga Mudra. Stay, doing puraka and rechaka.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Without letting go of the toes, lift the head up, sit up straight, and push the chest out.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The next vinyasas follow those of preceding asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "During Yoga Mudra, meditate upon one's chosen deity (ishta devata) while directing the gaze between the eyebrows, doing rechaka and puraka as much as possible."
+  ],
+  "benefits": [
+    "Purifies the liver and spleen.",
+    "Straightens the spinal column.",
+    "Remedies the anal canal."
+  ],
+  "quotes": [
+    "The greatness of Baddha Padmasana has been affirmed by the Upanishads."
+  ],
+  "images": []
+}

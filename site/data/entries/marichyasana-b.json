@@ -1,0 +1,52 @@
+{
+  "id": "marichyasana-b",
+  "number": 17,
+  "title": "Marichyasana B",
+  "title_as_printed": "17. MARICHYASANA (B)",
+  "section": "seated",
+  "source_file": "chapter0027.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Sit with the legs stretched out, bring the left heel toward the navel as in Padmasana, bend the right knee, sit firmly with the right knee bent and right heel pulled toward the right buttock, bring the right arm around the right shin, and grasp hold of the left wrist with the right hand.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Touch the nose to the floor, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head and straighten the chest.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Follow the method of vinyasa specified in earlier asanas, then repeat the above for the left side.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "janu-shirshasana-a",
+  "number": 15,
+  "title": "Janu Shirshasana A",
+  "title_as_printed": "15. JANU SHIRSHASANA (A)",
+  "section": "seated",
+  "source_file": "chapter0023.html",
+  "vinyasa_count": 22,
+  "state_vinyasas": [8, 15],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Sit as in Paschimattanasana, stretch the left leg out, press the area between the anus and the organ of generation with the heel of the right foot, pulling the right knee back 90 degrees, bend forward at the waist, take hold of the foot of the outstretched leg with both hands, tighten the anus and lower abdomen, straighten the back, and lift the head fully.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Place the forehead or chin on the knee of the outstretched leg, and do rechaka and puraka fully as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift up the head slowly.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The next vinyasas follow those of preceding asanas.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 15,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Practice the same method for the other side; this is the 15th vinyasa and the state for that side.",
+      "is_state": true
+    }
+  ],
+  "while_holding": [
+    "Do rechaka and puraka as deeply as possible while in the state of the asana."
+  ],
+  "benefits": [],
+  "quotes": [
+    "Janu Shirshasana, which some call Mahamudra, is of three types, each of which has twenty-two vinyasas."
+  ],
+  "images": []
+}

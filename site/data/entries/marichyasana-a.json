@@ -1,0 +1,57 @@
+{
+  "id": "marichyasana-a",
+  "number": 16,
+  "title": "Marichyasana A",
+  "title_as_printed": "16. MARICHYASANA (A)",
+  "section": "seated",
+  "source_file": "chapter0026.html",
+  "vinyasa_count": 22,
+  "state_vinyasas": [8, 15],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Marichyasana was discovered by the sage Maricha, who gave it its name.",
+    "There are eight types of Marichyasana; the first four, described here, are related to yoga chikitsa (yoga therapy)."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Stretch the left leg out as for the 7th vinyasa of Paschimattanasana, bend the right knee up, pull the right heel in toward the right buttock, take the right arm around the knee of the bent leg, bring the left hand behind the back and take hold of the right wrist, stretch the left leg, and raise the chest.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Place the forehead or chin on the knee of the outstretched leg, keeping the outstretched leg straight and tight, doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head up.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Uth Pluthi.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 15,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Practice the same method for the left side; this is the 15th vinyasa and the state for that side.",
+      "is_state": true
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

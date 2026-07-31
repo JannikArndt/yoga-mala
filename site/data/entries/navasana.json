@@ -1,0 +1,71 @@
+{
+  "id": "navasana",
+  "number": 20,
+  "title": "Navasana",
+  "title_as_printed": "20. NAVASANA",
+  "section": "seated",
+  "source_file": "chapter0030.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [7],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The first six vinyasas of this asana follow those of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Jump the legs in between the arms using only the strength of the arms, without letting the body or legs touch the floor, sit squarely on the buttocks, raise and straighten the legs, sit in the form of a boat, straighten the chest, waist, and legs, and hold the arms out straight on either side of the knees.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "free",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Stay in the boat, doing rechaka and puraka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Cross the legs without touching the floor, and use the strength of the arms and hands to lift the body up off the floor.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Come back to the 7th vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Repeat the asana three to six times.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The vinyasas that follow have been specified earlier.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Never do kumbhaka (hold the breath) while coming into the state of this asana."
+  ],
+  "benefits": [
+    "Purifies the anal channel, spinal column, ribs, and lower abdomen.",
+    "Cures gastric trouble resulting from food not digesting completely and provoked vata due to a lack of digestive fire.",
+    "Gives the waist additional strength."
+  ],
+  "quotes": [],
+  "images": []
+}

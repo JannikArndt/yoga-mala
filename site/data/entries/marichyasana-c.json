@@ -1,0 +1,38 @@
+{
+  "id": "marichyasana-c",
+  "number": 18,
+  "title": "Marichyasana C",
+  "title_as_printed": "18. MARICHYASANA (C)",
+  "section": "seated",
+  "source_file": "chapter0028.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [7],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "free",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Sit in the same manner as above, stretch the left leg out, press the right foot to the right buttock as in Marichyasana (A), straighten the chest, turn the waist toward the right, bring the left arm around the front of the right knee, twisting the left hand and arm around toward the back, bring the right arm around the back and grasp the left wrist with the right hand, straighten and turn the chest and waist fully, doing rechaka and puraka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The vinyasas that follow are specified in earlier asanas.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Practice the same method for the left side.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

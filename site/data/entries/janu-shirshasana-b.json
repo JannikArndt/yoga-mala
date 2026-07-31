@@ -1,0 +1,52 @@
+{
+  "id": "janu-shirshasana-b",
+  "number": null,
+  "title": "Janu Shirshasana B",
+  "title_as_printed": "JANU SHIRSHASANA (B)",
+  "section": "seated",
+  "source_file": "chapter0024.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Sit as in Paschimattanasana, stretch the left leg out straight, bend the right knee back 85 degrees, sit the anus directly on top of the right heel, take hold of the left foot with both hands, tighten the anus and lower abdomen, straighten the back, and lift the head fully.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Place the forehead or chin on the knee of the outstretched leg, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly lift the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The next vinyasas follow those of preceding asanas.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Practice the method described above for both the left and right sides.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

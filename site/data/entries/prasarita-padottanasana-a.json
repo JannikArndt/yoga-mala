@@ -1,0 +1,77 @@
+{
+  "id": "prasarita-padottanasana-a",
+  "number": 5,
+  "title": "Prasarita Padottanasana (A)",
+  "title_as_printed": "5. PRASARITA PADOTTANASANA (A)",
+  "section": "standing",
+  "source_file": "chapter0010.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [3],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "In the 2nd vinyasa, both rechaka and puraka are to be performed."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump to the right, spreading the legs as much as five feet apart, as in Utthita Parshvakonasana, and place the hands on the waist.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Press the hands to the floor with the fingertips in line with the big toes.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Keep the head lifted, breathing in slowly.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 3,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Place the head on the floor between the hands, keeping the legs straight and tight, and hold position with waist lifted, doing puraka and rechaka as much as possible. The stomach should be drawn in properly, using only the uddiyana bandha (stomach lock), and by slightly loosening the mula bandha (anal lock).",
+      "is_state": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift and hold the head up completely.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Hold the head up.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the hands and place them on the waist, and return to the position of the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

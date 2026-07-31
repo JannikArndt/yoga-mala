@@ -1,0 +1,51 @@
+{
+  "id": "pindasana",
+  "number": 36,
+  "title": "Pindasana",
+  "title_as_printed": "36. PINDASANA",
+  "section": "finishing",
+  "source_file": "chapter0046.html",
+  "vinyasa_count": 14,
+  "state_vinyasas": [9],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Sarvangasana and Shirshasana are together called viparita karani.",
+    "These seven asanas must be practiced in this order, which must never vary: Sarvangasana, Halasana, Karnapidasana, Urdhva Padmasana, Pindasana, Matsyasana, and Uttana Padasana.",
+    "After finishing these seven, one should never go on to an asana such as Paschimattanasana; only Matsyasana, Uttana Padasana, and Shirshasana should follow."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 8,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Follow the vinyasas of Urdhva Padmasana above through to the 9th vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Doing puraka and then rechaka, bring the legs in Padmasana slowly down to the forehead, envelop the thighs with the arms, embrace the Padmasana, hold the wrists tightly, and balance the body on the shoulders only. Stay, slowly doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Subsequent vinyasas are as those of Sarvangasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies the lower abdomen.",
+    "Purifies the spinal column.",
+    "Purifies the liver and spleen.",
+    "Purifies the stomach."
+  ],
+  "quotes": [
+    "Maranam bindu patena jivanam bindu dharanat [The falling of the drop is death, while retaining bindu is life]."
+  ],
+  "images": []
+}

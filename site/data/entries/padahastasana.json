@@ -1,0 +1,68 @@
+{
+  "id": "padahastasana",
+  "number": 2,
+  "title": "Padahastasana",
+  "title_as_printed": "2. PADAHASTASANA",
+  "section": "standing",
+  "source_file": "chapter0007.html",
+  "vinyasa_count": 3,
+  "state_vinyasas": [2],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Stand with the legs half a foot apart, as in Padangushtasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Place the palms under the feet.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head up and stay in position.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Place the head in the region between the knees, keeping knees straight, and hold position, doing rechaka and puraka fully as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti, as in the earlier asana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Draw the lower abdomen in tightly.",
+    "Rechaka and puraka done as much as possible."
+  ],
+  "benefits": [
+    "Purifies the anal canal.",
+    "Purifies the kidneys.",
+    "Purifies the lower abdomen."
+  ],
+  "quotes": [],
+  "images": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "kukkutasana",
+  "number": 24,
+  "title": "Kukkutasana",
+  "title_as_printed": "24. KUKKUTASANA",
+  "section": "seated",
+  "source_file": "chapter0034.html",
+  "vinyasa_count": 14,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Do Garbha Pindasana through the 7th vinyasa: Padmasana, with the arms inserted through the space behind the knees.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Press the palms to the floor and lift up the Padmasana, standing on the strength of the palms. In this position, revolve the stomach (nauli), lift the back and chest fully, and do rechaka and puraka.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Come down slowly.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in Garbha Pindasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Do rechaka and puraka deeply while keeping the chest, waist, and back completely straight.",
+    "With the heels pressing on either side of the navel and keeping the head lifted, do uddiyana bandha and nauli.",
+    "There is no mula bandha in this asana."
+  ],
+  "benefits": [
+    "Purifies the intestines.",
+    "Dissolves the fat of the lower abdomen.",
+    "Cures diseases affecting the bowels and urinary tract.",
+    "Cures excess phlegm."
+  ],
+  "quotes": [],
+  "images": []
+}

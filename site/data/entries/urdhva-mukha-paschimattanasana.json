@@ -1,0 +1,57 @@
+{
+  "id": "urdhva-mukha-paschimattanasana",
+  "number": 30,
+  "title": "Urdhva Mukha Paschimattanasana",
+  "title_as_printed": "30. URDHVA MUKHA PASCHIMATTANASANA",
+  "section": "seated",
+  "source_file": "chapter0040.html",
+  "vinyasa_count": 16,
+  "state_vinyasas": [10],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Lie in the 8th vinyasa of Ubhaya Padangushtasana, and take hold of the sides of the feet near the heels.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Come into the state of Ubhaya Padangushtasana with straightened knees, sitting firmly on the buttocks while holding the feet, not the toes.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Place the face between the knees slowly, then do puraka and rechaka.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly come back into the 9th vinyasa of Ubhaya Padangushtasana, and sit.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in Paschimattanasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies the katti granthi [lower back], the esophagus, and the swadishtana chakra (the region between the anus and navel).",
+    "When the swadishtana chakra is purified, bodily activities become light, physical activities become free and easy, and impediments such as disease do not torture one."
+  ],
+  "quotes": [],
+  "images": []
+}

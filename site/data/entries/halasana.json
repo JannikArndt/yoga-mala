@@ -1,0 +1,49 @@
+{
+  "id": "halasana",
+  "number": 33,
+  "title": "Halasana",
+  "title_as_printed": "33. HALASANA",
+  "section": "finishing",
+  "source_file": "chapter0043.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–7 as in Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Join together and raise the legs, as in Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly lower the legs to the floor over the head, keeping them straight, place the feet on the floor, lock the fingers behind the back, arms tight and straight, press the chin into the chest without bending the legs, and do puraka and rechaka deeply, as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in Sarvangasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Both rechaka and puraka occur in the 8th vinyasa."
+  ],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

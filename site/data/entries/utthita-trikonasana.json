@@ -1,0 +1,68 @@
+{
+  "id": "utthita-trikonasana",
+  "number": 3,
+  "title": "Utthita Trikonasana",
+  "title_as_printed": "3. UTTHITA TRIKONASANA",
+  "section": "standing",
+  "source_file": "chapter0008.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [2, 4],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Rechaka and puraka should be performed as above; as with the Surya Namaskara, rechaka occurs on the even-numbered vinyasas and puraka on the odd."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the legs open to the right, three feet apart, stretch the arms out wide on either side of the torso at chest level, and hold.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Turn the right foot to the right, reach down and take hold of the big toe of the right foot with the right hand, lift up the other arm, fix the gaze on its fingertips, and do puraka and rechaka slowly and as much as possible. Both knees must be kept straight.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Return to the position of the 1st vinyasa, and hold.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Turn the left foot to the left, reach down and take hold of the big toe, gaze at the tip of the raised hand, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Return to the position of the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Dissolves the bad fat at the waist.",
+    "Brings the body into shape.",
+    "Expands the narrow portion of the breathing channel.",
+    "Strengthens the backbone."
+  ],
+  "quotes": [],
+  "images": []
+}

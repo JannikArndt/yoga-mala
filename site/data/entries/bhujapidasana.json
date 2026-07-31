@@ -1,0 +1,70 @@
+{
+  "id": "bhujapidasana",
+  "number": 21,
+  "title": "Bhujapidasana",
+  "title_as_printed": "21. BHUJAPIDASANA",
+  "section": "seated",
+  "source_file": "chapter0031.html",
+  "vinyasa_count": 15,
+  "state_vinyasas": [7, 8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Begin with the first six vinyasas of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Using the strength of the arms, jump the legs around the shoulders without touching the floor, place one foot over the other, squeeze the shoulders forcefully with the thighs, and straighten the arms.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Without touching the legs or feet to the floor, touch only the chin to the floor, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Come back into the 7th vinyasa position.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Take back both legs without touching the floor, and balance them on the backs of the arms.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "puraka and rechaka",
+      "action": "Come into the 4th vinyasa of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The next vinyasas follow those specified earlier.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies the anna nala (food channel/esophagus).",
+    "Makes the body light.",
+    "Strengthens the shoulders and waist."
+  ],
+  "quotes": [],
+  "images": []
+}

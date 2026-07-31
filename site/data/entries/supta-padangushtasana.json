@@ -1,0 +1,127 @@
+{
+  "id": "supta-padangushtasana",
+  "number": 28,
+  "title": "Supta Padangushtasana",
+  "title_as_printed": "28. SUPTA PADANGUSHTASANA",
+  "section": "seated",
+  "source_file": "chapter0038.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [9, 11, 13, 19],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Supta Padangushtasana is a two-part asana: the first part has twenty vinyasas, the second has twenty-eight.",
+    "The 9th and 13th vinyasas are the states of the first part; the 11th and 19th vinyasas are the states of the second part.",
+    "While in the states of this asana, aspirants must be mindful to practice the breathing methods with attention — Guruji repeats this because the asana is unlike previous ones."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Part 1. Lie down on the back, as in the preparations for Sarvangasana, doing rechaka and puraka.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Bring the straightened right leg up toward the head, straighten the left leg, strongly take hold of the big toe of the right leg with the right hand, press the left hand firmly on the left thigh, and lie flat, keeping the head on the floor.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lift only the head a little, touch the nose to the straightened right knee, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 10,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lower the head to the floor.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lower the right leg to the floor and join the legs together.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Repeat the above (vinyasas 8–11) for the left leg.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Come into the position of Halasana, press the hands to the floor by the ears, and roll the whole body back over the head into the position of the 4th vinyasa. This is called Chakrasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in previous asanas. End of Part 1.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Part 2. Perform the first ten vinyasas of Part 1.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Bring the right leg out to the right and lower it to the floor, and do rechaka and puraka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Raise the right leg and return to the 8th vinyasa of Part 1.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Touch the nose to the knee.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lower the head to the floor.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Repeat the above (vinyasas 11–14) for the left side.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies and strengthens the waist region, knees, food and anal channels, and the sperm passageway (virya nala).",
+    "Dissolves bad fat on the sides of the body and the waist, making the waist slender and strong, and the body light.",
+    "Can be done by all and sundry, except pregnant women."
+  ],
+  "quotes": [
+    "Indeed, whatever the asana, one should practice first on the right side and then on the left side."
+  ],
+  "images": []
+}

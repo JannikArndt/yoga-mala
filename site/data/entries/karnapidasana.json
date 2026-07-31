@@ -1,0 +1,42 @@
+{
+  "id": "karnapidasana",
+  "number": 34,
+  "title": "Karnapidasana",
+  "title_as_printed": "34. KARNAPIDASANA",
+  "section": "finishing",
+  "source_file": "chapter0044.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Lie down, as in Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Proceed to the 8th vinyasa of Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lower the legs to the floor, as in Halasana, bring the knees to the floor, take hold of the ears tightly with the knees, lower the arms to the floor, lock the fingers, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    }
+  ],
+  "while_holding": [
+    "Draw the stomach in fully without tightening the anus, and do rechaka and puraka."
+  ],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

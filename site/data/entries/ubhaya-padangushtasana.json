@@ -1,0 +1,60 @@
+{
+  "id": "ubhaya-padangushtasana",
+  "number": 29,
+  "title": "Ubhaya Padangushtasana",
+  "title_as_printed": "29. UBHAYA PADANGUSHTASANA",
+  "section": "seated",
+  "source_file": "chapter0039.html",
+  "vinyasa_count": 15,
+  "state_vinyasas": [9],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Having reached the 7th vinyasa of Supta Padangushtasana, lie down and join the legs.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Straighten both legs, as in Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "As in Halasana, bring the legs up over the head, place the feet on the floor, and tightly take hold of the big toes.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Without letting go of the toes, roll forward and come to sit purely on the buttocks in the manner of Navasana, doing rechaka and puraka.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Both rechaka and puraka occur in the 8th vinyasa.",
+    "In the 9th vinyasa, do rechaka and puraka slowly and as much as possible, keeping the chest lifted and the stomach drawn in fully."
+  ],
+  "benefits": [
+    "Purifies the anus, waist, stomach, genital organs, and the granthi traya (the three knots below the vina danda, beginning at the anal canal).",
+    "Eliminates the burning sensation that can occur during urination."
+  ],
+  "quotes": [],
+  "images": []
+}

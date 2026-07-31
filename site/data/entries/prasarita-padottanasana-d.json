@@ -1,0 +1,78 @@
+{
+  "id": "prasarita-padottanasana-d",
+  "number": null,
+  "title": "Prasarita Padottanasana (D)",
+  "title_as_printed": "PRASARITA PADOTTANASANA (D)",
+  "section": "standing",
+  "source_file": "chapter0013.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [3],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Stand with the legs apart, as in Prasarita Padottanasana (A), and place the hands on the waist.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Take hold of the big toes and lift the head, keeping the arms and spine straight.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Place the center of the head on the floor in line with the feet, keeping the legs straight and the lower abdomen pulled in, and breathe fully and deeply as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head up completely.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Hold.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the hands, place them on the waist, and return to the position of the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies the anal canal.",
+    "Dissolves the bad fat in the lower abdomen.",
+    "Makes the waist thin and strong.",
+    "Makes the body light and beautiful.",
+    "Cures constipation.",
+    "Purifies the top part of the spinal column.",
+    "Purifies the waist."
+  ],
+  "quotes": [
+    "Great attention should be paid to the stomach and the anal channel while practicing the four parts of Prasarita Padottanasana. It is best to learn the proper method from a Guru."
+  ],
+  "images": []
+}

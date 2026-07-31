@@ -1,0 +1,81 @@
+{
+  "id": "shirshasana",
+  "number": 39,
+  "title": "Shirshasana",
+  "title_as_printed": "39. SHIRSHASANA",
+  "section": "finishing",
+  "source_file": "chapter0049.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Also known as Kapalasana or Viparita Karani.",
+    "Pregnant women should not practice this asana.",
+    "Merely putting the head down and legs up is not Shirshasana; the entire body must stand upside down on the strength of the arms alone, not on the weight of the head.",
+    "Shirshasana should never be practiced first, before the Surya Namaskara and the other asanas.",
+    "Following Shirshasana, one should only sit in Padmasana and do pranayama and the like — no further asanas should be practiced."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "While coming from the 6th to the 7th vinyasa of the first Surya Namaskara, sit on the knees, lock the fingers together, and place the elbows on the floor.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Doing rechaka and then puraka, place the crown of the head on the floor, interlocked hands cupping the back of the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Doing rechaka and puraka again, straighten the legs and, keeping them together and straight, lift them up with the power of the arms, tighten the body, point the toes, and keep the body erect using the strength of the arms. Stay, doing rechaka and puraka slowly and as many times as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Doing rechaka slowly, bring the feet back down onto the floor, rest with the buttocks on the heels and the head on the floor for two minutes.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Doing puraka and then rechaka, jump back into the 4th vinyasa of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The next vinyasas are as those described above.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Draw the lower abdomen and the anus in fully and hold them tightly — mula bandha.",
+    "Keep the entire body erect.",
+    "Do rechaka and puraka deeply, without kumbhaka.",
+    "Begin by staying five minutes, then ten, then fifteen, increasing the time in the state by five-minute increments over many days, months, and years, until able to stay for a full three hours."
+  ],
+  "benefits": [
+    "Purifies the subtle nadis of the head, related to the brain and sense organs, through an inflow of warm blood.",
+    "Increases the power of memory.",
+    "Destroys eye disease; the eyes glow and long-sightedness improves.",
+    "Purifies the five sense organs."
+  ],
+  "quotes": [
+    "Yama matram vashe nityam [We can dwell in (Shirshasana) for three hours].",
+    "Maranam bindu patena / Jivanam bindu dharanat / Tasmat sarvaprayatnena / Bindu dharanam abhyaset [Loss of bindu is death / and the preservation of it, life / So, by all means / is the holding of bindu to be preserved].",
+    "Yuva vrddho'tivrddho va vyadito durbalo'pi va / Abhyasat siddhim apnoti / Sarvayogeshvatandritah [Whether young or old, or very old / sick or debilitated / one who is vigilant attains, by means of practice, success in all the yogas.]"
+  ],
+  "images": []
+}

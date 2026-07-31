@@ -1,0 +1,58 @@
+{
+  "id": "baddha-konasana",
+  "number": 25,
+  "title": "Baddha Konasana",
+  "title_as_printed": "25. BADDHA KONASANA",
+  "section": "seated",
+  "source_file": "chapter0035.html",
+  "vinyasa_count": 15,
+  "state_vinyasas": [7, 8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in earlier asanas, then the 7th vinyasa of Paschimattanasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Join the feet, fold them open, press the heels to the sivani nadi (the nadi between the anus and the genitals), hold the feet open with both hands, lift the chest, and sit with the knees on the floor.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Fold forward, place the head on the floor, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Do rechaka and tighten the anus fully.",
+    "Pull the stomach in completely, holding the lower abdomen and anus tightly, practicing rechaka and puraka."
+  ],
+  "benefits": [
+    "Destroys terrible afflictions related to the anus, such as constipation and piles.",
+    "Indigestion will no longer haunt the aspirant.",
+    "Vamana speaks of Baddha Konasana as the greatest of the asanas.",
+    "Relieves bhagandara [fistula] and mulavyadhi [hemorrhoids].",
+    "Cures diseases related to the anus and the dhatu."
+  ],
+  "quotes": [
+    "Baddhakonasane tishtan gudamakunchayet buddha gudarognivrittih syat satyam satyam bravimyaham [The wise one should retract the anus while in Baddha Konasana as it wards off anal disease, this I declare is true]."
+  ],
+  "images": []
+}

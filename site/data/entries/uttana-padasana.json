@@ -1,0 +1,54 @@
+{
+  "id": "uttana-padasana",
+  "number": 38,
+  "title": "Uttana Padasana",
+  "title_as_printed": "38. UTTANA PADASANA",
+  "section": "finishing",
+  "source_file": "chapter0048.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "In consolidated practice: after Sarvangasana, do Halasana, then the state of Karnapidasana, then Urdhva Padmasana, then Pindasana; finishing puraka, move into the state of Matsyasana while doing rechaka; then pass into the state of Uttana Padasana; and finally, doing puraka and rechaka, do Chakrasana."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Perform all the vinyasas from the beginning of Sarvangasana to the 7th vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "free",
+      "breath_as_printed": null,
+      "action": "As in Matsyasana, lift the head, place the crown of the head on the floor, arch the back, extend the legs as in Navasana, hold straightened arms out parallel with the legs, bring the palms together, and tighten the entire body. Stay, doing rechaka and puraka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Do the 9th vinyasa of Matsyasana, and roll into the 4th vinyasa of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The next vinyasas follow those of earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Counterposes the five preceding asanas and removes the shoulder and waist pain that result from their practice.",
+    "Purifies the esophagus and anus.",
+    "Purifies the liver and spleen.",
+    "Furnishes the waist and neck with increasing strength."
+  ],
+  "quotes": [],
+  "images": []
+}

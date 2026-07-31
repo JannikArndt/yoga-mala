@@ -1,0 +1,49 @@
+{
+  "id": "marichyasana-d",
+  "number": 19,
+  "title": "Marichyasana D",
+  "title_as_printed": "19. MARICHYASANA (D)",
+  "section": "seated",
+  "source_file": "chapter0029.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [7],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Women should practice Marichyasana under the guidance of a Guru, sitting firmly and holding the hands and legs without error.",
+    "Pregnant women should not practice this asana after the second month."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "free",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Sit, bending the arms and legs as in Marichyasana (B), turn the waist, bring the left arm around the front of the right knee and around toward the back as in Marichyasana (C), bring the right arm around the back and take hold of the left wrist with the right hand, turn the waist fully, lift the chest, doing rechaka and puraka slowly and deeply, as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Practice the same method for the left leg.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The method for the vinyasas has been specified earlier.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Cures gaseous movements in the stomach and intestines.",
+    "Cures movements of the rectum, such as diarrhea, and restores digestive power.",
+    "Eliminates flatulence, indigestion, and constipation.",
+    "Removes abdominal pain during menstruation.",
+    "Strengthens the womb, enabling a woman to carry a child strongly, and cures miscarriage due to weakness.",
+    "Purifies the vata pitta kosha (large intestine and gall bladder) and the manipura chakra (the third chakra at the navel center).",
+    "Gives the body strength and power."
+  ],
+  "quotes": [],
+  "images": []
+}

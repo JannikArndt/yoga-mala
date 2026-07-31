@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # The site is committed pre-built, so this only guards against the data
+      # files drifting out of sync with the entries they are compiled from.
+      - name: Rebuild the data and fail if it differs from what was committed
+        run: |
+          python3 tools/extract_book.py
+          python3 tools/build_images.py
+          python3 tools/build_site_data.py
+          git diff --exit-code -- site/data
+
+      - name: Check the entries against the book
+        run: python3 tools/verify_entries.py
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

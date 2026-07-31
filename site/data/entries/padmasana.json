@@ -1,0 +1,48 @@
+{
+  "id": "padmasana",
+  "number": 41,
+  "title": "Padmasana",
+  "title_as_printed": "41. PADMASANA",
+  "section": "finishing",
+  "source_file": "chapter0051.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Also called Kevala, or Simple, Padmasana.",
+    "Useful for the practice of pranayama, dhyana, sandhya vandana, and puja.",
+    "One should sit in Kevala Padmasana after doing Baddha Padmasana."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Follow the vinyasas above for Baddha Padmasana through the 7th vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Place the right foot on the left thigh and the left foot on the right thigh, press the heels into the lower abdomen on either side of the navel, make the knees rest on the floor, place the hands on the knees, sit up, and straighten the back, chest, and waist. This is Padmasana. Stay, doing rechaka and puraka deeply and slowly as many times as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The next vinyasas are as those in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Regarded as the best and greatest of the asanas, easy to practice in all respects."
+  ],
+  "quotes": [
+    "The sages and seers of works such as the Yoga Yagnavalkya and Yoga Vashishta have said that the practice of Padmasana destroys not only diseases of the body, but great sins, as well."
+  ],
+  "images": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "parshvottanasana",
+  "number": 6,
+  "title": "Parshvottanasana",
+  "title_as_printed": "6. PARSHVOTTANASANA",
+  "section": "standing",
+  "source_file": "chapter0014.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [2, 4],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Rechaka and puraka are as in Trikonasana."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Jump to the right, standing with the legs three feet apart, as described in Trikonasana, bring hands together behind the back in a prayer position, turn the right foot and waist to the right, and lift the chest.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly touch the nose to the knee without bending the knees, and hold position, doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head up and turn to face the left, following the method for the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Touch the knee with the nose and hold, while doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head and chest, using the strength of the waist, and stand up straight.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Like Prasarita Padottanasana, eliminates the bad fat at the waist, which makes the lower abdomen thin, the waist strong, and the body light."
+  ],
+  "quotes": [],
+  "images": []
+}

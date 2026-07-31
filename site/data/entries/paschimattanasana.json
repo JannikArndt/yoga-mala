@@ -1,0 +1,82 @@
+{
+  "id": "paschimattanasana",
+  "number": 11,
+  "title": "Paschimattanasana",
+  "title_as_printed": "11. PASCHIMATTANASANA",
+  "section": "seated",
+  "source_file": "chapter0019.html",
+  "vinyasa_count": 16,
+  "state_vinyasas": [9],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "There are three types of Paschimattanasana: (1) holding the big toes and touching the nose to the knees; (2) holding either side of the feet and touching the nose to the knees; (3) locking the hand and wrist beyond the feet and touching the chin to the knee. All three types should be practiced, as each is useful."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "With only the strength of the arms, jump the legs between the hands without allowing them to touch the floor, and stretch out the legs. Press the hands to the floor on either side of the hips, straighten the chest and waist, lower the head a little, draw the anus up tightly, lift the lower abdomen and hold firmly, and sit erect, slowly doing rechaka and puraka as much as possible.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Grasp and hold the upper parts of the feet (as your practice becomes firm, you should be able to lock your hands behind your feet).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "puraka, rechaka",
+      "action": "Slowly straighten both legs, and place the head between the knees.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 10,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly lift only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka, puraka",
+      "action": "Let go of the feet, press the hands to the floor, bend the legs, and lift the entire body up off the floor merely with the strength of the arms.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 12–16 as in the Surya Namaskara.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Puraka and rechaka slowly and deeply, as much as possible."
+  ],
+  "benefits": [
+    "Helps the stomach become slender by dissolving its fat.",
+    "Increases jathara agni (the fire of hunger) and helps food digest well.",
+    "Strengthens the organs of the digestive systems (jirnanga kosha).",
+    "Cures weakness in the hands and legs resulting from a loss of appetite and low digestive fire.",
+    "Cures indolence and giddiness stemming from an aberration in the liver.",
+    "Cures gas problems in the stomach.",
+    "Retracting and holding the anus tightly, squeezing and holding in the lower abdomen, and concentrating on the nadis related to the kanda (the egg-shaped nerve plexus in the anal region), causes the apana vayu, having no place to go, to move upward and become one with the prana vayu; when this occurs, the aspirant has nothing to fear from old age and death."
+  ],
+  "quotes": [
+    "Iti Paschimattanam asanagyam Pavanam paschimavahinam karoti / Udayam jatharanalasya kuryadudare karshyamarogatam cha pumsam. [Principle among asanas, Paschimattanasana causes vital energy to be carried up the spine. As well, it should lead to the rising of the digestive fire, slenderness in the abdomen, and freedom from sickness for all.] —Hatha Yoga Pradipika i:29"
+  ],
+  "images": []
+}

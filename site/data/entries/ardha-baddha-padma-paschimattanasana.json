@@ -1,0 +1,102 @@
+{
+  "id": "ardha-baddha-padma-paschimattanasana",
+  "number": 13,
+  "title": "Ardha Baddha Padma Paschimattanasana",
+  "title_as_printed": "13. ARDHA BADDHA PADMA PASCHIMATTANASANA",
+  "section": "seated",
+  "source_file": "chapter0021.html",
+  "vinyasa_count": 22,
+  "state_vinyasas": [8, 15],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Sit as in the 7th vinyasa of Paschimattanasana, stretch the left leg out, place the right leg on the left thigh, pressing the right heel into the navel, bring the right arm behind the back and grasp the big toe of the right foot, take the left foot with the left hand, straighten the head and chest, slowly.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly place the chin on the outstretched left leg, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly lift only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Unfolding the legs and crossing them, as in Paschimattanasana, lift up the entire body with the strength of the arms.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 11–13 resemble the 4th, 5th, and 6th vinyasas of Paschimattanasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Back at the 7th vinyasa of the first Surya Namaskara, jump the legs through the arms on the strength of the hands alone, stretch the right leg out, place the left leg on the right thigh, grasp the left big toe with the left hand from behind, take the right foot with the right hand, straighten the head and chest.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 15,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Place the chin on the right knee, which is stretched out flat, and do puraka and rechaka slowly, as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 16,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head only.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 17,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Unfold and cross the legs, lift the entire body up with the hands, and stay in this position.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 18–22 follow Paschimattanasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Alleviates the enlargement of the liver and spleen.",
+    "Cures abdominal distention due to bad food and activities.",
+    "Cures the spoiling of the tissues due to a continually provoked vata.",
+    "Cures weakness due to an inability to take food.",
+    "Cures constipation and renders the operation of the bowels easy."
+  ],
+  "quotes": [],
+  "images": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "matsyasana",
+  "number": 37,
+  "title": "Matsyasana",
+  "title_as_printed": "37. MATSYASANA",
+  "section": "finishing",
+  "source_file": "chapter0047.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Lie down, as in Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Doing puraka, in Padmasana, press the hands to the floor on either side of the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Doing rechaka, lift the head up and place the crown of the head on the floor, bend the back up by lifting the waist, take hold of the feet, and straighten the arms. Stay, doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Doing puraka and next rechaka, lower the head, unfold the legs from Padmasana, hold the legs and feet as in Halasana, place the hands next to the ears, and roll over into the 4th vinyasa of the first Surya Namaskara. This is called Chakrasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The next vinyasas are the same as those in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Counterposes the five preceding asanas and removes the shoulder and waist pain that result from their practice.",
+    "Purifies the esophagus and anus.",
+    "Purifies the liver and spleen.",
+    "Furnishes the waist and neck with increasing strength."
+  ],
+  "quotes": [],
+  "images": []
+}

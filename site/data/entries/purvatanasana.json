@@ -1,0 +1,52 @@
+{
+  "id": "purvatanasana",
+  "number": 12,
+  "title": "Purvatanasana",
+  "title_as_printed": "12. PURVATANASANA",
+  "section": "seated",
+  "source_file": "chapter0020.html",
+  "vinyasa_count": 15,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Purvatanasana represents Paschimattanasana's opposite."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–7 as in Paschimattanasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Place the hands on the floor at a distance of twelve inches behind the waist, lift the legs and torso entirely off the floor, press the soles of the feet firmly on the floor, lower the head back, making the body firm, and hold, while slowly performing rechaka and puraka.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly return to the state of the 7th vinyasa and sit.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The remaining vinyasas that complete this asana follow those of Paschimattanasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies and strengthens the heart, anus, spinal column, and waist.",
+    "Immediately following a forward-bending asana with its opposite, backward-bending asana (and vice versa) makes any pain in the waist, resulting for example from Paschimattanasana, disappear."
+  ],
+  "quotes": [],
+  "images": []
+}

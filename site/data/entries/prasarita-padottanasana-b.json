@@ -1,0 +1,57 @@
+{
+  "id": "prasarita-padottanasana-b",
+  "number": null,
+  "title": "Prasarita Padottanasana (B)",
+  "title_as_printed": "PRASARITA PADOTTANASANA (B)",
+  "section": "standing",
+  "source_file": "chapter0011.html",
+  "vinyasa_count": 5,
+  "state_vinyasas": [3],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "This is the second part of Prasarita Padottanasana.",
+    "Aspirants should note that in each part of Prasarita Padottanasana, both rechaka and puraka occur in the same vinyasas."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Stand, as in Prasarita Padottanasana (A), stretch the arms out to the sides at chest level and straighten them, as in Trikonasana, and hold position.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Place the hands on the waist.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Place the head slowly on the floor, using the strength of the waist and legs, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Without placing the hands on the floor, lift the head up, using only the strength of the waist and legs, and stand up straight.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale-exhale",
+      "breath_as_printed": null,
+      "action": "Bring the arms out wide at the level of the chest, as described in the 1st vinyasa, and hold position.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

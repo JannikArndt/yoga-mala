@@ -1,0 +1,100 @@
+{
+  "id": "surya-namaskara-a",
+  "number": null,
+  "title": "Surya Namaskara A",
+  "title_as_printed": "METHOD FOR DOING THE FIRST SURYA NAMASKARA",
+  "section": "surya-namaskara",
+  "source_file": "chapter0053_split_000.html",
+  "vinyasa_count": 9,
+  "state_vinyasas": [],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Often practiced while chanting mantras.",
+    "Drishti: nasagra (tip of the nose) for Samasthiti; broomadhya (between the eyebrows) for the 1st vinyasa; nasagra for the 2nd; and so on — odd-numbered vinyasas gaze between the eyebrows, even-numbered vinyasas gaze at the tip of the nose.",
+    "For the even-numbered vinyasas, rechaka is performed; for the odd-numbered vinyasas, puraka."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Join the legs together, heels and big toes touching, push the chest up, lower the head slightly, and stand straight, gazing at the tip of the nose; this is Samasthiti, standing up in a straight line.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Raise the arms straight up over the head, bring the hands together, lean the head back a little, and look at the fingertips.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Bring the hands down to the floor on either side of the feet, straighten the knees, and touch the knees with the nose.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Press the hands squarely onto the floor and, with only the strength of the hands, throw the legs back and hold the body straight on the hands and toes only (Chaturanga Dandasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Push the chest forward with the strength of the hands, lift the head up, bend the waist, straighten the arms without touching either the thighs or knees to the floor, and extend the feet, toes pointed and tops pressed to the floor (Urdhva Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lift the waist up, tilt the head under, press the heels to the floor, pull in the stomach completely, and hold position, gazing at the navel (Adho Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Jump the feet in between the hands, press the legs together, and stand with the knees straightened and feet joined, as in the 3rd vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Bring the hands down to the floor on either side of the feet and touch the knees with the nose, as in the 2nd vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Raise the arms straight up over the head, bring the hands together, lean the head back a little, and look at the fingertips, as in the 1st vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Stand up straight in Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

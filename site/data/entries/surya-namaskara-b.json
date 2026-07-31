@@ -1,0 +1,155 @@
+{
+  "id": "surya-namaskara-b",
+  "number": null,
+  "title": "Surya Namaskara B",
+  "title_as_printed": "METHOD FOR DOING THE SECOND SURYA NAMASKARA",
+  "section": "surya-namaskara",
+  "source_file": "chapter0053_split_000.html",
+  "vinyasa_count": 17,
+  "state_vinyasas": [],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "The rechaka and puraka of the second Surya Namaskara are the same as for the first; the 1st, 7th, 11th, and 17th vinyasas introduce a different form, and the remaining vinyasas are the same as those of the first.",
+    "For the even-numbered vinyasas, rechaka is performed; for the odd-numbered vinyasas, puraka."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Stand straight, joining the legs together, as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Bend the knees, which are together, lift the chest, raise the arms straight up over the head, join the hands together, lean the head back a little, and stand gazing at the tips of the fingers (Utkatasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Straighten the legs (do not bend the knees), press the hands down onto the floor on either side of the feet, as in the first Surya Namaskara, and touch the knees with the nose.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Straighten the back and lift the head only.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Jump the body back into the form of a stick with only the strength of the hands, as in the first Surya Namaskara, and rest with the head lifted a little.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Push the body forward with the force of the arms, lift the chest, arch the back, and make the legs tight and straight, resting with the tops of the feet pressed to the floor (Urdhva Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lift the waist up, press the heels to the floor, tilt the head, draw in the stomach tightly, and stare at the navel (Adho Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Place the right foot between the hands, which are pressed to the floor, bend the knee of the right leg, straighten the thigh and knee of the left leg which is stretched back, raise the arms straight up over the head, bring the hands together, swell the chest, lean the head back a little, and rest, staring at the tips of the fingers.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump the body back into the form of a stick, as in the 4th vinyasa (Chaturanga Dandasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Push the body forward and lift the chest, as in the 5th vinyasa (Urdhva Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Lift the waist, press the heels to the floor, and stare at the navel, as in the 6th vinyasa (Adho Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "As in the 7th vinyasa, but with the left leg forward: place the left foot between the hands, bend the knee of the left leg, straighten the right leg stretched back, raise the arms overhead, hands together, and rest, staring at the tips of the fingers.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 12,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump the body back into the form of a stick, as in the 4th vinyasa (Chaturanga Dandasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 13,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Push the body forward and lift the chest, as in the 5th vinyasa (Urdhva Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 14,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Lift the waist, press the heels to the floor, and stare at the navel, as in the 6th vinyasa (Adho Mukha Svanasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": 15,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Straighten the back and lift the head only, as in the 3rd vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 16,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Straighten the legs, press the hands to the floor, and touch the knees with the nose, as in the 2nd vinyasa.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 17,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Bend the knees, lift the chest, raise the arms overhead, hands together, and stand gazing at the tips of the fingers, as in the 1st vinyasa (Utkatasana).",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Then comes Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

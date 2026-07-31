@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yoga Mala — Sri K. Pattabhi Jois</title>
+<meta name="description" content="An interactive reader for Yoga Mala by Sri K. Pattabhi Jois: the Surya Namaskara, the asanas of the primary series, and the eight limbs of Patanjali.">
+<meta name="theme-color" content="#f7f2e8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#entry">Skip to the practice</a>
+
+<header class="masthead">
+  <a class="masthead__title" href="#/" aria-label="Yoga Mala, home">
+    <span class="masthead__sanskrit" aria-hidden="true">योग माला</span>
+    <span class="masthead__name">Yoga Mala</span>
+  </a>
+  <nav class="chapters" id="chapter-nav" aria-label="Chapters"></nav>
+  <a class="masthead__about" href="#/about">Guruji</a>
+</header>
+
+<nav class="entries" id="entry-nav" aria-label="Postures in this chapter"></nav>
+
+<main id="main">
+  <button class="pager pager--previous" id="previous" aria-label="Previous" title="Previous (←)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8"/></svg>
+  </button>
+  <button class="pager pager--next" id="next" aria-label="Next" title="Next (→)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+  </button>
+  <article id="entry" class="entry" tabindex="-1"></article>
+</main>
+
+<footer class="colophon" id="colophon"></footer>
+
+<script src="app.js"></script>
+</body>
+</html>

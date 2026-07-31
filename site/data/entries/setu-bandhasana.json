@@ -1,0 +1,87 @@
+{
+  "id": "setu-bandhasana",
+  "number": 31,
+  "title": "Setu Bandhasana",
+  "title_as_printed": "31. SETU BANDHASANA",
+  "section": "seated",
+  "source_file": "chapter0041.html",
+  "vinyasa_count": 15,
+  "state_vinyasas": [9],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in earlier asanas.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Lie down, as in Supta Padangushtasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Inhale.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Bend the knees a little, join the heels together, placing the little toes firmly on the floor, bend the head back, place the top of the head on the floor, lift the chest a little, and maintain position, bending the back.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Cross the arms over the chest, lift up the waist and back, and stand straightly on the head and feet alone, while doing rechaka and puraka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 10,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly lie down.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Raise the straightened legs toward the head, and press the hands to the floor on either side of the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lift the head and roll the body over on the strength of the arms, coming into the 4th vinyasa of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in previous asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Purifies and strengthens the waist and neck.",
+    "Purifies the muladhara chakra [root chakra].",
+    "Increases the jathara agni [digestive fire].",
+    "Purifies the esophagus, heart, and lungs, making them strong."
+  ],
+  "quotes": [],
+  "images": []
+}

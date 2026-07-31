@@ -1,0 +1,56 @@
+{
+  "id": "garbha-pindasana",
+  "number": 23,
+  "title": "Garbha Pindasana",
+  "title_as_printed": "23. GARBHA PINDASANA",
+  "section": "seated",
+  "source_file": "chapter0033.html",
+  "vinyasa_count": 14,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "Do the six vinyasas described in earlier asanas, then sit as in the 7th vinyasa of Paschimattanasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "free",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Do Padmasana by placing the right foot on the left thigh and the left foot on the right thigh, insert both arms past the elbow through the openings between the thigh and calf, hold the ears with the hands, sitting purely on the buttocks, straighten the chest and spinal column, press both heels on either side of the navel, and remain in this position, doing rechaka and puraka as long as possible.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Bend the head forward completely, take hold of the head with the hands, and roll in a clockwise direction, doing rechaka on the roll back and puraka on the roll forward, until a full circle has been completed.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Roll forward and up, pressing the hands to the floor and lifting the body up off the floor.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The vinyasas and breathing that follow are described in foregoing asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [
+    "Dissolves the fat of the lower abdomen.",
+    "Purifies the manipura, the third chakra.",
+    "Wards off diseases of the liver and spleen."
+  ],
+  "quotes": [],
+  "images": []
+}

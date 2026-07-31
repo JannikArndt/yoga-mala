@@ -1,0 +1,68 @@
+{
+  "id": "padangushtasana",
+  "number": 1,
+  "title": "Padangushtasana",
+  "title_as_printed": "1. PADANGUSHTASANA",
+  "section": "standing",
+  "source_file": "chapter0006.html",
+  "vinyasa_count": 3,
+  "state_vinyasas": [2],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Stand up straight, inhaling deeply through the nostrils.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump the legs half a foot apart, reach down and take hold of the big toes, lift head and chest fully, knees straight.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Stay in position.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Draw in the lower abdomen, head between the two knees, knees straight. Stay, doing puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Slowly lift the head, fingers still holding the big toes.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Return to Samasthiti.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Draw the lower abdomen in and hold it tightly.",
+    "Rechaka and puraka slowly and as much as possible."
+  ],
+  "benefits": [
+    "Dissolves the fat of the lower abdomen.",
+    "Purifies the kanda — the egg-shaped nerve plexus in the anal region.",
+    "Purifies the rectum."
+  ],
+  "quotes": [],
+  "images": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "janu-shirshasana-c",
+  "number": null,
+  "title": "Janu Shirshasana C",
+  "title_as_printed": "JANU SHIRSHASANA (C)",
+  "section": "seated",
+  "source_file": "chapter0025.html",
+  "vinyasa_count": null,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "Janu Shirshasana cures maladies such as muthra krcchra (burning while urinating), dhatu krcchra (semen loss), and diabetes.",
+    "Janu Shirshasana can be practiced by anyone, man or woman, irrespective of age or sex."
+  ],
+  "sequence": [
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Sit as in Paschimattanasana, stretch the left leg out straight, bring the right foot in toward the groin, twisting it so that the toes are pressed to the floor and the heel is pointing up toward the navel, press the right knee forward to a 45 degree angle, take hold of the left foot with both hands, straighten the back and arms, and tighten the anus and lower abdomen.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Folding at the waist, place the forehead or chin on the outstretched leg, press the right heel into the navel, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head and straighten the arms.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "action": "The vinyasas that follow are as those in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [],
+  "benefits": [],
+  "quotes": [
+    "Janu Shirshasana destroys these terrible afflictions, and purifies and strengthens the nadi known as sivani, which is related to the dhatu.",
+    "By practicing Janu Shirshasana, the dhatu strengthens and, gradually, the vasana of kama is destroyed."
+  ],
+  "images": []
+}

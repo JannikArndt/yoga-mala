@@ -1,0 +1,101 @@
+{
+  "id": "tiriangmukhaikapada-paschimattanasana",
+  "number": 14,
+  "title": "Tiriangmukhaikapada Paschimattanasana",
+  "title_as_printed": "14. TIRIANGMUKHAIKAPADA PASCHIMATTANASANA",
+  "section": "seated",
+  "source_file": "chapter0022.html",
+  "vinyasa_count": 22,
+  "state_vinyasas": [8, 15],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "The methods of vinyasa are the same as those for Ardha Baddha Padma Paschimattanasana.",
+    "The method of inhaling and exhaling for each vinyasa follows the same pattern throughout the asanas."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "At the 7th vinyasa, jump through the arms, sit as described in Paschimattanasana, stretch the left leg out, fold the right leg back, placing the right foot by the side of the thigh, join the knees together, take hold with both hands of the left foot, which is at a right angle to the floor, lift the head and chest up fully.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly place the forehead on the outstretched leg, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly lift the head only.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Do the 11th vinyasa described in Paschimattanasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 11–13 follow the 4th, 5th, and 6th vinyasas of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Again sitting in the 7th vinyasa of Paschimattanasana, stretch out the right leg, fold back the left leg in the same manner as the right leg above, take hold of the right foot with both hands, and lift the head and chest up.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 15,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Slowly place the forehead on the outstretched knee, and do puraka and rechaka as much as possible.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 16,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Slowly lift up only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "The 17th vinyasa follows the method of the 10th vinyasa. The 18th, 19th, 20th, 21st, and 22nd vinyasas follow the 4th, 5th, 6th, 3rd, and 2nd vinyasas of Paschimattanasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Rechaka and puraka slowly and as much as possible."
+  ],
+  "benefits": [
+    "Cures body fat.",
+    "Cures water retention.",
+    "Cures thighs swollen out of proportion to the size of the body (elephant leg).",
+    "Cures piles.",
+    "Cures sciatica.",
+    "Makes the body symmetrical."
+  ],
+  "quotes": [],
+  "images": []
+}

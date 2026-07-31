@@ -1,0 +1,378 @@
+[
+ {
+  "source_file": "chapter0006.html",
+  "title": "1. PADANGUSHTASANA",
+  "id": "padangushtasana",
+  "number": 1,
+  "section": "standing",
+  "chars": 1183
+ },
+ {
+  "source_file": "chapter0007.html",
+  "title": "2. PADAHASTASANA",
+  "id": "padahastasana",
+  "number": 2,
+  "section": "standing",
+  "chars": 837
+ },
+ {
+  "source_file": "chapter0008.html",
+  "title": "3. UTTHITA TRIKONASANA",
+  "id": "utthita-trikonasana",
+  "number": 3,
+  "section": "standing",
+  "chars": 1485
+ },
+ {
+  "source_file": "chapter0009.html",
+  "title": "4. UTTHITA PARSHVAKONASANA",
+  "id": "utthita-parshvakonasana",
+  "number": 4,
+  "section": "standing",
+  "chars": 1554
+ },
+ {
+  "source_file": "chapter0010.html",
+  "title": "5. PRASARITA PADOTTANASANA (A)",
+  "id": "prasarita-padottanasana-a",
+  "number": 5,
+  "section": "standing",
+  "chars": 1206
+ },
+ {
+  "source_file": "chapter0011.html",
+  "title": "PRASARITA PADOTTANASANA (B)",
+  "id": "prasarita-padottanasana-b",
+  "number": null,
+  "section": "standing",
+  "chars": 1057
+ },
+ {
+  "source_file": "chapter0012.html",
+  "title": "PRASARITA PADOTTANASANA (C)",
+  "id": "prasarita-padottanasana-c",
+  "number": null,
+  "section": "standing",
+  "chars": 733
+ },
+ {
+  "source_file": "chapter0013.html",
+  "title": "PRASARITA PADOTTANASANA (D)",
+  "id": "prasarita-padottanasana-d",
+  "number": null,
+  "section": "standing",
+  "chars": 1269
+ },
+ {
+  "source_file": "chapter0014.html",
+  "title": "6. PARSHVOTTANASANA",
+  "id": "parshvottanasana",
+  "number": 6,
+  "section": "standing",
+  "chars": 1978
+ },
+ {
+  "source_file": "chapter0015.html",
+  "title": "7. UTTHITA HASTA PADANGUSHTASANA",
+  "id": "utthita-hasta-padangushtasana",
+  "number": 7,
+  "section": "standing",
+  "chars": 1769
+ },
+ {
+  "source_file": "chapter0016.html",
+  "title": "8. ARDHA BADDHA PADMOTTANASANA",
+  "id": "ardha-baddha-padmottanasana",
+  "number": 8,
+  "section": "standing",
+  "chars": 2695
+ },
+ {
+  "source_file": "chapter0017.html",
+  "title": "9. UTKATASANA",
+  "id": "utkatasana",
+  "number": 9,
+  "section": "standing",
+  "chars": 2930
+ },
+ {
+  "source_file": "chapter0018.html",
+  "title": "10. VIRABHADRASANA",
+  "id": "virabhadrasana",
+  "number": 10,
+  "section": "standing",
+  "chars": 2288
+ },
+ {
+  "source_file": "chapter0019.html",
+  "title": "11. PASCHIMATTANASANA",
+  "id": "paschimattanasana",
+  "number": 11,
+  "section": "seated",
+  "chars": 3187
+ },
+ {
+  "source_file": "chapter0020.html",
+  "title": "12. PURVATANASANA",
+  "id": "purvatanasana",
+  "number": 12,
+  "section": "seated",
+  "chars": 1228
+ },
+ {
+  "source_file": "chapter0021.html",
+  "title": "13. ARDHA BADDHA PADMA PASCHIMATTANASANA",
+  "id": "ardha-baddha-padma-paschimattanasana",
+  "number": 13,
+  "section": "seated",
+  "chars": 2228
+ },
+ {
+  "source_file": "chapter0022.html",
+  "title": "14. TIRIANGMUKHAIKAPADA PASCHIMATTANASANA",
+  "id": "tiriangmukhaikapada-paschimattanasana",
+  "number": 14,
+  "section": "seated",
+  "chars": 3092
+ },
+ {
+  "source_file": "chapter0023.html",
+  "title": "15. JANU SHIRSHASANA (A)",
+  "id": "janu-shirshasana-a",
+  "number": 15,
+  "section": "seated",
+  "chars": 1799
+ },
+ {
+  "source_file": "chapter0024.html",
+  "title": "JANU SHIRSHASANA (B)",
+  "id": "janu-shirshasana-b",
+  "number": null,
+  "section": "seated",
+  "chars": 706
+ },
+ {
+  "source_file": "chapter0025.html",
+  "title": "JANU SHIRSHASANA (C)",
+  "id": "janu-shirshasana-c",
+  "number": null,
+  "section": "seated",
+  "chars": 4876
+ },
+ {
+  "source_file": "chapter0026.html",
+  "title": "16. MARICHYASANA (A)",
+  "id": "marichyasana-a",
+  "number": 16,
+  "section": "seated",
+  "chars": 1377
+ },
+ {
+  "source_file": "chapter0027.html",
+  "title": "17. MARICHYASANA (B)",
+  "id": "marichyasana-b",
+  "number": 17,
+  "section": "seated",
+  "chars": 792
+ },
+ {
+  "source_file": "chapter0028.html",
+  "title": "18. MARICHYASANA (C)",
+  "id": "marichyasana-c",
+  "number": 18,
+  "section": "seated",
+  "chars": 679
+ },
+ {
+  "source_file": "chapter0029.html",
+  "title": "19. MARICHYASANA (D)",
+  "id": "marichyasana-d",
+  "number": 19,
+  "section": "seated",
+  "chars": 1597
+ },
+ {
+  "source_file": "chapter0030.html",
+  "title": "20. NAVASANA",
+  "id": "navasana",
+  "number": 20,
+  "section": "seated",
+  "chars": 1404
+ },
+ {
+  "source_file": "chapter0031.html",
+  "title": "21. BHUJAPIDASANA",
+  "id": "bhujapidasana",
+  "number": 21,
+  "section": "seated",
+  "chars": 1209
+ },
+ {
+  "source_file": "chapter0032.html",
+  "title": "22. KURMASANA",
+  "id": "kurmasana",
+  "number": 22,
+  "section": "seated",
+  "chars": 1394
+ },
+ {
+  "source_file": "chapter0033.html",
+  "title": "23. GARBHA PINDASANA",
+  "id": "garbha-pindasana",
+  "number": 23,
+  "section": "seated",
+  "chars": 1425
+ },
+ {
+  "source_file": "chapter0034.html",
+  "title": "24. KUKKUTASANA",
+  "id": "kukkutasana",
+  "number": 24,
+  "section": "seated",
+  "chars": 1120
+ },
+ {
+  "source_file": "chapter0035.html",
+  "title": "25. BADDHA KONASANA",
+  "id": "baddha-konasana",
+  "number": 25,
+  "section": "seated",
+  "chars": 2844
+ },
+ {
+  "source_file": "chapter0036.html",
+  "title": "26. UPAVISHTA KONASANA",
+  "id": "upavishta-konasana",
+  "number": 26,
+  "section": "seated",
+  "chars": 2092
+ },
+ {
+  "source_file": "chapter0037.html",
+  "title": "27. SUPTA KONASANA",
+  "id": "supta-konasana",
+  "number": 27,
+  "section": "seated",
+  "chars": 1487
+ },
+ {
+  "source_file": "chapter0038.html",
+  "title": "28. SUPTA PADANGUSHTASANA",
+  "id": "supta-padangushtasana",
+  "number": 28,
+  "section": "seated",
+  "chars": 2647
+ },
+ {
+  "source_file": "chapter0039.html",
+  "title": "29. UBHAYA PADANGUSHTASANA",
+  "id": "ubhaya-padangushtasana",
+  "number": 29,
+  "section": "seated",
+  "chars": 1193
+ },
+ {
+  "source_file": "chapter0040.html",
+  "title": "30. URDHVA MUKHA PASCHIMATTANASANA",
+  "id": "urdhva-mukha-paschimattanasana",
+  "number": 30,
+  "section": "seated",
+  "chars": 1068
+ },
+ {
+  "source_file": "chapter0041.html",
+  "title": "31. SETU BANDHASANA",
+  "id": "setu-bandhasana",
+  "number": 31,
+  "section": "seated",
+  "chars": 2991
+ },
+ {
+  "source_file": "chapter0042.html",
+  "title": "32. SARVANGASANA",
+  "id": "sarvangasana",
+  "number": 32,
+  "section": "finishing",
+  "chars": 1290
+ },
+ {
+  "source_file": "chapter0043.html",
+  "title": "33. HALASANA",
+  "id": "halasana",
+  "number": 33,
+  "section": "finishing",
+  "chars": 677
+ },
+ {
+  "source_file": "chapter0044.html",
+  "title": "34. KARNAPIDASANA",
+  "id": "karnapidasana",
+  "number": 34,
+  "section": "finishing",
+  "chars": 656
+ },
+ {
+  "source_file": "chapter0045.html",
+  "title": "35. URDHVA PADMASANA",
+  "id": "urdhva-padmasana",
+  "number": 35,
+  "section": "finishing",
+  "chars": 642
+ },
+ {
+  "source_file": "chapter0046.html",
+  "title": "36. PINDASANA",
+  "id": "pindasana",
+  "number": 36,
+  "section": "finishing",
+  "chars": 7887
+ },
+ {
+  "source_file": "chapter0047.html",
+  "title": "37. MATSYASANA",
+  "id": "matsyasana",
+  "number": 37,
+  "section": "finishing",
+  "chars": 813
+ },
+ {
+  "source_file": "chapter0048.html",
+  "title": "38. UTTANA PADASANA",
+  "id": "uttana-padasana",
+  "number": 38,
+  "section": "finishing",
+  "chars": 1862
+ },
+ {
+  "source_file": "chapter0049.html",
+  "title": "39. SHIRSHASANA",
+  "id": "shirshasana",
+  "number": 39,
+  "section": "finishing",
+  "chars": 12126
+ },
+ {
+  "source_file": "chapter0050.html",
+  "title": "40. BADDHA PADMASANA",
+  "id": "baddha-padmasana",
+  "number": 40,
+  "section": "finishing",
+  "chars": 1617
+ },
+ {
+  "source_file": "chapter0051.html",
+  "title": "41. PADMASANA",
+  "id": "padmasana",
+  "number": 41,
+  "section": "finishing",
+  "chars": 1759
+ },
+ {
+  "source_file": "chapter0052.html",
+  "title": "42. UTH PLUTHI",
+  "id": "uth-pluthi",
+  "number": 42,
+  "section": "finishing",
+  "chars": 2082
+ }
+]

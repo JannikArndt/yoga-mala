@@ -1,0 +1,49 @@
+{
+  "id": "urdhva-padmasana",
+  "number": 35,
+  "title": "Urdhva Padmasana",
+  "title_as_printed": "35. URDHVA PADMASANA",
+  "section": "finishing",
+  "source_file": "chapter0045.html",
+  "vinyasa_count": 14,
+  "state_vinyasas": [9],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": 8,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Do all vinyasas through to the state of Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Maintaining the same state, do Padmasana.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 10,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "puraka and rechaka",
+      "action": "Unlock the legs and come into the 4th vinyasa of Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in Sarvangasana.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Tighten the anus, draw in the stomach fully, hold the knees with the hands, straighten the arms, and slowly do puraka and rechaka as much as possible."
+  ],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}

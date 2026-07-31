@@ -1,0 +1,94 @@
+{
+  "id": "supta-konasana",
+  "number": 27,
+  "title": "Supta Konasana",
+  "title_as_printed": "27. SUPTA KONASANA",
+  "section": "seated",
+  "source_file": "chapter0037.html",
+  "vinyasa_count": 16,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "As in Paschimattanasana, lie flat on the floor, legs together, and stretch the legs out tightly.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Exhale.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift both legs up, as in Sarvangasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Bring the legs over the head, holding them as in Halasana, place the full weight of the body on the shoulders, and hold the big toes with the hands, legs wide apart.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "rechaka and puraka",
+      "action": "Do rechaka and puraka.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Without bending the legs, come up into the 9th vinyasa of Upavishta Konasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Slowly lower into the 8th vinyasa of Upavishta Konasana.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 10,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift only the head.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "Draw the abdomen in completely, but without mula bandha or even uddiyana bandha."
+  ],
+  "benefits": [
+    "Purifies the grdhrasi nadi.",
+    "Strengthens the spinal column and waist."
+  ],
+  "quotes": [],
+  "images": []
+}

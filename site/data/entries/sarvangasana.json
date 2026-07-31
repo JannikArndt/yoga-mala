@@ -1,0 +1,59 @@
+{
+  "id": "sarvangasana",
+  "number": 32,
+  "title": "Sarvangasana",
+  "title_as_printed": "32. SARVANGASANA",
+  "section": "finishing",
+  "source_file": "chapter0042.html",
+  "vinyasa_count": 13,
+  "state_vinyasas": [8],
+  "drishti": null,
+  "translation": null,
+  "notes": [
+    "As the next five asanas are related to Sarvangasana, their fruits (benefits) are described together in a later chapter."
+  ],
+  "sequence": [
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 7,
+      "breath": "inhale-exhale",
+      "breath_as_printed": "puraka and rechaka",
+      "action": "Coming into the 7th vinyasa of Paschimattanasana, lie down, arms by the sides and legs straight. Do puraka and rechaka four to five times, deeply.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "With the legs held straight and tightly together, slowly raise the legs up over the head, and put the full weight of the body on the shoulders only, hands holding the waist, elbows pressed to the floor.",
+      "is_state": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lower the legs toward the head, place the hands on the floor on either side of the head, push the legs back and behind, and lifting the head, come into the 4th vinyasa of the first Surya Namaskara.",
+      "is_state": false
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Remaining vinyasas as in earlier asanas.",
+      "is_state": false
+    }
+  ],
+  "while_holding": [
+    "The chin should press into the chest properly, the legs held straight, and the big toes and the tip of the nose should form a single line.",
+    "Stay in this state for five, ten, fifteen, even thirty minutes, doing rechaka and puraka deeply."
+  ],
+  "benefits": [],
+  "quotes": [],
+  "images": []
+}
