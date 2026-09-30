@@ -17,7 +17,7 @@
   "sequence": [
     {
       "vinyasa": 7,
-      "breath": "inhale-exhale",
+      "breath": "exhale-inhale",
       "breath_as_printed": "rechaka and puraka",
       "action": "Part 1. Lie down on the back, as in the preparations for Sarvangasana, doing rechaka and puraka.",
       "is_state": false
@@ -116,12 +116,16 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Purifies and strengthens the waist region, knees, food and anal channels, and the sperm passageway (virya nala).",
-    "Dissolves bad fat on the sides of the body and the waist, making the waist slender and strong, and the body light.",
-    "Can be done by all and sundry, except pregnant women."
+    "Supta Padangushtasana purifies and strengthens the waist region, knees, food and anal channels, and the sperm passageway (virya nala).",
+    "It dissolves the bad fat on the sides of the body and the waist, making the waist slender and strong, and the body light."
   ],
   "quotes": [
     "Indeed, whatever the asana, one should practice first on the right side and then on the left side."
   ],
-  "images": []
+  "images": [],
+  "vinyasa_label": "20 in part 1, 28 in part 2",
+  "state_label": "9 and 13 in part 1; 11 and 19 in part 2",
+  "cautions": [
+    "Supta Padangushtasana can be done by all and sundry, except pregnant women."
+  ]
 }

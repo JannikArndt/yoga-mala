@@ -1,1 +1,6 @@
 .DS_Store
+
+# The book itself is copyrighted and never committed. Unpack the EPUB here to
+# run the checks in tools/verify_entries.py that compare entries to the text.
+ebook/
+__pycache__/

@@ -24,7 +24,11 @@ numbers. When the source is ambiguous, prefer its exact words.
 
   "vinyasa_count": 3,                // integer, or null if the book does not say
   "state_vinyasas": [2],             // which vinyasas ARE the asana; [] if not stated
-  "drishti": null,                   // only if the book names a gazing point
+  // Optional display overrides, for asanas whose count or states the numbers
+  // alone would misstate (Supta Padangushtasana's two parts):
+  // "vinyasa_label": "20 in part 1, 28 in part 2",
+  // "state_label": "9 and 13 in part 1; 11 and 19 in part 2",
+  "drishti": null,                   // legacy; put gazing points on the steps
   "translation": null,               // only if the book translates the name
 
   // The framing sentences before METHOD, if they carry meaning beyond the
@@ -36,10 +40,11 @@ numbers. When the source is ambiguous, prefer its exact words.
   "sequence": [
     {
       "vinyasa": 1,                  // integer; null for un-numbered lead-in steps
-      "breath": "inhale",            // inhale | exhale | inhale-exhale | free | hold | null
+      "breath": "inhale",            // inhale | exhale | inhale-exhale | exhale-inhale | free | hold | null
       "breath_as_printed": "puraka", // Guruji's word: puraka | rechaka | ... | null
       "action": "Jump the legs half a foot apart, take hold of the big toes, lift head and chest, knees straight.",
-      "is_state": false              // true when this vinyasa is the state of the asana
+      "is_state": false,             // true when this vinyasa is the state of the asana
+      "drishti": "fingertips"        // optional; only where the book names the gaze for this step
     }
   ],
 
@@ -49,14 +54,26 @@ numbers. When the source is ambiguous, prefer its exact words.
     "Rechaka and puraka slowly and as fully as possible."
   ],
 
+  // The book's BENEFITS, as whole sentences in Guruji's exact words. They are
+  // shown in quotation marks, so a claim about disease is never restated as
+  // fact. Where the book gives benefits for a group of asanas in one place,
+  // every member carries them and "benefits_source" says so.
   "benefits": [
-    "Dissolves fat of the lower abdomen.",
-    "Purifies the kanda (egg-shaped nerve plexus in the anal region) and the rectum."
+    "Padangushtasana dissolves the fat of the lower abdomen, and purifies both the kanda, or egg-shaped nerve plexus in the anal region, and the rectum."
   ],
+  "benefits_source": null,
+
+  // Warnings, contraindications, and his insistence on learning from a Guru —
+  // exact sentences, like benefits.
+  "cautions": [],
 
   // Verbatim sentences worth showing beside the summary — Guruji's voice.
   // 0–3 per entry. Quote exactly, including his punctuation.
   "quotes": [],
+
+  // Scripture he quotes: { "sanskrit": "...", "translation": "...", "source": "..." }.
+  // Not his words, so never in "quotes".
+  "verses": [],
 
   // Filled in later by the image-matching pass. Always emit as [].
   "images": []
@@ -70,6 +87,10 @@ numbers. When the source is ambiguous, prefer its exact words.
   "Then, letting the breath out, one should place the head...".
 - Split a vinyasa into two bullets only if the book gives it two distinct
   breaths that are not a hold.
+- A combined breath keeps the book's order: "rechaka and then puraka" is
+  `exhale-inhale`, "puraka and then rechaka" is `inhale-exhale`. Steady
+  breathing while staying in a state ("rechaka and puraka as much as
+  possible") is `free`.
 - `breath: "free"` means the book says to breathe freely / as much as possible.
   `breath: "hold"` means the book says to stay while holding the breath.
 - Chapters that say "do the first six vinyasas of the first Surya Namaskara"
@@ -83,4 +104,5 @@ numbers. When the source is ambiguous, prefer its exact words.
    appear somewhere in `sequence`? Count them.
 2. Do `state_vinyasas` and the `is_state: true` bullets agree?
 3. Is every fact traceable to a sentence in the chapter? Delete it if not.
-4. Is the JSON valid and does it parse? Verify it.
+4. Is the JSON valid and does it parse? Run `tools/verify_entries.py`, with
+   the ebook unpacked so the wording and breath order are checked too.

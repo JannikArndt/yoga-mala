@@ -18,10 +18,11 @@ IMAGES_FILE = PROJECT_ROOT / "site" / "data" / "images.json"
 ABOUT_FILE = PROJECT_ROOT / "site" / "data" / "about.json"
 OUTPUT_FILE = PROJECT_ROOT / "site" / "data" / "mala.json"
 
-# The video Guruji's students filmed of the Primary Series, linked from the repo.
+# A recording of Guruji leading the series, linked from every asana. Title and
+# note are what YouTube itself reports for the upload; nothing more is claimed.
 PRIMARY_SERIES_VIDEO = {
-    "title": "Ashtanga Yoga: Primary Series with Sri K. Pattabhi Jois",
-    "note": "Yoga Works Productions, 1993",
+    "title": "Primary Series Ashtanga with Sri K. Pattabhi Jois",
+    "note": "YouTube",
     "url": "https://www.youtube.com/watch?v=aUgtMaAZzW0",
 }
 
@@ -62,7 +63,7 @@ NAVIGATION = [
             },
             {
                 "id": "seated",
-                "title": "Primary",
+                "title": "Seated",
                 "entries": [
                     "paschimattanasana",
                     "purvatanasana",

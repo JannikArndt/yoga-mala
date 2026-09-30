@@ -9,7 +9,9 @@
   "state_vinyasas": [7, 8],
   "drishti": null,
   "translation": null,
-  "notes": [],
+  "notes": [
+    "Vamana speaks of Baddha Konasana as the greatest of the asanas."
+  ],
   "sequence": [
     {
       "vinyasa": null,
@@ -45,14 +47,21 @@
     "Pull the stomach in completely, holding the lower abdomen and anus tightly, practicing rechaka and puraka."
   ],
   "benefits": [
-    "Destroys terrible afflictions related to the anus, such as constipation and piles.",
-    "Indigestion will no longer haunt the aspirant.",
-    "Vamana speaks of Baddha Konasana as the greatest of the asanas.",
-    "Relieves bhagandara [fistula] and mulavyadhi [hemorrhoids].",
-    "Cures diseases related to the anus and the dhatu."
+    "By pulling the stomach in completely, holding the lower abdomen and anus tightly, and practicing rechaka and puraka, terrible afflictions related to the anus, such as constipation and piles, will be destroyed, and indigestion will no longer haunt an aspirant.",
+    "Many have had the experience of being relieved of bhagandara [fistula] and mulavyadhi [hemorrhoids] by this asana.",
+    "Thus, through its practice, diseases related to the anus and the dhatu will definitely be cured."
   ],
-  "quotes": [
-    "Baddhakonasane tishtan gudamakunchayet buddha gudarognivrittih syat satyam satyam bravimyaham [The wise one should retract the anus while in Baddha Konasana as it wards off anal disease, this I declare is true]."
+  "quotes": [],
+  "images": [],
+  "verses": [
+    {
+      "sanskrit": "Baddhakonasane tishtan gudamakunchayet buddha gudarognivrittih syat satyam satyam bravimyaham",
+      "translation": "The wise one should retract the anus while in Baddha Konasana as it wards off anal disease, this I declare is true.",
+      "source": "Vamana"
+    }
   ],
-  "images": []
+  "cautions": [
+    "But if an aspirant thinks that this will occur by his merely practicing asanas while continuing to eat rajasic [stimulating] and tamasic [heavy] foods, then he is misguided. Such a course will actually lead to an increase in sickness.",
+    "However, one should not abandon the practice of yoga after becoming disappointed or indifferent because of an inability to follow the sattvic diet strictly."
+  ]
 }

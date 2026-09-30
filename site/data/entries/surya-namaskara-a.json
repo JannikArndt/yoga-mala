@@ -20,14 +20,16 @@
       "breath": null,
       "breath_as_printed": null,
       "action": "Join the legs together, heels and big toes touching, push the chest up, lower the head slightly, and stand straight, gazing at the tip of the nose; this is Samasthiti, standing up in a straight line.",
-      "is_state": false
+      "is_state": false,
+      "drishti": "tip of the nose"
     },
     {
       "vinyasa": 1,
       "breath": "inhale",
       "breath_as_printed": null,
       "action": "Raise the arms straight up over the head, bring the hands together, lean the head back a little, and look at the fingertips.",
-      "is_state": false
+      "is_state": false,
+      "drishti": "fingertips"
     },
     {
       "vinyasa": 2,
@@ -62,7 +64,8 @@
       "breath": "exhale",
       "breath_as_printed": "rechaka",
       "action": "Lift the waist up, tilt the head under, press the heels to the floor, pull in the stomach completely, and hold position, gazing at the navel (Adho Mukha Svanasana).",
-      "is_state": false
+      "is_state": false,
+      "drishti": "navel"
     },
     {
       "vinyasa": 7,

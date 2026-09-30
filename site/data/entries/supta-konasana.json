@@ -48,7 +48,7 @@
     },
     {
       "vinyasa": 8,
-      "breath": "inhale-exhale",
+      "breath": "free",
       "breath_as_printed": "rechaka and puraka",
       "action": "Do rechaka and puraka.",
       "is_state": true
@@ -86,8 +86,7 @@
     "Draw the abdomen in completely, but without mula bandha or even uddiyana bandha."
   ],
   "benefits": [
-    "Purifies the grdhrasi nadi.",
-    "Strengthens the spinal column and waist."
+    "The benefits of Supta Konasana are the same as those for Baddha Konasana and Upavishta Konasana: the grdhrasi nadi becomes purified and the spinal column and waist become strong."
   ],
   "quotes": [],
   "images": []

@@ -5,14 +5,11 @@
   "title_as_printed": "19. MARICHYASANA (D)",
   "section": "seated",
   "source_file": "chapter0029.html",
-  "vinyasa_count": null,
-  "state_vinyasas": [7],
+  "vinyasa_count": 18,
+  "state_vinyasas": [7, 12],
   "drishti": null,
   "translation": null,
-  "notes": [
-    "Women should practice Marichyasana under the guidance of a Guru, sitting firmly and holding the hands and legs without error.",
-    "Pregnant women should not practice this asana after the second month."
-  ],
+  "notes": [],
   "sequence": [
     {
       "vinyasa": 7,
@@ -22,10 +19,11 @@
       "is_state": true
     },
     {
-      "vinyasa": null,
+      "vinyasa": 12,
       "breath": null,
-      "action": "Practice the same method for the left leg.",
-      "is_state": false
+      "breath_as_printed": null,
+      "action": "The same for the left side; this is the 12th vinyasa and the state for that side.",
+      "is_state": true
     },
     {
       "vinyasa": null,
@@ -36,14 +34,19 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Cures gaseous movements in the stomach and intestines.",
-    "Cures movements of the rectum, such as diarrhea, and restores digestive power.",
-    "Eliminates flatulence, indigestion, and constipation.",
-    "Removes abdominal pain during menstruation.",
-    "Strengthens the womb, enabling a woman to carry a child strongly, and cures miscarriage due to weakness.",
-    "Purifies the vata pitta kosha (large intestine and gall bladder) and the manipura chakra (the third chakra at the navel center).",
-    "Gives the body strength and power."
+    "The benefits of the four Marichyasanas are different, though all cure diseases in accordance with man’s physical nature.",
+    "They each cure gaseous movements in the stomach and intestines, as well as movements of the rectum, such as diarrhea, and restore digestive power.",
+    "With that, flatulence, indigestion, and constipation are eliminated.",
+    "Some women suffer from abdominal pain during menstruation. This is removed by the practice of these asanas.",
+    "The womb becomes powerful and enables a woman to carry a child strongly, and miscarriage due to weakness is cured.",
+    "The vata pitta kosha [large intestine and gall bladder] are purified, as is the manipura chakra [the third chakra at the navel center], and the body gains strength and power."
   ],
   "quotes": [],
-  "images": []
+  "images": [],
+  "benefits_source": "Given for all four Marichyasanas.",
+  "cautions": [
+    "It is a very good idea for women to practice Marichyasana, but they should do so under the guidance of a Guru.",
+    "There should be no error in sitting firmly and holding the hands and legs.",
+    "Pregnant women should not practice this asana after the second month."
+  ]
 }

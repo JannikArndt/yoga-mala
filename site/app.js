@@ -6,7 +6,8 @@
 const BREATH_MARKS = {
   inhale: { mark: "▲", label: "Inhale" },
   exhale: { mark: "▼", label: "Exhale" },
-  "inhale-exhale": { mark: "◆", label: "Inhale, then exhale" },
+  "inhale-exhale": { mark: "▲▼", label: "Inhale, then exhale" },
+  "exhale-inhale": { mark: "▼▲", label: "Exhale, then inhale" },
   free: { mark: "∿", label: "Breathe freely" },
   hold: { mark: "●", label: "Hold" },
 };
@@ -27,12 +28,20 @@ const listOf = (items, className = "points") =>
     ? `<ul class="${className}">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`
     : "";
 
+/** Guruji's exact sentences, shown as quotations rather than as facts. */
+const quotedListOf = (items, note) =>
+  items?.length
+    ? listOf(items, "points points--quoted") + (note ? `<p class="section__note">${escapeHtml(note)}</p>` : "")
+    : "";
+
 const section = (title, inner) =>
   inner ? `<section class="section"><h2 class="section__title">${escapeHtml(title)}</h2>${inner}</section>` : "";
 
+const routeOf = () => location.hash.replace(/^#\/?/, "");
+
 /** The entry currently addressed by the URL, falling back to the first one. */
 function currentEntryId() {
-  const route = location.hash.replace(/^#\/?/, "");
+  const route = routeOf();
   if (route === "about") return "about";
   return book.entries[route] ? route : book.reading_order[0];
 }
@@ -64,6 +73,19 @@ function renderChapterNav(activeChapterId) {
       </div>`,
     )
     .join("");
+
+  // On a narrow screen the tabs scroll sideways; keep the current one in view.
+  centreActiveLink(document.getElementById("chapter-nav"));
+}
+
+/** Scroll a sideways strip so its current link sits in the middle. */
+function centreActiveLink(strip) {
+  const active = strip.querySelector('[aria-current="true"]');
+  if (!active) return;
+  const stripBox = strip.getBoundingClientRect();
+  const linkBox = active.getBoundingClientRect();
+  const offset = strip.scrollLeft + linkBox.left - stripBox.left - (stripBox.width - linkBox.width) / 2;
+  strip.scrollTo({ left: Math.max(0, offset), behavior: "smooth" });
 }
 
 function renderEntryNav(chapter, activeEntryId) {
@@ -84,12 +106,8 @@ function renderEntryNav(chapter, activeEntryId) {
     })
     .join("");
 
-  const active = nav.querySelector('[aria-current="true"]');
-  if (active) {
-    // Keep the current posture visible in the strip without scrolling the page.
-    const offset = active.offsetLeft - nav.clientWidth / 2 + active.clientWidth / 2;
-    nav.scrollTo({ left: Math.max(0, offset), behavior: "smooth" });
-  }
+  // Keep the current posture visible in the strip without scrolling the page.
+  centreActiveLink(nav);
 }
 
 function renderPager(entryId) {
@@ -129,6 +147,10 @@ function renderVerse(sutra) {
     </blockquote>`;
 }
 
+function renderVerses(verses) {
+  return (verses || []).map(renderVerse).join("");
+}
+
 function renderQuotes(quotes) {
   if (!quotes?.length) return "";
   return quotes.map((quote) => `<p class="quote">${escapeHtml(quote)}</p>`).join("");
@@ -151,17 +173,20 @@ function renderSequence(sequence) {
   const rows = sequence
     .map((step) => {
       const breath = BREATH_MARKS[step.breath];
+      const breathLabel = breath
+        ? escapeHtml(breath.label + (step.breath_as_printed ? ` (${step.breath_as_printed})` : ""))
+        : "";
       const breathCell = breath
-        ? `<span class="vinyasa__breath vinyasa__breath--${escapeHtml(step.breath)}" title="${escapeHtml(
-            breath.label + (step.breath_as_printed ? ` (${step.breath_as_printed})` : ""),
-          )}">${breath.mark}</span>`
+        ? `<span class="vinyasa__breath vinyasa__breath--${escapeHtml(step.breath)}" role="img"
+             aria-label="${breathLabel}" title="${breathLabel}">${breath.mark}</span>`
         : `<span class="vinyasa__breath"></span>`;
       const stateTag = step.is_state ? `<span class="vinyasa__state-tag">state</span>` : "";
+      const gaze = step.drishti ? `<span class="vinyasa__gaze">gaze: ${escapeHtml(step.drishti)}</span>` : "";
       return `
         <li class="vinyasa${step.is_state ? " vinyasa--state" : ""}">
           <span class="vinyasa__number">${step.vinyasa ?? ""}</span>
           ${breathCell}
-          <p class="vinyasa__action">${escapeHtml(step.action)}${stateTag}</p>
+          <p class="vinyasa__action">${escapeHtml(step.action)}${stateTag}${gaze}</p>
         </li>`;
     })
     .join("");
@@ -172,21 +197,25 @@ function renderSequence(sequence) {
 
 function renderAsana(entry) {
   const meta = [];
-  if (entry.vinyasa_count) meta.push(`<span><b>${entry.vinyasa_count}</b> vinyasas</span>`);
-  if (entry.state_vinyasas?.length)
+  if (entry.vinyasa_label) meta.push(`<span>vinyasas: <b>${escapeHtml(entry.vinyasa_label)}</b></span>`);
+  else if (entry.vinyasa_count) meta.push(`<span><b>${entry.vinyasa_count}</b> vinyasas</span>`);
+  if (entry.state_label) meta.push(`<span>state: <b>${escapeHtml(entry.state_label)}</b></span>`);
+  else if (entry.state_vinyasas?.length)
     meta.push(`<span>state: <b>${entry.state_vinyasas.join(", ")}</b></span>`);
   if (entry.drishti) meta.push(`<span>drishti: <b>${escapeHtml(entry.drishti)}</b></span>`);
 
   const left = [
     section("Method", renderSequence(entry.sequence)),
     section("While holding", listOf(entry.while_holding)),
+    section("Cautions", quotedListOf(entry.cautions)),
     section("Notes", listOf(entry.notes)),
   ].join("");
 
   const right = [
     renderPlates(entry.images),
-    section("Benefits", listOf(entry.benefits)),
+    section("Benefits, in Guruji's words", quotedListOf(entry.benefits, entry.benefits_source)),
     section("In Guruji's words", renderQuotes(entry.quotes)),
+    section("Scripture he quotes", renderVerses(entry.verses)),
     section("Watch", renderVideoResource()),
   ].join("");
 
@@ -207,7 +236,7 @@ function renderConcept(entry) {
 
   const right = [
     renderPlates(entry.images),
-    section("Scripture", renderVerse(entry.sutra)),
+    section("Scripture", renderVerse(entry.sutra) + renderVerses(entry.verses)),
     section("In Guruji's words", renderQuotes(entry.quotes)),
   ].join("");
 
@@ -231,12 +260,18 @@ function renderAbout() {
         <h1 class="entry__title">${escapeHtml(about.guruji?.name || "Sri K. Pattabhi Jois")}</h1>
       </div>
       ${portrait ? `<img class="about__portrait" src="assets/plates/${escapeHtml(portrait.file)}" alt="${escapeHtml(portrait.caption)}">` : ""}
-      ${section("His life", listOf(about.guruji?.life))}
-      ${section("In his words", renderQuotes(about.guruji?.quotes))}
+      ${section(
+        "His life",
+        listOf(about.guruji?.life) +
+          (about.guruji?.life_source ? `<p class="section__note">${escapeHtml(about.guruji.life_source)}</p>` : ""),
+      )}
+      ${(about.forewords || [])
+        .map((foreword) => section(`From ${foreword.author}'s foreword`, renderQuotes(foreword.quotes)))
+        .join("")}
       ${about.dedication ? `<p class="about__dedication">${escapeHtml(about.dedication)}</p>` : ""}
       ${section("Why he wrote this book", listOf(about.preface?.summary) + renderQuotes(about.preface?.quotes))}
       ${section("The blessing of Shringeri", (about.blessing?.summary ? `<p>${escapeHtml(about.blessing.summary)}</p>` : "") + renderQuotes(about.blessing?.quotes))}
-      ${section("The shala", renderPlates(book.gallery))}
+      ${section("Photographs", renderPlates(book.gallery))}
       ${section("Acknowledgments", about.acknowledgments ? `<p>${escapeHtml(about.acknowledgments)}</p>` : "")}
     </div>`;
 }
@@ -245,6 +280,8 @@ function renderAbout() {
 
 function render() {
   const entryId = currentEntryId();
+  // An unknown address shows the first entry; say so in the URL too.
+  if (entryId !== routeOf()) history.replaceState(null, "", `#/${entryId}`);
   const entryElement = document.getElementById("entry");
 
   if (entryId === "about") {
@@ -253,6 +290,7 @@ function render() {
     renderPager("about");
     document.querySelector(".masthead__about").setAttribute("aria-current", "page");
     entryElement.innerHTML = renderAbout();
+    document.title = "Guruji — Yoga Mala";
   } else {
     const entry = book.entries[entryId];
     const location_ = chapterContaining(entryId);
@@ -280,10 +318,20 @@ function step(direction) {
 /* ---------------------------------------------------------------- controls */
 
 function attachControls() {
+  // The skip link targets #entry, which the router would read as a route.
+  document.querySelector(".skip-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    document.getElementById("entry").focus();
+  });
+
   document.getElementById("previous").addEventListener("click", () => step(-1));
   document.getElementById("next").addEventListener("click", () => step(1));
 
-  window.addEventListener("hashchange", render);
+  window.addEventListener("hashchange", () => {
+    render();
+    // Move keyboard and screen-reader focus to the new page, as a link would.
+    document.getElementById("entry").focus({ preventScroll: true });
+  });
 
   document.addEventListener("keydown", (event) => {
     if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -294,9 +342,12 @@ function attachControls() {
   // Horizontal swipe pages the book; vertical scrolling must stay untouched.
   let touchStartX = 0;
   let touchStartY = 0;
+  let touchIsOnStrip = false;
   document.addEventListener(
     "touchstart",
     (event) => {
+      // The chapter and posture strips scroll sideways; a swipe there is theirs.
+      touchIsOnStrip = Boolean(event.target.closest?.(".chapters, .entries"));
       touchStartX = event.changedTouches[0].clientX;
       touchStartY = event.changedTouches[0].clientY;
     },
@@ -305,6 +356,7 @@ function attachControls() {
   document.addEventListener(
     "touchend",
     (event) => {
+      if (touchIsOnStrip) return;
       const deltaX = event.changedTouches[0].clientX - touchStartX;
       const deltaY = event.changedTouches[0].clientY - touchStartY;
       if (Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
@@ -318,15 +370,24 @@ function attachControls() {
 function renderColophon() {
   const copyright = book.about?.copyright;
   document.getElementById("colophon").innerHTML = `
-    <p>Every word of the practice on this site is Sri K. Pattabhi Jois's, from <i>Yoga Mala</i>.</p>
+    <p>The practice on this site is summarised from Sri K. Pattabhi Jois's <i>Yoga Mala</i>; passages in quotation marks are quoted from the book.</p>
     ${copyright?.notice ? `<p>${escapeHtml(copyright.notice)}${copyright.publisher ? ` &middot; ${escapeHtml(copyright.publisher)}` : ""}</p>` : ""}
     ${copyright?.translator ? `<p>Translated by ${escapeHtml(copyright.translator)}.</p>` : ""}
+    ${copyright?.forewords ? `<p>${escapeHtml(copyright.forewords)}.</p>` : ""}
+    ${copyright?.photographs ? `<p>${escapeHtml(copyright.photographs)}.</p>` : ""}
     <p>This reader is offered in gratitude, not in place of a teacher.</p>`;
 }
 
 async function start() {
-  const response = await fetch("data/mala.json");
-  book = await response.json();
+  try {
+    const response = await fetch("data/mala.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    book = await response.json();
+  } catch (error) {
+    document.getElementById("entry").innerHTML =
+      `<p class="lead">The book could not be loaded (${escapeHtml(error.message)}). Please reload the page.</p>`;
+    return;
+  }
   attachControls();
   renderColophon();
   render();

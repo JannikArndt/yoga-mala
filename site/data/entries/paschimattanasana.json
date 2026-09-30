@@ -50,7 +50,7 @@
     },
     {
       "vinyasa": 11,
-      "breath": "inhale-exhale",
+      "breath": "exhale-inhale",
       "breath_as_printed": "rechaka, puraka",
       "action": "Let go of the feet, press the hands to the floor, bend the legs, and lift the entire body up off the floor merely with the strength of the arms.",
       "is_state": false
@@ -64,19 +64,23 @@
     }
   ],
   "while_holding": [
-    "Puraka and rechaka slowly and deeply, as much as possible."
+    "Puraka and rechaka slowly and deeply, as much as possible.",
+    "Retract and hold the anus tightly, squeeze the lower abdomen and hold it in, and concentrate on the nadis related to the kanda."
   ],
   "benefits": [
-    "Helps the stomach become slender by dissolving its fat.",
-    "Increases jathara agni (the fire of hunger) and helps food digest well.",
-    "Strengthens the organs of the digestive systems (jirnanga kosha).",
-    "Cures weakness in the hands and legs resulting from a loss of appetite and low digestive fire.",
-    "Cures indolence and giddiness stemming from an aberration in the liver.",
-    "Cures gas problems in the stomach.",
-    "Retracting and holding the anus tightly, squeezing and holding in the lower abdomen, and concentrating on the nadis related to the kanda (the egg-shaped nerve plexus in the anal region), causes the apana vayu, having no place to go, to move upward and become one with the prana vayu; when this occurs, the aspirant has nothing to fear from old age and death."
+    "The practice of this asana helps the stomach to become slender by dissolving its fat.",
+    "It also increases jathara agni [the fire of hunger], helps food to digest well, and strengthens the organs of the digestive systems (jir-nanga kosha).",
+    "In addition, it cures weakness in the hands and legs resulting from a loss of appetite and low digestive fire, as well as indolence and giddiness stemming from an aberration in the liver, and gas problems in the stomach."
   ],
   "quotes": [
-    "Iti Paschimattanam asanagyam Pavanam paschimavahinam karoti / Udayam jatharanalasya kuryadudare karshyamarogatam cha pumsam. [Principle among asanas, Paschimattanasana causes vital energy to be carried up the spine. As well, it should lead to the rising of the digestive fire, slenderness in the abdomen, and freedom from sickness for all.] —Hatha Yoga Pradipika i:29"
+    "As there is no place for the apana vayu [downward-flowing prana, or energy], which circulates in the anus, to go, it moves upward and becomes one with prana vayu [upward-moving prana]. When this occurs, an aspirant has nothing to fear from old age and death"
   ],
-  "images": []
+  "images": [],
+  "verses": [
+    {
+      "sanskrit": "Iti Paschimattanam asanagyam Pavanam paschimavahinam karoti / Udayam jatharanalasya kuryadudare karshyamarogatam cha pumsam.",
+      "translation": "Principle among asanas, Paschimattanasana causes vital energy to be carried up the spine. As well, it should lead to the rising of the digestive fire, slenderness in the abdomen, and freedom from sickness for all.",
+      "source": "Hatha Yoga Pradipika i:29"
+    }
+  ]
 }

@@ -27,12 +27,12 @@ jobs:
       # files drifting out of sync with the entries they are compiled from.
       - name: Rebuild the data and fail if it differs from what was committed
         run: |
-          python3 tools/extract_book.py
-          python3 tools/build_images.py
           python3 tools/build_site_data.py
           git diff --exit-code -- site/data
 
-      - name: Check the entries against the book
+      # The book is not in the repository, so CI runs the structural checks;
+      # the comparison with the text runs locally where the ebook is unpacked.
+      - name: Check the entries
         run: python3 tools/verify_entries.py
 
       - uses: actions/configure-pages@v5

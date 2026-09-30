@@ -10,7 +10,7 @@
       "For two years he practiced with Krishnamacharya daily in Kowshika without telling his family he was learning yoga.",
       "In 1930, without informing anyone, he left Kowshika for Mysore with two rupees in his pocket to attend the maharaja's Sanskrit College, begging for food and sleeping in a friend's dormitory room; it was three years before he wrote to tell his father where he was.",
       "He remained at the Sanskrit College from 1930 to 1956, studying Sanskrit and then the Vedas, and eventually earned a professorship in Advaita Vedanta; he taught there until 1973.",
-      "In 1931 he was reunited with Krishnamacharya at a demonstration at the Sanskrit College. Also present was a minister of the Maharaja of Mysore, Krishna Rajendra Wodeyar, who became Krishnamacharya's patron and established a yoga shala for him on the palace grounds.",
+      "In 1931 he was reunited with Krishnamacharya at a demonstration at the Sanskrit College. A minister from the palace of the Maharaja of Mysore, Krishna Rajendra Wodeyar, was also present; the maharaja became Krishnamacharya's patron and established a yoga shala for him on the palace grounds.",
       "On March 1, 1937, at the maharaja's invitation, Jois began to teach at the Sanskrit College.",
       "In 1948, in his home in Lakshmipurum, he established the Ashtanga Yoga Research Institute; in 1964 he built an extension for the yoga hall and a resting room upstairs.",
       "He began writing Yoga Mala by hand in 1958, working little by little over a two- to three-year period in the afternoons while his family rested; it was first published in India in 1962.",
@@ -19,11 +19,7 @@
       "In 1974 he made his first trip to the West, by invitation of Marie Helena Bastidos to a yoga conference in South America, where he lectured on yoga in Sanskrit; in 1975 he traveled to California with Manju.",
       "He taught tirelessly at his yoga institute for seventy years."
     ],
-    "quotes": [
-      "“Yoga is ninety-nine percent practice and one percent theory” is an idea that Guruji repeatedly presented.",
-      "Guruji instructed countless thousands of people around the world, and guided many to become teachers as well.",
-      "Pattabhi Jois was a shining example of pure dedication, of what it takes to keep the light of an ancient tradition burning brightly."
-    ]
+    "life_source": "From the forewords by Eddie Stern and R. Sharath."
   },
   "preface": {
     "summary": [
@@ -54,6 +50,23 @@
     "notice": "COPYRIGHT © 1999, 2002 BY SRI K. PATTABHI JOIS",
     "publisher": "NORTH POINT PRESS, A DIVISION OF FARRAR, STRAUS AND GIROUX",
     "isbn": "eISBN 9781429965064",
-    "translator": "Sri Vishwanath Kadam and Dr. H. L. Chandrashekar"
-  }
+    "translator": "Sri Vishwanath Kadam and Dr. H. L. Chandrashekar",
+    "forewords": "Forewords copyright © 2010 by R. Sharath and © 2010 by Eddie Stern",
+    "photographs": "Photographs of Sharath Rangaswamy copyright © 1999 by Stephan Crasneanscki; archival photographs of Sri K. Pattabhi Jois courtesy of Sri K. Pattabhi Jois"
+  },
+  "forewords": [
+    {
+      "author": "R. Sharath",
+      "quotes": [
+        "“Yoga is ninety-nine percent practice and one percent theory” is an idea that Guruji repeatedly presented.",
+        "Guruji instructed countless thousands of people around the world, and guided many to become teachers as well."
+      ]
+    },
+    {
+      "author": "Eddie Stern",
+      "quotes": [
+        "Pattabhi Jois was a shining example of pure dedication, of what it takes to keep the light of an ancient tradition burning brightly."
+      ]
+    }
+  ]
 }
