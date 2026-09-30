@@ -1,5 +1,7 @@
 """Extract the Yoga Mala ebook HTML into one structured JSON document.
 
+Local-only: needs the unpacked EPUB in ebook/, which is not in the repository.
+
 The ebook is Calibre-generated: semantics live in CSS class names, not tags.
 This script converts those class names back into meaning so that every later
 step (summarising, rendering) works on data instead of on HTML.
@@ -19,7 +21,9 @@ import re
 from pathlib import Path
 
 EBOOK_TEXT_DIRECTORY = Path(__file__).parent.parent / "ebook" / "Text"
-OUTPUT_FILE = Path(__file__).parent.parent / "site" / "data" / "book-raw.json"
+# Written next to the ebook, which is git-ignored: the book's text is only ever
+# read locally, to check the entries against it, and is never published.
+OUTPUT_FILE = Path(__file__).parent.parent / "ebook" / "book-raw.json"
 
 HEADING_CLASSES = {"style2", "style3", "calibre6"}
 BODY_CLASSES = {"style5", "calibre7", "calibre8"}
