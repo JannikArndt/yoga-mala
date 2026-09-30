@@ -1,6 +1,7 @@
 /* Yoga Mala — a reader for Sri K. Pattabhi Jois's book.
    The visual language borrows from the printed edition: warm paper, a quiet
-   serif, generous margins, and the original sepia plates left as they are. */
+   serif, generous margins, and sepia plates. The ebook ships most plates as
+   photographic negatives; they are committed already turned positive. */
 
 :root {
   --paper: #f7f2e8;
@@ -255,7 +256,8 @@ main { position: relative; }
 .entry {
   max-width: 78rem;
   margin: 0 auto;
-  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 5vw, 3.5rem) 5rem;
+  /* Wide enough at the sides that the fixed pager arrows never sit on text. */
+  padding: clamp(1.5rem, 4vw, 3rem) max(3.2rem, 5vw) 5rem;
   outline: none;
   animation: settle 0.35s ease-out;
 }
@@ -330,7 +332,8 @@ main { position: relative; }
   .entry__body { grid-template-columns: minmax(0, 1fr); }
 }
 
-.section + .section { margin-top: 2rem; }
+.section + .section,
+.plates + .section { margin-top: 2rem; }
 
 .section__title {
   font-family: var(--sans);
@@ -389,8 +392,24 @@ main { position: relative; }
 .vinyasa__breath--exhale { color: var(--exhale); }
 .vinyasa__breath--free,
 .vinyasa__breath--hold { color: var(--ink-faint); }
+.vinyasa__breath--inhale-exhale,
+.vinyasa__breath--exhale-inhale {
+  color: var(--ink-soft);
+  font-size: 0.62rem;
+  letter-spacing: -0.12em;
+  white-space: nowrap;
+}
 
 .vinyasa__action { margin: 0; }
+
+.vinyasa__gaze {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
 
 .vinyasa__state-tag {
   font-family: var(--sans);
@@ -419,6 +438,27 @@ main { position: relative; }
   height: 4px;
   border-radius: 50%;
   background: var(--ochre-soft);
+}
+
+/* Guruji's exact sentences: benefits and cautions are quoted, not restated. */
+.points--quoted li { padding-left: 0.85rem; }
+.points--quoted li::before {
+  content: "\201C";
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  color: var(--ochre-soft);
+}
+.points--quoted li::after { content: "\201D"; }
+
+.section__note {
+  margin: 0.4rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
 }
 
 .lead {
@@ -593,5 +633,5 @@ main { position: relative; }
   }
   .pager--previous { left: 0.7rem; }
   .pager--next { right: 0.7rem; }
-  .entry { padding-bottom: 5.5rem; }
+  .entry { padding-inline: 1.25rem; padding-bottom: 5.5rem; }
 }
