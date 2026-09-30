@@ -503,6 +503,15 @@ function openPlate(image) {
 
 /* ---------------------------------------------------------------- controls */
 
+/** Whether the touch landed in something that can itself scroll left or right. */
+function scrollsSideways(target) {
+  for (let element = target instanceof Element ? target : null; element; element = element.parentElement) {
+    const overflow = getComputedStyle(element).overflowX;
+    if ((overflow === "auto" || overflow === "scroll") && element.scrollWidth > element.clientWidth) return true;
+  }
+  return false;
+}
+
 function isTyping(target) {
   return target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement;
 }
@@ -568,11 +577,13 @@ function attachControls() {
     "touchstart",
     (event) => {
       const touch = event.changedTouches[0];
-      // The strips scroll sideways, the dialogs are their own world, and a
-      // swipe from the very edge of the screen is the system's back gesture.
+      // Anything that scrolls sideways (the strips, a row of plates) owns a
+      // sideways swipe, the dialogs are their own world, and a swipe from the
+      // very edge of the screen is the system's back gesture.
       swipeIgnored =
         event.touches.length > 1 ||
-        Boolean(event.target.closest?.(".chapters, .entries, dialog")) ||
+        Boolean(event.target.closest?.("dialog")) ||
+        scrollsSideways(event.target) ||
         touch.clientX < 24 ||
         touch.clientX > window.innerWidth - 24;
       touchStartX = touch.clientX;
