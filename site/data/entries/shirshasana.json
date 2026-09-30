@@ -10,11 +10,7 @@
   "drishti": null,
   "translation": null,
   "notes": [
-    "Also known as Kapalasana or Viparita Karani.",
-    "Pregnant women should not practice this asana.",
-    "Merely putting the head down and legs up is not Shirshasana; the entire body must stand upside down on the strength of the arms alone, not on the weight of the head.",
-    "Shirshasana should never be practiced first, before the Surya Namaskara and the other asanas.",
-    "Following Shirshasana, one should only sit in Padmasana and do pranayama and the like — no further asanas should be practiced."
+    "Also known as Kapalasana or Viparita Karani."
   ],
   "sequence": [
     {
@@ -26,20 +22,20 @@
     },
     {
       "vinyasa": 8,
-      "breath": "inhale-exhale",
-      "breath_as_printed": null,
+      "breath": "exhale-inhale",
+      "breath_as_printed": "rechaka, puraka",
       "action": "Doing rechaka and then puraka, place the crown of the head on the floor, interlocked hands cupping the back of the head.",
       "is_state": false
     },
     {
       "vinyasa": 8,
-      "breath": "inhale-exhale",
-      "breath_as_printed": null,
+      "breath": "exhale-inhale",
+      "breath_as_printed": "rechaka, puraka",
       "action": "Doing rechaka and puraka again, straighten the legs and, keeping them together and straight, lift them up with the power of the arms, tighten the body, point the toes, and keep the body erect using the strength of the arms. Stay, doing rechaka and puraka slowly and as many times as possible.",
       "is_state": true
     },
     {
-      "vinyasa": null,
+      "vinyasa": 9,
       "breath": "exhale",
       "breath_as_printed": "rechaka",
       "action": "Doing rechaka slowly, bring the feet back down onto the floor, rest with the buttocks on the heels and the head on the floor for two minutes.",
@@ -67,15 +63,34 @@
     "Begin by staying five minutes, then ten, then fifteen, increasing the time in the state by five-minute increments over many days, months, and years, until able to stay for a full three hours."
   ],
   "benefits": [
-    "Purifies the subtle nadis of the head, related to the brain and sense organs, through an inflow of warm blood.",
-    "Increases the power of memory.",
-    "Destroys eye disease; the eyes glow and long-sightedness improves.",
-    "Purifies the five sense organs."
+    "Through the practice of Shirshasana, the subtle nadis of the head—that is, those related to the brain and sense organs, such as the eyes—are purified by an inflow of warm blood, and the power of memory is increased.",
+    "Eye disease is destroyed, the eyes glow, and long-sightedness improves.",
+    "The five sense organs, too, become purified."
   ],
-  "quotes": [
-    "Yama matram vashe nityam [We can dwell in (Shirshasana) for three hours].",
-    "Maranam bindu patena / Jivanam bindu dharanat / Tasmat sarvaprayatnena / Bindu dharanam abhyaset [Loss of bindu is death / and the preservation of it, life / So, by all means / is the holding of bindu to be preserved].",
-    "Yuva vrddho'tivrddho va vyadito durbalo'pi va / Abhyasat siddhim apnoti / Sarvayogeshvatandritah [Whether young or old, or very old / sick or debilitated / one who is vigilant attains, by means of practice, success in all the yogas.]"
+  "quotes": [],
+  "images": [],
+  "cautions": [
+    "Pregnant women should not practice this asana.",
+    "Aspirants should note that merely putting the head down and legs up, and then standing upside down is not Shirshasana; very simply, this is wrong.",
+    "For example, the entire body must stand upside down on the strength of the arms alone.",
+    "Hence, aspirants should never practice Shirshasana first.",
+    "Moreover, following Shirshasana, they should only sit in Padmasana and do pranayama and the like, but no further asanas."
   ],
-  "images": []
+  "verses": [
+    {
+      "sanskrit": "Yama matram vashe nityam",
+      "translation": "We can dwell in (Shirshasana) for three hours.",
+      "source": "A scriptural saying, as quoted by Guruji"
+    },
+    {
+      "sanskrit": "Maranam bindu patena / Jivanam bindu dharanat / Tasmat sarvaprayatnena / Bindu dharanam abhyaset",
+      "translation": "Loss of bindu is death / and the preservation of it, life / So, by all means / is the holding of bindu to be preserved.",
+      "source": "The yoga shastra, as quoted by Guruji"
+    },
+    {
+      "sanskrit": "Yuva vrddho’tivrddho va vyadito durbalo’pi va / Abhyasat siddhim apnoti / Sarvayogeshvatandritah",
+      "translation": "Whether young or old, or very old / sick or debilitated / one who is vigilant attains, by means of practice, success in all the yogas.",
+      "source": "Hatha Yoga Pradipika i:64"
+    }
+  ]
 }

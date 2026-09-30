@@ -23,7 +23,8 @@
       "breath": "exhale",
       "breath_as_printed": null,
       "action": "Turn the right foot out, bend the knee completely, place the right hand by the side of the right foot, stretch the left arm straight out over the ear, and gaze at the fingertips. Puraka and rechaka should be done as much as possible.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "fingertips"
     },
     {
       "vinyasa": 3,
@@ -59,10 +60,7 @@
     "Rechaka and puraka slowly and as much as possible."
   ],
   "benefits": [
-    "Purifies the ribs.",
-    "Purifies the lower abdomen.",
-    "Dissolves the bad fat at the waist.",
-    "Softens the limbs so that subsequent asanas can be more easily practiced."
+    "Utthita Parshvakonasana purifies the ribs and lower abdomen, dissolves the bad fat at the waist, and softens the limbs so that subsequent asanas can be more easily practiced."
   ],
   "quotes": [],
   "images": []

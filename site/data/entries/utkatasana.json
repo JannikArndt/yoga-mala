@@ -11,7 +11,8 @@
   "translation": null,
   "notes": [
     "The vinyasa method described for the first Surya Namaskara is important to know for this asana.",
-    "Rechaka and puraka for the first six vinyasas must be performed in the same manner as in the first Surya Namaskara."
+    "Rechaka and puraka for the first six vinyasas must be performed in the same manner as in the first Surya Namaskara.",
+    "The vinyasas of the asanas that follow begin as they do for the first six vinyasas of the first Surya Namaskara; from the 7th vinyasa on, the vinyasas, and rechaka and puraka, differ for each asana."
   ],
   "sequence": [
     {
@@ -30,7 +31,7 @@
     },
     {
       "vinyasa": 8,
-      "breath": "inhale-exhale",
+      "breath": "exhale-inhale",
       "breath_as_printed": "rechaka, puraka",
       "action": "Press the hands to the floor by the sides of the feet, put the whole weight of the body on the two hands, and lift the body up off the floor.",
       "is_state": false
@@ -80,10 +81,13 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Increases the strength of the waist, which becomes slender.",
-    "Makes the body light.",
-    "Prevents pain associated with the vertebral column."
+    "Utkatasana increases the strength of the waist, which becomes slender, and makes the body light.",
+    "It also prevents pain associated with the vertebral column."
   ],
   "quotes": [],
-  "images": []
+  "images": [],
+  "cautions": [
+    "Again, no asana should be performed without following the proper method of vinyasa.",
+    "I consider it my earnest duty to caution the reader and aspirant not to try to learn these methods from books, reflections [photos], or pseudo-yogis."
+  ]
 }

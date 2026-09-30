@@ -26,7 +26,8 @@
       "breath": "inhale",
       "breath_as_printed": "puraka",
       "action": "Bend the knees, which are together, lift the chest, raise the arms straight up over the head, join the hands together, lean the head back a little, and stand gazing at the tips of the fingers (Utkatasana).",
-      "is_state": false
+      "is_state": false,
+      "drishti": "tips of the fingers"
     },
     {
       "vinyasa": 2,
@@ -61,14 +62,16 @@
       "breath": "exhale",
       "breath_as_printed": "rechaka",
       "action": "Lift the waist up, press the heels to the floor, tilt the head, draw in the stomach tightly, and stare at the navel (Adho Mukha Svanasana).",
-      "is_state": false
+      "is_state": false,
+      "drishti": "navel"
     },
     {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
       "action": "Place the right foot between the hands, which are pressed to the floor, bend the knee of the right leg, straighten the thigh and knee of the left leg which is stretched back, raise the arms straight up over the head, bring the hands together, swell the chest, lean the head back a little, and rest, staring at the tips of the fingers.",
-      "is_state": false
+      "is_state": false,
+      "drishti": "tips of the fingers"
     },
     {
       "vinyasa": 8,
@@ -89,14 +92,16 @@
       "breath": "exhale",
       "breath_as_printed": null,
       "action": "Lift the waist, press the heels to the floor, and stare at the navel, as in the 6th vinyasa (Adho Mukha Svanasana).",
-      "is_state": false
+      "is_state": false,
+      "drishti": "navel"
     },
     {
       "vinyasa": 11,
       "breath": "inhale",
       "breath_as_printed": null,
       "action": "As in the 7th vinyasa, but with the left leg forward: place the left foot between the hands, bend the knee of the left leg, straighten the right leg stretched back, raise the arms overhead, hands together, and rest, staring at the tips of the fingers.",
-      "is_state": false
+      "is_state": false,
+      "drishti": "tips of the fingers"
     },
     {
       "vinyasa": 12,
@@ -117,7 +122,8 @@
       "breath": "exhale",
       "breath_as_printed": null,
       "action": "Lift the waist, press the heels to the floor, and stare at the navel, as in the 6th vinyasa (Adho Mukha Svanasana).",
-      "is_state": false
+      "is_state": false,
+      "drishti": "navel"
     },
     {
       "vinyasa": 15,
@@ -138,7 +144,8 @@
       "breath": "inhale",
       "breath_as_printed": null,
       "action": "Bend the knees, lift the chest, raise the arms overhead, hands together, and stand gazing at the tips of the fingers, as in the 1st vinyasa (Utkatasana).",
-      "is_state": false
+      "is_state": false,
+      "drishti": "tips of the fingers"
     },
     {
       "vinyasa": null,

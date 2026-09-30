@@ -41,14 +41,16 @@
       "breath": "inhale",
       "breath_as_printed": "puraka",
       "action": "Keeping the legs in the same position, bring arms down to shoulder level, and stand gazing at the fingertips of the left hand, keeping the arms stretched out straight and tight.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "fingertips of the left hand"
     },
     {
       "vinyasa": 10,
       "breath": "exhale",
       "breath_as_printed": "rechaka",
       "action": "Without bending the arms, turn to the right, bend the right knee, and stand gazing at the tips of the right hand with concentration.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "tips of the right hand"
     },
     {
       "vinyasa": 11,
@@ -67,10 +69,12 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Purifies all the joints of the body, as well as the lower abdomen, spinal column, and organ of generation.",
-    "Eliminates pain associated with the knees.",
-    "Eliminates pain from standing or sitting all day while working."
+    "By means of Virabhadrasana, all the joints of the body, as well as the lower abdomen, spinal column, and organ of generation, are purified.",
+    "In addition, pain associated with the knees, as well as the pain from standing or sitting all day while working, is eliminated."
   ],
   "quotes": [],
-  "images": []
+  "images": [],
+  "cautions": [
+    "Again, it is best to learn the vinyasas of all the asanas, as well as their states and the series of rechaka and puraka, under the guidance of a Guru, as these are very difficult to relate in the written descriptions given here."
+  ]
 }

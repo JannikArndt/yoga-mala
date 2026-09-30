@@ -5,8 +5,8 @@
   "title_as_printed": "JANU SHIRSHASANA (B)",
   "section": "seated",
   "source_file": "chapter0024.html",
-  "vinyasa_count": null,
-  "state_vinyasas": [8],
+  "vinyasa_count": 22,
+  "state_vinyasas": [8, 15],
   "drishti": null,
   "translation": null,
   "notes": [],
@@ -39,14 +39,21 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
+      "vinyasa": 15,
       "breath": null,
-      "action": "Practice the method described above for both the left and right sides.",
-      "is_state": false
+      "breath_as_printed": null,
+      "action": "Practice the same method for the other side; this is the 15th vinyasa and the state for that side.",
+      "is_state": true
     }
   ],
   "while_holding": [],
-  "benefits": [],
+  "benefits": [
+    "Janu Shirshasana cures maladies such as muthra krcchra [burning while urinating], dhatu krcchra [semen loss], and diabetes.",
+    "Janu Shirshasana destroys these terrible afflictions, and purifies and strengthens the nadi known as sivani, which is related to the dhatu.",
+    "Janu Shirshasana (A & B) press on the virya nala for men, and Janu Shirshasana (C) presses on it for women, though all three are necessary and useful for both men and women alike.",
+    "In this way, diseases of the type just described will be cured, the fire of hunger increased, and food digested easily."
+  ],
   "quotes": [],
-  "images": []
+  "images": [],
+  "benefits_source": "Given in the book under Janu Shirshasana (C), for all three types."
 }

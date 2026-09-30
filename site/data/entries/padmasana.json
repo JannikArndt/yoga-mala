@@ -24,8 +24,8 @@
     },
     {
       "vinyasa": null,
-      "breath": "inhale-exhale",
-      "breath_as_printed": null,
+      "breath": "free",
+      "breath_as_printed": "rechaka and puraka",
       "action": "Place the right foot on the left thigh and the left foot on the right thigh, press the heels into the lower abdomen on either side of the navel, make the knees rest on the floor, place the hands on the knees, sit up, and straighten the back, chest, and waist. This is Padmasana. Stay, doing rechaka and puraka deeply and slowly as many times as possible.",
       "is_state": true
     },
@@ -39,10 +39,9 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Regarded as the best and greatest of the asanas, easy to practice in all respects."
+    "The sages and seers of works such as the Yoga Yagnavalkya and Yoga Vashishta have said that the practice of Padmasana destroys not only diseases of the body, but great sins, as well.",
+    "Therefore, as Padmasana is the best and greatest of the asanas, and easy to practice in all respects, it should be performed by everyone."
   ],
-  "quotes": [
-    "The sages and seers of works such as the Yoga Yagnavalkya and Yoga Vashishta have said that the practice of Padmasana destroys not only diseases of the body, but great sins, as well."
-  ],
+  "quotes": [],
   "images": []
 }

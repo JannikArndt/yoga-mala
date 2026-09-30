@@ -25,7 +25,8 @@
       "breath": "exhale",
       "breath_as_printed": null,
       "action": "Turn the right foot to the right, reach down and take hold of the big toe of the right foot with the right hand, lift up the other arm, fix the gaze on its fingertips, and do puraka and rechaka slowly and as much as possible. Both knees must be kept straight.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "fingertips of the raised hand"
     },
     {
       "vinyasa": 3,
@@ -39,7 +40,8 @@
       "breath": "exhale",
       "breath_as_printed": null,
       "action": "Turn the left foot to the left, reach down and take hold of the big toe, gaze at the tip of the raised hand, and do puraka and rechaka as much as possible.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "tip of the raised hand"
     },
     {
       "vinyasa": 5,
@@ -58,10 +60,8 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Dissolves the bad fat at the waist.",
-    "Brings the body into shape.",
-    "Expands the narrow portion of the breathing channel.",
-    "Strengthens the backbone."
+    "Utthita Trikonasana dissolves the bad fat at the waist, and brings the body into shape.",
+    "It also expands the narrow portion of the breathing channel and strengthens the backbone."
   ],
   "quotes": [],
   "images": []

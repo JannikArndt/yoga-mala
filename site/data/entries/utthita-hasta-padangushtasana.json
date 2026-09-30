@@ -44,7 +44,8 @@
       "breath": "exhale",
       "breath_as_printed": "rechaka",
       "action": "Bring the right leg out to the right, hold the arm, leg, waist, and chest straight, and look to the left, breathing fully and deeply as much as possible.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "to the left"
     },
     {
       "vinyasa": 5,
@@ -84,10 +85,8 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Loosens the hip joints.",
-    "Destroys defects of the testicles and male organ of generation.",
-    "Purifies and strengthens the vertebral column, waist, hips, and lower abdomen.",
-    "Eliminates constipation."
+    "Utthita Hasta Padangushtasana loosens the hip joints, destroys defects of the testicles and male organ of generation, and purifies and strengthens the vertebral column, waist, hips, and lower abdomen.",
+    "It also eliminates constipation."
   ],
   "quotes": [],
   "images": []

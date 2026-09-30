@@ -55,10 +55,11 @@
     },
     {
       "vinyasa": 9,
-      "breath": "inhale-exhale",
+      "breath": "free",
       "breath_as_printed": "rechaka and puraka",
       "action": "Hold the raised legs wide apart and straight, as in the 8th vinyasa, keep the chest, arms, and waist straight, look up, and do rechaka and puraka as much as possible.",
-      "is_state": true
+      "is_state": true,
+      "drishti": "up"
     },
     {
       "vinyasa": null,
@@ -73,11 +74,12 @@
     "As practice becomes firm, rest the chin on the floor in the state of this asana while holding the feet."
   ],
   "benefits": [
-    "Prevents the grdhrasi nadi [sciatic nerve], between the anus and the organ of generation, from weakening — its weakness otherwise decreases the strength of the waist, weakens the other nadis, and makes sitting and walking difficult.",
-    "Restores the strength of the grdhrasi nadi, along with other nadis and organs.",
-    "Resolves udara bhramana [gaseous movements in the stomach] and peristalsis.",
-    "Not appropriate for pregnant women; otherwise useful for all, men and women alike."
+    "If the nadi called grdhrasi [sciatic nerve], which is in the mid-region between the anus and the organ of generation, becomes weak, then the strength of the waist will decrease, and the other nadis will weaken as well. When the grdhrasi nadi is weak, the waist becomes stiff and sitting and walking become difficult. Through the practice of this asana, however, such afflictions will go.",
+    "With the return of the grdhrasi nadi’s strength, other nadis and organs also will become strong, and udara bhramana [gaseous movements in the stomach] will no longer occur, and peristalsis will be resolved."
   ],
   "quotes": [],
-  "images": []
+  "images": [],
+  "cautions": [
+    "The practice of Upavishta Konasana, however, is not appropriate for pregnant women."
+  ]
 }

@@ -9,7 +9,10 @@
   "state_vinyasas": [9],
   "drishti": null,
   "translation": null,
-  "notes": [],
+  "notes": [
+    "The asanas described so far are organized systematically and should only be practiced in the order in which they are presented. One asana must not be performed at the expense of another, because the muscles on one side of the body will become strong while those on the other will weaken.",
+    "When time is short, it is not necessary to practice every asana, though those that are done should be practiced in a systematic manner."
+  ],
   "sequence": [
     {
       "vinyasa": null,
@@ -77,11 +80,13 @@
   ],
   "while_holding": [],
   "benefits": [
-    "Purifies and strengthens the waist and neck.",
-    "Purifies the muladhara chakra [root chakra].",
-    "Increases the jathara agni [digestive fire].",
-    "Purifies the esophagus, heart, and lungs, making them strong."
+    "Setu Bandhasana purifies and strengthens the waist and neck, purifies the muladhara chakra [root chakra], and increases the jathara agni, or digestive fire.",
+    "It also purifies the esophagus, heart, and lungs, making them strong."
   ],
   "quotes": [],
-  "images": []
+  "images": [],
+  "cautions": [
+    "They can be practiced by anyone, men and women alike, except by women who are more than four months pregnant.",
+    "This does not mean, however, that they should be learned from pictures or books. On the contrary, they should be practiced under the tutelage of a benevolent Satguru."
+  ]
 }
