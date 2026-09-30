@@ -9,6 +9,20 @@ vinyasa, every breath kept. The right is what supports it: the plates from the
 book, the benefits he gives, and his own sentences where they are worth reading
 whole.
 
+## On an iPhone
+
+Open the site in Safari, tap **Share → Add to Home Screen**, and open it from
+the new icon once while online. It then runs full screen like an app and keeps
+every page and plate on the phone: the contents sheet (☰) says *Saved for
+offline reading* once it is ready, and from then on it needs no connection —
+only the linked video does. It reopens where you stopped, and when a new
+version is published it offers to reload.
+
+Moving around: swipe sideways or use the arrows to turn pages, tap a chapter
+or a posture in the strips at the top, or open ☰ to see everything and search
+("mari c" finds Marichyasana C). Tap a plate to see it full screen. With a
+keyboard: ← and → turn pages, / opens the search.
+
 ## The rule the content follows
 
 **Nothing on the site that is not in the book.** Where Guruji names no gazing
@@ -29,8 +43,11 @@ exact wording. It exits non-zero on any flag.
 ```
 site/                  everything that gets deployed
   index.html
-  app.js               routing, rendering, keyboard and swipe paging
+  app.js               routing, rendering, contents and search, paging
   styles.css
+  sw.js                the offline cache (its file list is generated)
+  manifest.webmanifest what makes it installable as an app
+  assets/icons/        the mala icon, from tools/build_icons.py
   data/mala.json       the compiled payload the page fetches
   data/entries/*.json  one file per asana or concept — the editable source
   data/images.json     which plate belongs to which entry, with its caption
@@ -48,9 +65,13 @@ were left alone.
 ## Rebuilding
 
 ```sh
-python3 tools/build_site_data.py  # entries + images -> data/mala.json
+python3 tools/build_site_data.py  # entries + images -> data/mala.json, and sw.js's file list
 python3 tools/verify_entries.py   # check the entries
 ```
+
+Run the build after changing *any* file in `site/`, not only the entries: it
+stamps `sw.js` with a hash of every cached file, which is how phones that
+already have the site learn that there is something new to download.
 
 Reading order and the chapter grouping are declared in `tools/build_site_data.py`.
 To correct a posture, edit its file in `site/data/entries/` (the fields are
@@ -65,8 +86,8 @@ Preview locally with `python3 -m http.server 8765 --directory site`.
 ## Deployment
 
 `.github/workflows/pages.yml` publishes `site/` to GitHub Pages on every push to
-`main`, after checking that the committed `mala.json` still matches what the
-entries compile to and that the entries pass verification. Enable it once under
+`main`, after checking that the committed `mala.json` and `sw.js` still match what
+the build produces and that the entries pass verification. Enable it once under
 **Settings → Pages → Source: GitHub Actions**.
 
 ## Credits

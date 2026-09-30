@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Yoga Mala — Sri K. Pattabhi Jois</title>
 <meta name="description" content="An interactive reader for Yoga Mala by Sri K. Pattabhi Jois: the Surya Namaskara, the asanas of the primary series, and the eight limbs of Patanjali.">
-<meta name="theme-color" content="#f7f2e8">
+<meta name="theme-color" content="#f7f2e8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#17130f" media="(prefers-color-scheme: dark)">
+
+<!-- Installable: "Add to Home Screen" opens it full screen, like an app. -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Yoga Mala">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,11 +26,17 @@
 
 <header class="masthead">
   <a class="masthead__title" href="#/" aria-label="Yoga Mala, home">
-    <span class="masthead__sanskrit" aria-hidden="true">योग माला</span>
-    <span class="masthead__name">Yoga Mala</span>
+    <img class="masthead__icon" src="assets/icons/favicon.svg" alt="" width="28" height="28">
+    <span class="masthead__words">
+      <span class="masthead__sanskrit" aria-hidden="true">योग माला</span>
+      <span class="masthead__name">Yoga Mala</span>
+    </span>
   </a>
   <nav class="chapters" id="chapter-nav" aria-label="Chapters"></nav>
   <a class="masthead__about" href="#/about">Guruji</a>
+  <button class="masthead__contents" id="open-contents" type="button" aria-haspopup="dialog" aria-label="Contents and search" title="Contents (/)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
 </header>
 
 <nav class="entries" id="entry-nav" aria-label="Postures in this chapter"></nav>
@@ -31,9 +49,31 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
   </button>
   <article id="entry" class="entry" tabindex="-1"></article>
+  <nav class="turn" id="turn" aria-label="Previous and next"></nav>
 </main>
 
 <footer class="colophon" id="colophon"></footer>
+
+<dialog class="sheet" id="contents" aria-label="Contents">
+  <div class="sheet__head">
+    <input class="sheet__search" id="search" type="search" placeholder="Find an asana or a limb" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Find an asana or a limb">
+    <button class="sheet__close" type="button" data-close aria-label="Close">Done</button>
+  </div>
+  <div class="sheet__body" id="contents-list"></div>
+  <p class="sheet__status" id="offline-status"></p>
+</dialog>
+
+<dialog class="viewer" id="viewer" aria-label="Plate">
+  <figure class="viewer__figure" data-close>
+    <img id="viewer-image" alt="">
+    <figcaption id="viewer-caption"></figcaption>
+  </figure>
+</dialog>
+
+<div class="notice" id="update-notice" hidden>
+  <span>A new version is ready.</span>
+  <button type="button" id="apply-update">Reload</button>
+</div>
 
 <script src="app.js"></script>
 </body>
