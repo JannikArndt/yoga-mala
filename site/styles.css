@@ -52,11 +52,18 @@ body {
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   text-rendering: optimizeLegibility;
   overscroll-behavior-y: none;
 }
 
 a { color: inherit; }
+
+/* No double-tap-to-zoom delay on the things you tap. */
+a, button { touch-action: manipulation; }
+
+.nowrap { white-space: nowrap; }
 
 .skip-link {
   position: absolute;
@@ -79,7 +86,9 @@ a { color: inherit; }
   align-items: center;
   gap: 1.25rem;
   height: var(--masthead-height);
-  padding: 0 clamp(0.75rem, 3vw, 2rem);
+  /* Clear the notch and rounded corners when an iPhone is held sideways. */
+  padding-block: 0;
+  padding-inline: max(clamp(0.75rem, 3vw, 2rem), env(safe-area-inset-left)) max(clamp(0.75rem, 3vw, 2rem), env(safe-area-inset-right));
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: saturate(1.4) blur(12px);
   border-bottom: 1px solid var(--rule);
@@ -87,10 +96,18 @@ a { color: inherit; }
 
 .masthead__title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 0.55rem;
   text-decoration: none;
   flex: none;
+}
+
+.masthead__icon { display: block; width: 1.75rem; height: 1.75rem; border-radius: 0.4rem; }
+
+.masthead__words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   line-height: 1.1;
 }
 
@@ -124,6 +141,30 @@ a { color: inherit; }
 .masthead__about[aria-current="page"] {
   color: var(--ochre);
   border-color: var(--ochre-soft);
+}
+
+.masthead__contents {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: -0.4rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.masthead__contents:hover { color: var(--ochre); }
+.masthead__contents svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
 }
 
 /* Chapter tabs, grouped under their part label. */
@@ -181,7 +222,8 @@ a { color: inherit; }
   align-items: center;
   gap: 0.15rem;
   height: var(--entries-height);
-  padding: 0 clamp(0.75rem, 3vw, 2rem);
+  padding-block: 0;
+  padding-inline: max(clamp(0.75rem, 3vw, 2rem), env(safe-area-inset-left)) max(clamp(0.75rem, 3vw, 2rem), env(safe-area-inset-right));
   background: var(--paper-sunk);
   border-bottom: 1px solid var(--rule);
   overflow-x: auto;
@@ -295,13 +337,30 @@ main { position: relative; }
   letter-spacing: -0.01em;
 }
 
-.entry__title .entry__number {
+/* The asana's number, and its variant letter, are small marks on the name,
+   not words of it — so a long name never drops a lone "D" onto a new line. */
+.title-number {
   color: var(--ochre);
   font-size: 0.5em;
   vertical-align: 0.55em;
-  margin-right: 0.5rem;
+  margin-right: 0.4em;
   font-family: var(--sans);
   font-variant-numeric: tabular-nums;
+}
+
+.title-variant {
+  display: inline-block;
+  margin-left: 0.3em;
+  padding: 0.12em 0.4em 0.1em;
+  border: 1px solid var(--ochre-soft);
+  border-radius: 0.35em;
+  color: var(--ochre);
+  font-family: var(--sans);
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  vertical-align: 0.5em;
 }
 
 .entry__meta {
@@ -319,17 +378,33 @@ main { position: relative; }
   font-variant-numeric: tabular-nums;
 }
 
-/* Two columns: the summary reads, the plates and sources support it. */
-
+/* Two columns: the method reads on the left; plates and sources support it
+   on the right. The second row takes the slack, so the sources sit directly
+   under the plates however long the method is. */
 .entry__body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
-  gap: clamp(1.75rem, 4vw, 3.5rem);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "main plates"
+    "main support";
+  column-gap: clamp(1.75rem, 4vw, 3.5rem);
   align-items: start;
 }
+.entry__main { grid-area: main; }
+.entry__plates { grid-area: plates; margin-bottom: 2rem; }
+.entry__support { grid-area: support; }
 
+/* One column: the plates first, because you look at a posture before you
+   read it, then the method, then what supports it. */
 @media (max-width: 60rem) {
-  .entry__body { grid-template-columns: minmax(0, 1fr); }
+  .entry__body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: "plates" "main" "support";
+  }
+  .entry__main { margin-bottom: 2rem; }
+  .entry__plates .plate figcaption { text-align: center; }
 }
 
 .section + .section,
@@ -401,6 +476,20 @@ main { position: relative; }
 }
 
 .vinyasa__action { margin: 0; }
+
+/* What the marks mean, for the marks this asana uses. */
+.breath-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  margin: 0.9rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+}
+.breath-key b { font-weight: 400; margin-right: 0.15rem; }
+.breath-key .vinyasa__breath--inhale { color: var(--inhale); }
+.breath-key .vinyasa__breath--exhale { color: var(--exhale); }
 
 .vinyasa__gaze {
   display: block;
@@ -517,13 +606,13 @@ main { position: relative; }
 
 .plate img {
   display: block;
-  width: 100%;
+  /* Sized by the photograph itself, capped by the column and the screen, so
+     a tall plate never fills the column or sits in an empty letterbox. */
+  width: auto;
   height: auto;
-  /* The plates are tall portraits. Left alone, one photograph fills the whole
-     column and pushes the benefits below the fold. */
+  max-width: 100%;
   max-height: 58vh;
-  object-fit: contain;
-  object-position: top;
+  margin-inline: auto;
   border-radius: 2px;
   background: var(--paper-sunk);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14), 0 10px 26px -12px rgba(0, 0, 0, 0.4);
@@ -539,6 +628,52 @@ main { position: relative; }
 }
 
 .plates--many { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+
+.plate__open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+/* Tap a plate to see it whole. */
+.viewer {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #100c09;
+}
+.viewer::backdrop { background: #100c09; }
+.viewer__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 100%;
+  margin: 0;
+  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+  cursor: zoom-out;
+}
+.viewer__figure img {
+  max-width: 100%;
+  max-height: calc(100% - 3rem);
+  object-fit: contain;
+}
+.viewer__figure figcaption {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #cbbfae;
+  text-align: center;
+}
 
 /* Resource cards: the video and anything else that supports the practice. */
 
@@ -598,11 +733,181 @@ main { position: relative; }
   border-bottom: 1px solid var(--rule);
 }
 
+/* ---------------------------------------------------------- previous / next */
+
+.turn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 78rem;
+  margin: -2rem auto 0;
+  padding: 0 max(3.2rem, 5vw) 4rem;
+}
+.turn[hidden] { display: none; }
+.turn__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--paper-raised);
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+.turn__link:hover { border-color: var(--ochre-soft); }
+.turn__link--next { text-align: right; grid-column: 2; }
+.turn__label {
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.turn__title { font-size: 1.05rem; line-height: 1.3; }
+.turn__title .title-number { font-size: 0.62em; vertical-align: 0.3em; }
+
+/* ---------------------------------------------------------------- contents */
+
+.sheet {
+  width: min(34rem, 100vw);
+  max-width: none;
+  height: min(46rem, 100dvh);
+  max-height: none;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
+}
+.sheet[open] { display: flex; flex-direction: column; }
+.sheet::backdrop { background: rgba(23, 19, 15, 0.45); backdrop-filter: blur(2px); }
+
+.sheet__head {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+.sheet__search {
+  flex: 1;
+  min-width: 0;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--paper-raised);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px; /* anything smaller and iOS zooms the page to type */
+}
+.sheet__search:focus { outline: 2px solid var(--ochre-soft); outline-offset: 0; }
+.sheet__close {
+  flex: none;
+  padding: 0.5rem 0.2rem;
+  border: none;
+  background: none;
+  color: var(--ochre);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sheet__body {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.4rem 1rem 1rem;
+}
+.sheet__status {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+.toc__part[hidden], .toc__chapter[hidden], .toc__list li[hidden] { display: none; }
+.toc__part-title {
+  margin: 1.1rem 0 0.2rem;
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.toc__chapter-title {
+  margin: 0.8rem 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--sans);
+  color: var(--ochre);
+}
+.toc__list { list-style: none; margin: 0; padding: 0; }
+.toc__link {
+  display: grid;
+  grid-template-columns: 1.8rem minmax(0, 1fr);
+  align-items: baseline;
+  min-height: 2.6rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  line-height: 1.3;
+}
+.toc__link:hover { background: var(--paper-raised); }
+.toc__link[aria-current="page"] { background: var(--ochre); color: var(--paper); }
+.toc__link[aria-current="page"] .toc__number,
+.toc__link[aria-current="page"] .title-variant { color: inherit; border-color: currentColor; }
+.toc__number {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.toc__link .title-variant { font-size: 0.62em; vertical-align: 0.15em; }
+.toc__empty { color: var(--ink-faint); font-style: italic; margin-top: 1.2rem; }
+
+/* ------------------------------------------------------------ update notice */
+
+.notice {
+  position: fixed;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: 30;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.55rem 0.6rem 0.55rem 1rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+}
+.notice[hidden] { display: none; }
+.notice button {
+  padding: 0.35rem 0.8rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--ochre-soft);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* --------------------------------------------------------------- colophon */
 
 .colophon {
   border-top: 1px solid var(--rule);
-  padding: 2rem clamp(1.25rem, 5vw, 3.5rem) 3rem;
+  padding: 2rem clamp(1.25rem, 5vw, 3.5rem) calc(3rem + env(safe-area-inset-bottom));
   font-family: var(--sans);
   font-size: 0.74rem;
   line-height: 1.7;
@@ -617,12 +922,46 @@ main { position: relative; }
 @media (max-width: 45rem) {
   body { font-size: 16px; }
   .masthead { gap: 0.8rem; }
-  .masthead__about { padding: 0.35rem 0.55rem; font-size: 0.68rem; }
+  /* The icon stands for the name, and Guruji is in the contents sheet, so
+     the chapter tabs get the width. */
+  .masthead__words,
+  .masthead__about { display: none; }
+  .chapters { flex: 1; }
+  .entry-link { padding-block: 0.45rem; }
+  .entry__title { font-size: clamp(1.7rem, 7.4vw, 2.2rem); }
+
+  /* Several plates scroll sideways, a little of the next one showing. */
+  .entry__plates .plates--many {
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-inline: -1.25rem;
+    padding-inline: 1.25rem;
+  }
+  .entry__plates .plates--many::-webkit-scrollbar { display: none; }
+  .entry__plates .plates--many .plate { flex: 0 0 72%; scroll-snap-align: center; }
+  /* Leave the start of the method in view beneath the plate. */
+  .entry__plates .plate img { max-height: 38vh; }
+
+  .turn { padding-inline: 1.25rem; margin-top: -1.5rem; padding-bottom: 5.5rem; }
+  .turn__link { padding: 0.75rem 0.8rem; }
+  .turn__title { font-size: 0.95rem; }
+
+  .sheet {
+    width: 100vw;
+    height: 100dvh;
+    border: none;
+    border-radius: 0;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
   .part + .part { padding-left: 0.9rem; }
   .chapters { gap: 0.9rem; }
   .pager {
     top: auto;
-    bottom: 0.6rem;
+    bottom: calc(0.6rem + env(safe-area-inset-bottom));
     transform: none;
     width: 3rem;
     height: 3rem;
@@ -631,7 +970,7 @@ main { position: relative; }
     border: 1px solid var(--rule);
     backdrop-filter: blur(8px);
   }
-  .pager--previous { left: 0.7rem; }
-  .pager--next { right: 0.7rem; }
+  .pager--previous { left: calc(0.7rem + env(safe-area-inset-left)); }
+  .pager--next { right: calc(0.7rem + env(safe-area-inset-right)); }
   .entry { padding-inline: 1.25rem; padding-bottom: 5.5rem; }
 }

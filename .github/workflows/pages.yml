@@ -28,7 +28,7 @@ jobs:
       - name: Rebuild the data and fail if it differs from what was committed
         run: |
           python3 tools/build_site_data.py
-          git diff --exit-code -- site/data
+          git diff --exit-code -- site/data site/sw.js
 
       # The book is not in the repository, so CI runs the structural checks;
       # the comparison with the text runs locally where the ebook is unpacked.

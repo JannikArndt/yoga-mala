@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#f7f2e8"/>
+  <circle cx="256" cy="238" r="150" fill="none" stroke="#c98a4e" stroke-width="6"/>
+  <polygon points="256,402 236,470 276,470" fill="#a35a26"/>
+  <circle cx="204.7" cy="379.0" r="21" fill="#a35a26"/>
+  <circle cx="159.6" cy="352.9" r="21" fill="#a35a26"/>
+  <circle cx="126.1" cy="313.0" r="21" fill="#a35a26"/>
+  <circle cx="108.3" cy="264.0" r="21" fill="#a35a26"/>
+  <circle cx="108.3" cy="212.0" r="21" fill="#a35a26"/>
+  <circle cx="126.1" cy="163.0" r="21" fill="#a35a26"/>
+  <circle cx="159.6" cy="123.1" r="21" fill="#a35a26"/>
+  <circle cx="204.7" cy="97.0" r="21" fill="#a35a26"/>
+  <circle cx="256.0" cy="88.0" r="21" fill="#a35a26"/>
+  <circle cx="307.3" cy="97.0" r="21" fill="#a35a26"/>
+  <circle cx="352.4" cy="123.1" r="21" fill="#a35a26"/>
+  <circle cx="385.9" cy="163.0" r="21" fill="#a35a26"/>
+  <circle cx="403.7" cy="212.0" r="21" fill="#a35a26"/>
+  <circle cx="403.7" cy="264.0" r="21" fill="#a35a26"/>
+  <circle cx="385.9" cy="313.0" r="21" fill="#a35a26"/>
+  <circle cx="352.4" cy="352.9" r="21" fill="#a35a26"/>
+  <circle cx="307.3" cy="379.0" r="21" fill="#a35a26"/>
+  <circle cx="256.0" cy="388.0" r="31" fill="#a35a26"/>
+</svg>

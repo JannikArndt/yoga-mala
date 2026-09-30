@@ -10,6 +10,7 @@ the concepts, and the four Prasarita Padottanasanas share one number.
 """
 
 import json
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -233,6 +234,12 @@ def main():
         f"{len(reading_order)} entries in reading order, "
         f"{len(missing)} missing -> {OUTPUT_FILE.name} ({size_kilobytes:.0f} KB)"
     )
+
+    # The offline cache is versioned by the files' contents, mala.json among them.
+    sys.path.insert(0, str(Path(__file__).parent))
+    import build_offline
+
+    build_offline.main()
 
 
 if __name__ == "__main__":

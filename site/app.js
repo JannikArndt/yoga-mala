@@ -1,16 +1,19 @@
 /* Yoga Mala — reader.
    One fetch of data/mala.json, then everything is rendered from that. The URL
    hash is the single source of truth for "where am I", so every way of moving
-   through the book (click, arrow key, swipe, back button) goes through it. */
+   through the book (click, arrow key, swipe, contents, back button) goes
+   through it. sw.js keeps a copy of every file, so it all works offline. */
 
 const BREATH_MARKS = {
-  inhale: { mark: "▲", label: "Inhale" },
-  exhale: { mark: "▼", label: "Exhale" },
-  "inhale-exhale": { mark: "▲▼", label: "Inhale, then exhale" },
-  "exhale-inhale": { mark: "▼▲", label: "Exhale, then inhale" },
-  free: { mark: "∿", label: "Breathe freely" },
-  hold: { mark: "●", label: "Hold" },
+  inhale: { mark: "▲", label: "Inhale", short: "inhale" },
+  exhale: { mark: "▼", label: "Exhale", short: "exhale" },
+  "inhale-exhale": { mark: "▲▼", label: "Inhale, then exhale", short: "inhale, then exhale" },
+  "exhale-inhale": { mark: "▼▲", label: "Exhale, then inhale", short: "exhale, then inhale" },
+  free: { mark: "∿", label: "Breathe freely", short: "breathe freely" },
+  hold: { mark: "●", label: "Hold", short: "hold" },
 };
+
+const LAST_PLACE_KEY = "yoga-mala:last-place";
 
 let book = null;
 
@@ -37,6 +40,33 @@ const quotedListOf = (items, note) =>
 const section = (title, inner) =>
   inner ? `<section class="section"><h2 class="section__title">${escapeHtml(title)}</h2>${inner}</section>` : "";
 
+/** Lower case, no diacritics, letters and digits only: "Śīrṣāsana" finds "shirshasana". */
+const searchable = (text) =>
+  String(text ?? "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+/** localStorage can be missing or refuse (private mode); the reader must not care. */
+const remember = {
+  get: (key) => {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  },
+  set: (key, value) => {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      /* not remembered, which is fine */
+    }
+  },
+};
+
 const routeOf = () => location.hash.replace(/^#\/?/, "");
 
 /** The entry currently addressed by the URL, falling back to the first one. */
@@ -53,6 +83,29 @@ function chapterContaining(entryId) {
     }
   }
   return null;
+}
+
+/**
+ * The title, split so the variant letter never ends up alone on a line:
+ * "Prasarita Padottanasana D" keeps "Padottanasana D" together, and the letter
+ * is set as a small tag rather than as a word.
+ */
+function titleHtml(entry, { withNumber = true } = {}) {
+  const match = /^(.*?)(?:\s+\(?([A-D])\)?)?$/.exec(entry.title);
+  const words = match[1].split(" ");
+  const lastWord = words.pop();
+  const variant = match[2] ? `<span class="title-variant">${match[2]}</span>` : "";
+  const number = withNumber && entry.number ? `<span class="title-number">${entry.number}</span>` : "";
+  const head = words.length ? `${escapeHtml(words.join(" "))} ` : "";
+  return `${number}${head}<span class="nowrap">${escapeHtml(lastWord)}${variant}</span>`;
+}
+
+/** "Seated · 7 of 23": where this page sits, which the title no longer repeats. */
+function positionLabel(entryId) {
+  const place = chapterContaining(entryId);
+  if (!place) return "";
+  const index = place.chapter.entries.indexOf(entryId);
+  return `${place.chapter.title} · ${index + 1} of ${place.chapter.entries.length}`;
 }
 
 /* ------------------------------------------------------------ navigation */
@@ -112,29 +165,45 @@ function renderEntryNav(chapter, activeEntryId) {
 
 function renderPager(entryId) {
   const position = book.reading_order.indexOf(entryId);
+  const previousId = book.reading_order[position - 1];
+  const nextId = position < 0 ? undefined : book.reading_order[position + 1];
   const previous = document.getElementById("previous");
   const next = document.getElementById("next");
-  previous.disabled = position <= 0;
-  next.disabled = position < 0 || position >= book.reading_order.length - 1;
-  previous.dataset.target = book.reading_order[position - 1] ?? "";
-  next.dataset.target = book.reading_order[position + 1] ?? "";
+  previous.disabled = !previousId || position < 0;
+  next.disabled = !nextId;
+  previous.setAttribute("aria-label", previousId && position >= 0 ? `Previous: ${book.entries[previousId].title}` : "Previous");
+  next.setAttribute("aria-label", nextId ? `Next: ${book.entries[nextId].title}` : "Next");
+
+  // At the foot of the page, name where the arrows go.
+  const turn = document.getElementById("turn");
+  const link = (id, direction) =>
+    id
+      ? `<a class="turn__link turn__link--${direction}" href="#/${escapeHtml(id)}">
+           <span class="turn__label">${direction === "previous" ? "← Previous" : "Next →"}</span>
+           <span class="turn__title">${titleHtml(book.entries[id])}</span>
+         </a>`
+      : `<span></span>`;
+  turn.hidden = position < 0;
+  turn.innerHTML = position < 0 ? "" : link(previousId, "previous") + link(nextId, "next");
 }
 
 /* --------------------------------------------------------------- fragments */
 
-function renderPlates(images) {
+function renderPlates(images, className = "plates") {
   if (!images?.length) return "";
-  const many = images.length > 1 ? " plates--many" : "";
+  const many = images.length > 1 ? ` ${className}--many` : "";
   const figures = images
     .map(
       (image) => `
       <figure class="plate">
-        <img src="assets/plates/${escapeHtml(image.file)}" alt="${escapeHtml(image.caption || "Plate from Yoga Mala")}" loading="lazy" decoding="async">
+        <button class="plate__open" type="button" aria-label="Enlarge: ${escapeHtml(image.caption || "plate")}">
+          <img src="assets/plates/${escapeHtml(image.file)}" alt="${escapeHtml(image.caption || "Plate from Yoga Mala")}" loading="lazy" decoding="async">
+        </button>
         ${image.caption ? `<figcaption>${escapeHtml(image.caption)}</figcaption>` : ""}
       </figure>`,
     )
     .join("");
-  return `<div class="plates${many}">${figures}</div>`;
+  return `<div class="${className}${many}">${figures}</div>`;
 }
 
 function renderVerse(sutra) {
@@ -163,9 +232,19 @@ function renderVideoResource() {
       <span class="resource__icon" aria-hidden="true">&#9654;</span>
       <span>
         <span class="resource__title">${escapeHtml(video.title)}</span>
-        <span class="resource__note">${escapeHtml(video.note)} &middot; watch the whole series</span>
+        <span class="resource__note">${escapeHtml(video.note)} &middot; watch the whole series &middot; needs a connection</span>
       </span>
     </a>`;
+}
+
+/** Only the marks this asana uses, so the key stays one line. */
+function renderBreathKey(sequence) {
+  const used = Object.keys(BREATH_MARKS).filter((breath) => sequence?.some((step) => step.breath === breath));
+  if (!used.length) return "";
+  const items = used
+    .map((breath) => `<span><b class="vinyasa__breath--${breath}">${BREATH_MARKS[breath].mark}</b> ${BREATH_MARKS[breath].short}</span>`)
+    .join("");
+  return `<p class="breath-key" aria-hidden="true">${items}</p>`;
 }
 
 function renderSequence(sequence) {
@@ -190,12 +269,34 @@ function renderSequence(sequence) {
         </li>`;
     })
     .join("");
-  return `<ul class="vinyasas">${rows}</ul>`;
+  return `<ul class="vinyasas">${rows}</ul>${renderBreathKey(sequence)}`;
 }
 
 /* ------------------------------------------------------------ entry views */
 
-function renderAsana(entry) {
+function renderHead(entryId, entry, meta = []) {
+  return `
+    <div class="entry__head">
+      <p class="entry__eyebrow">${escapeHtml(positionLabel(entryId))}</p>
+      <h1 class="entry__title">${titleHtml(entry)}</h1>
+      ${meta.length ? `<div class="entry__meta">${meta.join("")}</div>` : ""}
+    </div>`;
+}
+
+/**
+ * Three regions rather than two columns: on a phone the plates come first,
+ * because you look at a posture before you read it.
+ */
+function renderBody(main, plates, support) {
+  return `
+    <div class="entry__body">
+      ${plates ? `<div class="entry__plates">${plates}</div>` : ""}
+      <div class="entry__main">${main}</div>
+      <div class="entry__support">${support}</div>
+    </div>`;
+}
+
+function renderAsana(entryId, entry) {
   const meta = [];
   if (entry.vinyasa_label) meta.push(`<span>vinyasas: <b>${escapeHtml(entry.vinyasa_label)}</b></span>`);
   else if (entry.vinyasa_count) meta.push(`<span><b>${entry.vinyasa_count}</b> vinyasas</span>`);
@@ -204,48 +305,35 @@ function renderAsana(entry) {
     meta.push(`<span>state: <b>${entry.state_vinyasas.join(", ")}</b></span>`);
   if (entry.drishti) meta.push(`<span>drishti: <b>${escapeHtml(entry.drishti)}</b></span>`);
 
-  const left = [
+  const main = [
     section("Method", renderSequence(entry.sequence)),
     section("While holding", listOf(entry.while_holding)),
     section("Cautions", quotedListOf(entry.cautions)),
     section("Notes", listOf(entry.notes)),
   ].join("");
 
-  const right = [
-    renderPlates(entry.images),
+  const support = [
     section("Benefits, in Guruji's words", quotedListOf(entry.benefits, entry.benefits_source)),
     section("In Guruji's words", renderQuotes(entry.quotes)),
     section("Scripture he quotes", renderVerses(entry.verses)),
     section("Watch", renderVideoResource()),
   ].join("");
 
-  return `
-    <div class="entry__head">
-      <p class="entry__eyebrow">${escapeHtml(entry.title_as_printed || "")}</p>
-      <h1 class="entry__title">${entry.number ? `<span class="entry__number">${entry.number}</span>` : ""}${escapeHtml(entry.title)}</h1>
-      ${meta.length ? `<div class="entry__meta">${meta.join("")}</div>` : ""}
-    </div>
-    <div class="entry__body"><div>${left}</div><div>${right}</div></div>`;
+  return renderHead(entryId, entry, meta) + renderBody(main, renderPlates(entry.images), support);
 }
 
-function renderConcept(entry) {
-  const left = [
+function renderConcept(entryId, entry) {
+  const main = [
     entry.one_line ? `<p class="lead">${escapeHtml(entry.one_line)}</p>` : "",
     listOf(entry.points),
   ].join("");
 
-  const right = [
-    renderPlates(entry.images),
+  const support = [
     section("Scripture", renderVerse(entry.sutra) + renderVerses(entry.verses)),
     section("In Guruji's words", renderQuotes(entry.quotes)),
   ].join("");
 
-  return `
-    <div class="entry__head">
-      <p class="entry__eyebrow">Yoga Shastra</p>
-      <h1 class="entry__title">${escapeHtml(entry.title)}</h1>
-    </div>
-    <div class="entry__body"><div>${left}</div><div>${right}</div></div>`;
+  return renderHead(entryId, entry) + renderBody(main, renderPlates(entry.images), support);
 }
 
 function renderAbout() {
@@ -282,6 +370,7 @@ function render() {
   const entryId = currentEntryId();
   // An unknown address shows the first entry; say so in the URL too.
   if (entryId !== routeOf()) history.replaceState(null, "", `#/${entryId}`);
+  remember.set(LAST_PLACE_KEY, entryId);
   const entryElement = document.getElementById("entry");
 
   if (entryId === "about") {
@@ -293,15 +382,16 @@ function render() {
     document.title = "Guruji — Yoga Mala";
   } else {
     const entry = book.entries[entryId];
-    const location_ = chapterContaining(entryId);
-    renderChapterNav(location_?.chapter.id);
-    renderEntryNav(location_?.chapter, entryId);
+    const place = chapterContaining(entryId);
+    renderChapterNav(place?.chapter.id);
+    renderEntryNav(place?.chapter, entryId);
     renderPager(entryId);
     document.querySelector(".masthead__about").removeAttribute("aria-current");
-    entryElement.innerHTML = entry.kind === "concept" ? renderConcept(entry) : renderAsana(entry);
+    entryElement.innerHTML = entry.kind === "concept" ? renderConcept(entryId, entry) : renderAsana(entryId, entry);
     document.title = `${entry.title} — Yoga Mala`;
   }
 
+  markCurrentInContents(entryId);
   window.scrollTo({ top: 0, behavior: "auto" });
 }
 
@@ -315,7 +405,107 @@ function step(direction) {
   goTo(book.reading_order[position + direction]);
 }
 
+/* -------------------------------------------------------- contents and search */
+
+function renderContents() {
+  const parts = book.navigation
+    .map(
+      (part) => `
+      <section class="toc__part">
+        <h2 class="toc__part-title">${escapeHtml(part.subtitle)} · ${escapeHtml(part.title)}</h2>
+        ${part.chapters
+          .map(
+            (chapter) => `
+          <div class="toc__chapter">
+            <h3 class="toc__chapter-title">${escapeHtml(chapter.title)}</h3>
+            <ul class="toc__list">
+              ${chapter.entries
+                .map((entryId) => {
+                  const entry = book.entries[entryId];
+                  const terms = searchable(`${entry.title} ${entry.number ?? ""} ${chapter.title}`);
+                  return `
+                  <li data-search="${escapeHtml(terms)}">
+                    <a class="toc__link" href="#/${escapeHtml(entryId)}" data-entry="${escapeHtml(entryId)}">
+                      <span class="toc__number">${entry.number ?? ""}</span>
+                      <span>${titleHtml(entry, { withNumber: false })}</span>
+                    </a>
+                  </li>`;
+                })
+                .join("")}
+            </ul>
+          </div>`,
+          )
+          .join("")}
+      </section>`,
+    )
+    .join("");
+  const about = `
+    <section class="toc__part">
+      <ul class="toc__list">
+        <li data-search="guruji pattabhi jois about life foreword preface">
+          <a class="toc__link" href="#/about" data-entry="about"><span class="toc__number"></span><span>Guruji — his life and this book</span></a>
+        </li>
+      </ul>
+    </section>`;
+  document.getElementById("contents-list").innerHTML =
+    parts + about + `<p class="toc__empty" hidden>Nothing matches.</p>`;
+}
+
+function markCurrentInContents(entryId) {
+  document.querySelectorAll("#contents-list .toc__link").forEach((link) => {
+    if (link.dataset.entry === entryId) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
+}
+
+/** Every word typed must begin a word of the entry: "mari c" finds Marichyasana C only. */
+function filterContents(query) {
+  const words = searchable(query).split(" ").filter(Boolean);
+  const list = document.getElementById("contents-list");
+  let shown = 0;
+  list.querySelectorAll("li[data-search]").forEach((item) => {
+    const terms = item.dataset.search.split(" ");
+    const match = words.every((word) => terms.some((term) => term.startsWith(word)));
+    item.hidden = !match;
+    if (match) shown += 1;
+  });
+  // Hide headings whose every entry is filtered out.
+  list.querySelectorAll(".toc__chapter, .toc__part").forEach((group) => {
+    group.hidden = !group.querySelector("li[data-search]:not([hidden])");
+  });
+  list.querySelector(".toc__empty").hidden = shown > 0;
+}
+
+function openContents() {
+  const dialog = document.getElementById("contents");
+  if (dialog.open) return;
+  const search = document.getElementById("search");
+  search.value = "";
+  filterContents("");
+  dialog.showModal();
+  const current = dialog.querySelector('[aria-current="page"]');
+  current?.scrollIntoView({ block: "center" });
+  // A keyboard opens it to type; a finger opens it to browse, and focusing
+  // the field would throw the iPhone keyboard over the list.
+  if (matchMedia("(hover: hover)").matches) search.focus();
+}
+
+/* ------------------------------------------------------------ plate viewer */
+
+function openPlate(image) {
+  const viewer = document.getElementById("viewer");
+  const img = document.getElementById("viewer-image");
+  img.src = image.getAttribute("src");
+  img.alt = image.alt;
+  document.getElementById("viewer-caption").textContent = image.closest("figure")?.querySelector("figcaption")?.textContent || "";
+  viewer.showModal();
+}
+
 /* ---------------------------------------------------------------- controls */
+
+function isTyping(target) {
+  return target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement;
+}
 
 function attachControls() {
   // The skip link targets #entry, which the router would read as a route.
@@ -333,30 +523,67 @@ function attachControls() {
     document.getElementById("entry").focus({ preventScroll: true });
   });
 
+  // Contents: open, search, and close once a place is chosen.
+  const contents = document.getElementById("contents");
+  document.getElementById("open-contents").addEventListener("click", openContents);
+  document.getElementById("search").addEventListener("input", (event) => filterContents(event.target.value));
+  document.getElementById("search").addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    const first = contents.querySelector("li[data-search]:not([hidden]) a");
+    if (first) {
+      event.preventDefault();
+      first.click();
+    }
+  });
+  contents.addEventListener("click", (event) => {
+    if (event.target.closest(".toc__link") || event.target.closest("[data-close]") || event.target === contents) {
+      contents.close();
+    }
+  });
+
+  // Plates open full screen; any tap closes them again.
+  const viewer = document.getElementById("viewer");
+  document.getElementById("entry").addEventListener("click", (event) => {
+    const button = event.target.closest(".plate__open");
+    if (button) openPlate(button.querySelector("img"));
+  });
+  viewer.addEventListener("click", () => viewer.close());
+
   document.addEventListener("keydown", (event) => {
-    if (event.metaKey || event.ctrlKey || event.altKey) return;
+    if (event.metaKey || event.ctrlKey || event.altKey || isTyping(event.target)) return;
+    if (contents.open || viewer.open) return;
     if (event.key === "ArrowLeft") step(-1);
     if (event.key === "ArrowRight") step(1);
+    if (event.key === "/") {
+      event.preventDefault();
+      openContents();
+    }
   });
 
   // Horizontal swipe pages the book; vertical scrolling must stay untouched.
   let touchStartX = 0;
   let touchStartY = 0;
-  let touchIsOnStrip = false;
+  let swipeIgnored = false;
   document.addEventListener(
     "touchstart",
     (event) => {
-      // The chapter and posture strips scroll sideways; a swipe there is theirs.
-      touchIsOnStrip = Boolean(event.target.closest?.(".chapters, .entries"));
-      touchStartX = event.changedTouches[0].clientX;
-      touchStartY = event.changedTouches[0].clientY;
+      const touch = event.changedTouches[0];
+      // The strips scroll sideways, the dialogs are their own world, and a
+      // swipe from the very edge of the screen is the system's back gesture.
+      swipeIgnored =
+        event.touches.length > 1 ||
+        Boolean(event.target.closest?.(".chapters, .entries, dialog")) ||
+        touch.clientX < 24 ||
+        touch.clientX > window.innerWidth - 24;
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
     },
     { passive: true },
   );
   document.addEventListener(
     "touchend",
     (event) => {
-      if (touchIsOnStrip) return;
+      if (swipeIgnored) return;
       const deltaX = event.changedTouches[0].clientX - touchStartX;
       const deltaY = event.changedTouches[0].clientY - touchStartY;
       if (Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
@@ -367,6 +594,64 @@ function attachControls() {
   );
 }
 
+/* ----------------------------------------------------------------- offline */
+
+let offlineMessage = "";
+
+function setOfflineStatus(message) {
+  offlineMessage = message;
+  document.querySelectorAll(".offline-status, #offline-status").forEach((element) => {
+    element.textContent = message;
+  });
+}
+
+function registerOffline() {
+  if (!("serviceWorker" in navigator)) {
+    setOfflineStatus("This browser cannot keep the book for offline reading.");
+    return;
+  }
+  // Only a page that already had a worker is being updated; on the very first
+  // visit the new worker takes over silently.
+  const hadController = Boolean(navigator.serviceWorker.controller);
+  let updateRequested = false;
+  const notice = document.getElementById("update-notice");
+  const offerUpdate = (worker) => {
+    notice.hidden = false;
+    document.getElementById("apply-update").onclick = () => {
+      updateRequested = true;
+      worker.postMessage("skip-waiting");
+    };
+  };
+
+  setOfflineStatus(hadController ? "Saved for offline reading." : "Saving the book for offline reading…");
+  navigator.serviceWorker
+    .register("sw.js")
+    .then((registration) => {
+      if (registration.waiting && hadController) offerUpdate(registration.waiting);
+      registration.addEventListener("updatefound", () => {
+        const worker = registration.installing;
+        worker?.addEventListener("statechange", () => {
+          if (worker.state === "installed" && navigator.serviceWorker.controller) offerUpdate(worker);
+        });
+      });
+      // A home-screen app can stay open for days; look for a new version
+      // whenever it comes back to the front.
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") registration.update().catch(() => {});
+      });
+    })
+    .catch(() => setOfflineStatus("The book could not be saved for offline reading."));
+
+  navigator.serviceWorker.ready.then(() => setOfflineStatus("Saved for offline reading — works without a connection."));
+
+  let reloading = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!(hadController || updateRequested) || reloading) return;
+    reloading = true;
+    location.reload();
+  });
+}
+
 function renderColophon() {
   const copyright = book.about?.copyright;
   document.getElementById("colophon").innerHTML = `
@@ -375,10 +660,12 @@ function renderColophon() {
     ${copyright?.translator ? `<p>Translated by ${escapeHtml(copyright.translator)}.</p>` : ""}
     ${copyright?.forewords ? `<p>${escapeHtml(copyright.forewords)}.</p>` : ""}
     ${copyright?.photographs ? `<p>${escapeHtml(copyright.photographs)}.</p>` : ""}
-    <p>This reader is offered in gratitude, not in place of a teacher.</p>`;
+    <p>This reader is offered in gratitude, not in place of a teacher.</p>
+    <p class="offline-status">${escapeHtml(offlineMessage)}</p>`;
 }
 
 async function start() {
+  registerOffline();
   try {
     const response = await fetch("data/mala.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -388,7 +675,15 @@ async function start() {
       `<p class="lead">The book could not be loaded (${escapeHtml(error.message)}). Please reload the page.</p>`;
     return;
   }
+
+  // Opened from the home screen with no address: carry on where you stopped.
+  const lastPlace = remember.get(LAST_PLACE_KEY);
+  if (!routeOf() && lastPlace && (lastPlace === "about" || book.entries[lastPlace])) {
+    history.replaceState(null, "", `#/${lastPlace}`);
+  }
+
   attachControls();
+  renderContents();
   renderColophon();
   render();
 }
