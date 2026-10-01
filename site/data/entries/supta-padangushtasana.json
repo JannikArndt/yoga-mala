@@ -5,13 +5,14 @@
   "title_as_printed": "28. SUPTA PADANGUSHTASANA",
   "section": "seated",
   "source_file": "chapter0038.html",
-  "vinyasa_count": null,
-  "state_vinyasas": [9, 11, 13, 19],
+  "vinyasa_count": 28,
+  "state_vinyasas": [9, 11, 17, 19],
   "drishti": null,
   "translation": null,
   "notes": [
     "Supta Padangushtasana is a two-part asana: the first part has twenty vinyasas, the second has twenty-eight.",
     "The 9th and 13th vinyasas are the states of the first part; the 11th and 19th vinyasas are the states of the second part.",
+    "Shown here as Part 2, which holds every movement of Part 1; Part 1 alone leaves out the leg to the side (11th–14th on each side).",
     "While in the states of this asana, aspirants must be mindful to practice the breathing methods with attention — Guruji repeats this because the asana is unlike previous ones."
   ],
   "sequence": [
@@ -67,7 +68,7 @@
       "vinyasa": 7,
       "breath": "exhale-inhale",
       "breath_as_printed": "rechaka and puraka",
-      "action": "Part 1. Lie down on the back, as in the preparations for Sarvangasana, doing rechaka and puraka.",
+      "action": "Lie down on the back, as in the preparations for Sarvangasana, doing rechaka and puraka.",
       "is_state": false
     },
     {
@@ -95,41 +96,6 @@
       "vinyasa": 11,
       "breath": "exhale",
       "breath_as_printed": "rechaka",
-      "action": "Lower the right leg to the floor and join the legs together.",
-      "is_state": false
-    },
-    {
-      "vinyasa": null,
-      "breath": null,
-      "breath_as_printed": null,
-      "action": "Repeat the above (vinyasas 8–11) for the left leg.",
-      "is_state": false
-    },
-    {
-      "vinyasa": null,
-      "breath": null,
-      "breath_as_printed": null,
-      "action": "Come into the position of Halasana, press the hands to the floor by the ears, and roll the whole body back over the head into the position of the 4th vinyasa. This is called Chakrasana.",
-      "is_state": false
-    },
-    {
-      "vinyasa": null,
-      "breath": null,
-      "breath_as_printed": null,
-      "action": "Remaining vinyasas as in previous asanas. End of Part 1.",
-      "is_state": false
-    },
-    {
-      "vinyasa": null,
-      "breath": null,
-      "breath_as_printed": null,
-      "action": "Part 2. Perform the first ten vinyasas of Part 1.",
-      "is_state": false
-    },
-    {
-      "vinyasa": 11,
-      "breath": "exhale",
-      "breath_as_printed": "rechaka",
       "action": "Bring the right leg out to the right and lower it to the floor, and do rechaka and puraka as much as possible.",
       "is_state": true
     },
@@ -137,7 +103,7 @@
       "vinyasa": 12,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Raise the right leg back up, holding the big toe, head on the floor.",
+      "action": "Raise the right leg, and return to the 8th vinyasa.",
       "is_state": false
     },
     {
@@ -155,11 +121,112 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
+      "vinyasa": 15,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Lower the right leg to the floor and join the legs together.",
+      "is_state": false
+    },
+    {
+      "vinyasa": 16,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Left side: bring the straightened left leg up and take hold of its big toe with the left hand, right hand on the right thigh, head on the floor",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 17,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Left side: nose to the left knee",
+      "is_state": true
+    },
+    {
+      "vinyasa": 18,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Left side: lower the head to the floor",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 19,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Left side: bring the left leg out to the left and lower it to the floor; rechaka and puraka as much as possible",
+      "is_state": true
+    },
+    {
+      "vinyasa": 20,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Left side: raise the left leg, holding the big toe",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 21,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Left side: nose to the knee",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 22,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Left side: lower the head to the floor",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 23,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Left side: lower the left leg to the floor and join the legs",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 24,
       "breath": null,
       "breath_as_printed": null,
-      "action": "Repeat the above (vinyasas 11–14) for the left side.",
+      "action": "Come into the position of Halasana, press the hands to the floor by the ears, and roll the whole body back over the head into the position of the 4th vinyasa (Chaturanga Dandasana). This is called Chakrasana.",
       "is_state": false
+    },
+    {
+      "vinyasa": 25,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 26,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 27,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 28,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],
@@ -171,6 +238,6 @@
     "Indeed, whatever the asana, one should practice first on the right side and then on the left side."
   ],
   "images": [],
-  "vinyasa_label": "20 in part 1, 28 in part 2",
-  "state_label": "9 and 13 in part 1; 11 and 19 in part 2"
+  "vinyasa_label": "28 (Part 1 alone: 20)",
+  "state_label": "11 and 19 (Part 1 alone: 9 and 13)"
 }

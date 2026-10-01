@@ -5,7 +5,7 @@
    version is a hash of the files, so any change to them installs a new cache. */
 
 // BEGIN GENERATED
-const VERSION = "311b4bd98dda";
+const VERSION = "5d21fe64e7c1";
 const FILES = [
   "app.js",
   "assets/icons/apple-touch-icon.png",
