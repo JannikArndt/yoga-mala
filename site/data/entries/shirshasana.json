@@ -10,14 +10,64 @@
   "drishti": null,
   "translation": null,
   "notes": [
-    "Also known as Kapalasana or Viparita Karani."
+    "Also known as Kapalasana or Viparita Karani.",
+    "The whole body stands upside down on the strength of the arms alone, not on the head.",
+    "Shirshasana comes after the Surya Namaskara and the other asanas, never first; after it, only Padmasana and pranayama."
   ],
   "sequence": [
+    {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
     {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "While coming from the 6th to the 7th vinyasa of the first Surya Namaskara, sit on the knees, lock the fingers together, and place the elbows on the floor.",
+      "action": "From Adho Mukha Svanasana, sit on the knees, lock the fingers together, and place the elbows on the floor.",
       "is_state": false
     },
     {
@@ -45,15 +95,40 @@
       "vinyasa": 9,
       "breath": "inhale-exhale",
       "breath_as_printed": null,
-      "action": "Doing puraka and then rechaka, jump back into the 4th vinyasa of the first Surya Namaskara.",
+      "action": "Doing puraka and then rechaka, jump back into Chaturanga Dandasana.",
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 10,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "The next vinyasas are as those described above.",
-      "is_state": false
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [
@@ -69,13 +144,6 @@
   ],
   "quotes": [],
   "images": [],
-  "cautions": [
-    "Pregnant women should not practice this asana.",
-    "Aspirants should note that merely putting the head down and legs up, and then standing upside down is not Shirshasana; very simply, this is wrong.",
-    "For example, the entire body must stand upside down on the strength of the arms alone.",
-    "Hence, aspirants should never practice Shirshasana first.",
-    "Moreover, following Shirshasana, they should only sit in Padmasana and do pranayama and the like, but no further asanas."
-  ],
   "verses": [
     {
       "sanskrit": "Yama matram vashe nityam",

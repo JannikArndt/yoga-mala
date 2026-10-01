@@ -12,11 +12,68 @@
   "notes": [],
   "sequence": [
     {
-      "vinyasa": 8,
-      "breath": null,
+      "vinyasa": 1,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Do all vinyasas through to the state of Sarvangasana.",
-      "is_state": false
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 7,
+      "breath": "free",
+      "breath_as_printed": null,
+      "action": "Lie down, arms by the sides, legs straight; puraka and rechaka four to five times",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Raise the legs into Sarvangasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 9,
@@ -29,15 +86,40 @@
       "vinyasa": 10,
       "breath": "inhale-exhale",
       "breath_as_printed": "puraka and rechaka",
-      "action": "Unlock the legs and come into the 4th vinyasa of Sarvangasana.",
+      "action": "Unlock the legs and roll over into Chaturanga Dandasana.",
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 11,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Remaining vinyasas as in Sarvangasana.",
-      "is_state": false
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 14,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [

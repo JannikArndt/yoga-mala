@@ -14,10 +14,58 @@
   ],
   "sequence": [
     {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Sit as in Paschimattanasana, stretch the left leg out straight, bring the right foot in toward the groin, twisting it so that the toes are pressed to the floor and the heel is pointing up toward the navel, press the right knee forward to a 45 degree angle, take hold of the left foot with both hands, straighten the back and arms, and tighten the anus and lower abdomen.",
+      "action": "Jump through and sit, stretch the left leg out straight, bring the right foot in toward the groin, twisting it so that the toes are pressed to the floor and the heel is pointing up toward the navel, press the right knee forward to a 45 degree angle, take hold of the left foot with both hands, straighten the back and arms, and tighten the anus and lower abdomen.",
       "is_state": false
     },
     {
@@ -35,17 +83,107 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
-      "action": "The vinyasas that follow are as those in earlier asanas.",
-      "is_state": false
+      "vinyasa": 10,
+      "breath": "exhale-inhale",
+      "breath_as_printed": null,
+      "action": "Cross the legs and lift up on the hands (Uth Pluthi)",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Other side: right leg out, left foot turned with the heel toward the navel; hold the foot",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 15,
-      "breath": null,
-      "breath_as_printed": null,
-      "action": "Practice the same method for the other side; this is the 15th vinyasa and the state for that side.",
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Other side: forehead or chin to the leg, heel into the navel",
       "is_state": true
+    },
+    {
+      "vinyasa": 16,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Other side: lift the head, straighten the arms",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 17,
+      "breath": "exhale-inhale",
+      "breath_as_printed": null,
+      "action": "Cross the legs and lift up on the hands (Uth Pluthi)",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 18,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 19,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 20,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 21,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 22,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],

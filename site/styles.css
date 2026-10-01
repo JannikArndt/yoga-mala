@@ -449,6 +449,19 @@ main { position: relative; }
   border-radius: 3px;
 }
 
+/* Carried over from the Surya Namaskara or an earlier asana: written out in
+   full so nothing needs looking up, but smaller and fainter. */
+.vinyasa--borrowed {
+  padding-block: 0.15rem;
+  border-top: none;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--ink-faint);
+}
+.vinyasa--borrowed + .vinyasa:not(.vinyasa--borrowed) { margin-top: 0.3rem; }
+.vinyasa:not(.vinyasa--borrowed) + .vinyasa--borrowed { margin-top: 0.3rem; }
+.vinyasa--borrowed .vinyasa__breath { opacity: 0.7; }
+
 .vinyasa__number {
   font-family: var(--sans);
   font-size: 0.7rem;
@@ -529,7 +542,7 @@ main { position: relative; }
   background: var(--ochre-soft);
 }
 
-/* Guruji's exact sentences: benefits and cautions are quoted, not restated. */
+/* Guruji's exact sentences: benefits are quoted, not restated. */
 .points--quoted li { padding-left: 0.85rem; }
 .points--quoted li::before {
   content: "\201C";

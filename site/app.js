@@ -250,7 +250,7 @@ function renderBreathKey(sequence) {
 function renderSequence(sequence) {
   if (!sequence?.length) return "";
   const rows = sequence
-    .map((step) => {
+    .map((step, index) => {
       const breath = BREATH_MARKS[step.breath];
       const breathLabel = breath
         ? escapeHtml(breath.label + (step.breath_as_printed ? ` (${step.breath_as_printed})` : ""))
@@ -261,9 +261,16 @@ function renderSequence(sequence) {
         : `<span class="vinyasa__breath"></span>`;
       const stateTag = step.is_state ? `<span class="vinyasa__state-tag">state</span>` : "";
       const gaze = step.drishti ? `<span class="vinyasa__gaze">gaze: ${escapeHtml(step.drishti)}</span>` : "";
+      // A vinyasa told in several steps shows its number once, on the first.
+      const continues = index > 0 && step.vinyasa != null && sequence[index - 1].vinyasa === step.vinyasa;
+      // Steps carried over from the Surya Namaskara or an earlier asana are
+      // written out, but quietly, so the asana's own steps stand out.
+      const classes = ["vinyasa", step.is_state && "vinyasa--state", step.borrowed && "vinyasa--borrowed"]
+        .filter(Boolean)
+        .join(" ");
       return `
-        <li class="vinyasa${step.is_state ? " vinyasa--state" : ""}">
-          <span class="vinyasa__number">${step.vinyasa ?? ""}</span>
+        <li class="${classes}">
+          <span class="vinyasa__number">${continues ? "" : step.vinyasa ?? ""}</span>
           ${breathCell}
           <p class="vinyasa__action">${escapeHtml(step.action)}${stateTag}${gaze}</p>
         </li>`;
@@ -308,7 +315,6 @@ function renderAsana(entryId, entry) {
   const main = [
     section("Method", renderSequence(entry.sequence)),
     section("While holding", listOf(entry.while_holding)),
-    section("Cautions", quotedListOf(entry.cautions)),
     section("Notes", listOf(entry.notes)),
   ].join("");
 

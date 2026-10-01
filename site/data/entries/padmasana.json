@@ -16,11 +16,60 @@
   ],
   "sequence": [
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 1,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Follow the vinyasas above for Baddha Padmasana through the 7th vinyasa.",
-      "is_state": false
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 7,
+      "breath": "exhale-inhale",
+      "breath_as_printed": null,
+      "action": "Sit, legs stretched out, back and chest straight",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": null,
@@ -33,8 +82,9 @@
       "vinyasa": null,
       "breath": null,
       "breath_as_printed": null,
-      "action": "The next vinyasas are as those in earlier asanas.",
-      "is_state": false
+      "action": "Continue with Uth Pluthi",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],

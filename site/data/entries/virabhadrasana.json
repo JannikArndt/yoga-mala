@@ -16,18 +16,60 @@
   ],
   "sequence": [
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 1,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
-      "is_state": false
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 7,
       "breath": "free",
       "breath_as_printed": null,
-      "action": "Stand as in the 7th vinyasa of the second Surya Namaskara, and do rechaka and puraka five times.",
-      "is_state": true
+      "action": "Right foot between the hands, right knee bent, left leg straight back, arms over the head, palms together, gaze at the fingertips. Do rechaka and puraka five times.",
+      "is_state": true,
+      "drishti": "fingertips"
     },
     {
       "vinyasa": 8,
@@ -60,11 +102,44 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 12,
+      "breath": "exhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 12–16 as the 4th, 5th, 6th, 3rd, and 2nd vinyasas of the first Surya Namaskara, respectively.",
-      "is_state": false
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 14,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 15,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 16,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],
@@ -73,8 +148,5 @@
     "In addition, pain associated with the knees, as well as the pain from standing or sitting all day while working, is eliminated."
   ],
   "quotes": [],
-  "images": [],
-  "cautions": [
-    "Again, it is best to learn the vinyasas of all the asanas, as well as their states and the series of rechaka and puraka, under the guidance of a Guru, as these are very difficult to relate in the written descriptions given here."
-  ]
+  "images": []
 }

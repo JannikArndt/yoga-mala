@@ -12,11 +12,60 @@
   "notes": [],
   "sequence": [
     {
-      "vinyasa": null,
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 7,
       "breath": null,
       "breath_as_printed": null,
-      "action": "Having reached the 7th vinyasa of Supta Padangushtasana, lie down and join the legs.",
-      "is_state": false
+      "action": "Lie down on the back and join the legs",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 8,
@@ -40,11 +89,52 @@
       "is_state": true
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 10,
+      "breath": "exhale-inhale",
       "breath_as_printed": null,
-      "action": "Remaining vinyasas as in earlier asanas.",
-      "is_state": false
+      "action": "Cross the legs and lift up on the hands (Uth Pluthi)",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 15,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [

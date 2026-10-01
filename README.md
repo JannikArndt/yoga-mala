@@ -5,7 +5,9 @@ can practice from: the Surya Namaskara, the asanas in the order he teaches them,
 and the eight limbs of Patanjali as he explains them.
 
 The left of each page is the practice, compressed to bullets — one line per
-vinyasa, every breath kept. The right is what supports it: the plates from the
+vinyasa, every breath kept. Where the book says "as in the first Surya
+Namaskara" or "as in Paschimattanasana", those vinyasas are written out in
+place, smaller and fainter, so nothing has to be looked up. The right is what supports it: the plates from the
 book, the benefits he gives, and his own sentences where they are worth reading
 whole.
 
@@ -27,8 +29,8 @@ keyboard: ← and → turn pages, / opens the search.
 
 **Nothing on the site that is not in the book.** Where Guruji names no gazing
 point, none is supplied, however standard it has since become. Where he gives no
-benefits, the section is absent. Benefits and cautions are his exact sentences,
-shown in quotation marks — so a claim about disease stays a quotation in his
+benefits, the section is absent. Benefits are his exact sentences, shown in
+quotation marks — so a claim about disease stays a quotation in his
 words rather than being restated as fact. The site does not modernise him,
 correct him, or fill his gaps from later Ashtanga sources.
 

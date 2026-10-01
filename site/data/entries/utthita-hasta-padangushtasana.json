@@ -76,11 +76,65 @@
       "is_state": false
     },
     {
+      "vinyasa": 8,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Raise the left leg, take hold of its big toe with the left hand",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Nose to the left knee",
+      "is_state": true
+    },
+    {
+      "vinyasa": 10,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head, stand straight",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Left leg out to the left; look to the right",
+      "is_state": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Leg back to the center",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Nose to the knee",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Lift the head, hands on the waist, leg held out straight",
+      "is_state": true
+    },
+    {
       "vinyasa": null,
-      "breath": null,
-      "breath_as_printed": null,
-      "action": "Repeat the above for the left leg.",
-      "is_state": false
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Bring the left leg down.",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],

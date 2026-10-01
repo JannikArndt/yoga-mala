@@ -16,11 +16,52 @@
   ],
   "sequence": [
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 1,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
-      "is_state": false
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 7,
@@ -45,23 +86,41 @@
     },
     {
       "vinyasa": 10,
-      "breath": null,
+      "breath": "exhale-inhale",
       "breath_as_printed": null,
-      "action": "Do the 11th vinyasa described in Paschimattanasana.",
-      "is_state": false
+      "action": "Cross the legs and lift up on the hands (Uth Pluthi)",
+      "is_state": false,
+      "borrowed": true
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 11,
+      "breath": "exhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 11–13 follow the 4th, 5th, and 6th vinyasas of the first Surya Namaskara.",
-      "is_state": false
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 14,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Again sitting in the 7th vinyasa of Paschimattanasana, stretch out the right leg, fold back the left leg in the same manner as the right leg above, take hold of the right foot with both hands, and lift the head and chest up.",
+      "action": "Jump through and sit; stretch out the right leg, fold back the left leg in the same manner as the right leg above, take hold of the right foot with both hands, and lift the head and chest up.",
       "is_state": false
     },
     {
@@ -79,11 +138,52 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 17,
+      "breath": "exhale-inhale",
       "breath_as_printed": null,
-      "action": "The 17th vinyasa follows the method of the 10th vinyasa. The 18th, 19th, 20th, 21st, and 22nd vinyasas follow the 4th, 5th, 6th, 3rd, and 2nd vinyasas of Paschimattanasana.",
-      "is_state": false
+      "action": "Cross the legs and lift up on the hands (Uth Pluthi)",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 18,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 19,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 20,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 21,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 22,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [
@@ -94,8 +194,5 @@
     "It also makes the body symmetrical."
   ],
   "quotes": [],
-  "images": [],
-  "cautions": [
-    "Readers and aspirants should learn these fully, which is best done under the guidance of a Guru."
-  ]
+  "images": []
 }

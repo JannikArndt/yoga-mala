@@ -44,7 +44,8 @@ numbers. When the source is ambiguous, prefer its exact words.
       "breath_as_printed": "puraka", // Guruji's word: puraka | rechaka | ... | null
       "action": "Jump the legs half a foot apart, take hold of the big toes, lift head and chest, knees straight.",
       "is_state": false,             // true when this vinyasa is the state of the asana
-      "drishti": "fingertips"        // optional; only where the book names the gaze for this step
+      "drishti": "fingertips",       // optional; only where the book names the gaze for this step
+      "borrowed": true               // optional; a step carried over from another asana
     }
   ],
 
@@ -62,10 +63,6 @@ numbers. When the source is ambiguous, prefer its exact words.
     "Padangushtasana dissolves the fat of the lower abdomen, and purifies both the kanda, or egg-shaped nerve plexus in the anal region, and the rectum."
   ],
   "benefits_source": null,
-
-  // Warnings, contraindications, and his insistence on learning from a Guru —
-  // exact sentences, like benefits.
-  "cautions": [],
 
   // Verbatim sentences worth showing beside the summary — Guruji's voice.
   // 0–3 per entry. Quote exactly, including his punctuation.
@@ -93,10 +90,14 @@ numbers. When the source is ambiguous, prefer its exact words.
   possible") is `free`.
 - `breath: "free"` means the book says to breathe freely / as much as possible.
   `breath: "hold"` means the book says to stay while holding the breath.
-- Chapters that say "do the first six vinyasas of the first Surya Namaskara"
-  get one bullet: `{"vinyasa": null, "breath": null, "action": "Vinyasas 1–6 as
-  in the first Surya Namaskara.", "is_state": false}` — do not expand it.
-- Cross-references to other asanas stay as references. Do not inline them.
+- Write references out. Where the book says "do the first six vinyasas of the
+  first Surya Namaskara" or "the remaining vinyasas follow Paschimattanasana",
+  add those vinyasas as steps with their own numbers and breaths, marked
+  `"borrowed": true` so they are shown smaller and fainter. Name the Surya
+  Namaskara's 4th, 5th and 6th vinyasas as the book's plates do: Chaturanga
+  Dandasana, Urdhva Mukha Svanasana, Adho Mukha Svanasana. Expand only where
+  the mapping is fixed: the numbering must then run exactly from 1 to
+  `vinyasa_count`.
 
 ## Sanity checks before you write the file
 

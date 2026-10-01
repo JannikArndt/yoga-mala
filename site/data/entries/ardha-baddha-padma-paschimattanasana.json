@@ -12,17 +12,58 @@
   "notes": [],
   "sequence": [
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 1,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
-      "is_state": false
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Sit as in the 7th vinyasa of Paschimattanasana, stretch the left leg out, place the right leg on the left thigh, pressing the right heel into the navel, bring the right arm behind the back and grasp the big toe of the right foot, take the left foot with the left hand, and straighten the head and chest, doing puraka slowly.",
+      "action": "Jump through and sit, stretch the left leg out, place the right leg on the left thigh, pressing the right heel into the navel, bring the right arm behind the back and grasp the big toe of the right foot, take the left foot with the left hand, and straighten the head and chest, doing puraka slowly.",
       "is_state": false
     },
     {
@@ -47,17 +88,34 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 11,
+      "breath": "exhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 11–13 resemble the 4th, 5th, and 6th vinyasas of Paschimattanasana.",
-      "is_state": false
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 14,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Back at the 7th vinyasa of the first Surya Namaskara, jump the legs through the arms on the strength of the hands alone, stretch the right leg out, place the left leg on the right thigh, grasp the left big toe with the left hand from behind, take the right foot with the right hand, straighten the head and chest.",
+      "action": "Jump the legs through the arms on the strength of the hands alone, stretch the right leg out, place the left leg on the right thigh, grasp the left big toe with the left hand from behind, take the right foot with the right hand, straighten the head and chest.",
       "is_state": false
     },
     {
@@ -82,11 +140,44 @@
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 18,
+      "breath": "exhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 18–22 follow Paschimattanasana.",
-      "is_state": false
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 19,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 20,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 21,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 22,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],

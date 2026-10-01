@@ -7,7 +7,8 @@ meaning, but it catches the failures that have actually occurred:
   Always (these need only the repository, and run in CI):
     - a breath value outside the schema
     - a step marked as the state whose vinyasa is not listed as a state
-    - a step numbered beyond the asana's vinyasa count
+    - a step numbered beyond the asana's vinyasa count, or written-out
+      references that leave a gap in the numbering
     - sibling asanas the book describes together disagreeing on their counts
     - an entry declared in the reading order but missing, or a missing plate
 
@@ -16,7 +17,7 @@ meaning, but it catches the failures that have actually occurred:
     - a chapter's breath words outnumbering the entry's — a dropped breath
     - a combined breath recorded in the opposite order to the book's
     - a gazing point the chapter never names
-    - a benefit, caution, quote, or verse that is not the book's exact words
+    - a benefit, quote, or verse that is not the book's exact words
 
 It reports every flag and exits non-zero if there are any.
 """
@@ -71,14 +72,14 @@ def entry_text(entry):
     parts = [step.get("action", "") for step in steps]
     parts += [step.get("breath") or "" for step in steps]
     parts += [step.get("breath_as_printed") or "" for step in steps]
-    for field in ("while_holding", "notes", "quotes", "cautions"):
+    for field in ("while_holding", "notes", "quotes"):
         parts += entry.get(field) or []
     return " ".join(parts)
 
 
 def verbatim_fields(entry):
     """(label, text) for every string the site presents as Guruji's own words."""
-    for field in ("benefits", "cautions", "quotes"):
+    for field in ("benefits", "quotes"):
         for text in entry.get(field) or []:
             yield field, text
     verses = list(entry.get("verses") or [])
@@ -105,6 +106,13 @@ def check_structure(entries, problems):
                 )
             if count and number and number > count:
                 problems.append(f"{entry['id']}: step {number} beyond its {count} vinyasas")
+
+        # Once references are written out, every vinyasa from 1 to the count
+        # must be there, in order.
+        if count and any(step.get("borrowed") for step in steps):
+            numbers = [step["vinyasa"] for step in steps if step.get("vinyasa") is not None]
+            if sorted(set(numbers)) != list(range(1, count + 1)) or numbers != sorted(numbers):
+                problems.append(f"{entry['id']}: steps do not run 1 to {count} in order")
 
     for group in SIBLINGS:
         shapes = {
@@ -173,7 +181,7 @@ def check_against_book(entries, chapters, problems):
         for step in entry.get("sequence", []):
             is_first = step.get("vinyasa") not in seen_vinyasas
             seen_vinyasas.add(step.get("vinyasa"))
-            if not is_first or step.get("breath") not in ("inhale-exhale", "exhale-inhale"):
+            if not is_first or step.get("borrowed") or step.get("breath") not in ("inhale-exhale", "exhale-inhale"):
                 continue
             clause = clauses.get(step.get("vinyasa"))
             first = INHALE_OR_EXHALE.search(clause or "")

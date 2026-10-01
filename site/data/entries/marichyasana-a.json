@@ -15,10 +15,58 @@
   ],
   "sequence": [
     {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Stretch the left leg out as for the 7th vinyasa of Paschimattanasana, bend the right knee up, pull the right heel in toward the right buttock, take the right arm around the knee of the bent leg, bring the left hand behind the back and take hold of the right wrist, stretch the left leg, and raise the chest.",
+      "action": "Jump through and sit, stretch the left leg out, bend the right knee up, pull the right heel in toward the right buttock, take the right arm around the knee of the bent leg, bring the left hand behind the back and take hold of the right wrist, stretch the left leg, and raise the chest.",
       "is_state": false
     },
     {
@@ -43,11 +91,99 @@
       "is_state": false
     },
     {
-      "vinyasa": 15,
-      "breath": null,
+      "vinyasa": 11,
+      "breath": "exhale",
       "breath_as_printed": null,
-      "action": "Practice the same method for the left side; this is the 15th vinyasa and the state for that side.",
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 14,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Other side: right leg out, left knee up, bind the wrist behind the back",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 15,
+      "breath": "exhale",
+      "breath_as_printed": "rechaka",
+      "action": "Other side: forehead or chin to the knee",
       "is_state": true
+    },
+    {
+      "vinyasa": 16,
+      "breath": "inhale",
+      "breath_as_printed": "puraka",
+      "action": "Other side: lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 17,
+      "breath": "exhale-inhale",
+      "breath_as_printed": null,
+      "action": "Cross the legs and lift up on the hands (Uth Pluthi)",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 18,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 19,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 20,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 21,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 22,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],
@@ -61,10 +197,5 @@
   ],
   "quotes": [],
   "images": [],
-  "benefits_source": "Given in the book under Marichyasana (D), for all four.",
-  "cautions": [
-    "It is a very good idea for women to practice Marichyasana, but they should do so under the guidance of a Guru.",
-    "There should be no error in sitting firmly and holding the hands and legs.",
-    "Pregnant women should not practice this asana after the second month."
-  ]
+  "benefits_source": "Given in the book under Marichyasana (D), for all four."
 }

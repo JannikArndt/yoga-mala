@@ -12,23 +12,58 @@
   "notes": [],
   "sequence": [
     {
-      "vinyasa": null,
-      "breath": null,
-      "action": "The first six vinyasas of this asana follow those of the first Surya Namaskara.",
-      "is_state": false
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Jump the legs in between the arms using only the strength of the arms, without letting the body or legs touch the floor, sit squarely on the buttocks, raise and straighten the legs, sit in the form of a boat, straighten the chest, waist, and legs, and hold the arms out straight on either side of the knees.",
-      "is_state": false
-    },
-    {
-      "vinyasa": 7,
-      "breath": "free",
-      "breath_as_printed": "rechaka and puraka",
-      "action": "Stay in the boat, doing rechaka and puraka as much as possible.",
+      "action": "Using only the strength of the arms, jump the legs in between the arms without touching the floor, sit squarely on the buttocks, raise and straighten the legs in the form of a boat, straighten the chest, waist, and legs, and hold the arms out straight on either side of the knees. Stay, doing rechaka and puraka as much as possible.",
       "is_state": true
     },
     {
@@ -39,27 +74,55 @@
       "is_state": false
     },
     {
-      "vinyasa": 7,
+      "vinyasa": null,
       "breath": "exhale",
       "breath_as_printed": "rechaka",
-      "action": "Come back to the 7th vinyasa.",
+      "action": "Come back to the 7th vinyasa. Repeat the 7th and 8th three to six times.",
       "is_state": false
     },
     {
-      "vinyasa": null,
-      "breath": null,
-      "action": "Repeat the asana three to six times.",
-      "is_state": false
+      "vinyasa": 9,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
-      "vinyasa": null,
-      "breath": null,
-      "action": "The vinyasas that follow have been specified earlier.",
-      "is_state": false
+      "vinyasa": 10,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 11,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 12,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 13,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [
-    "Never do kumbhaka (hold the breath) while coming into the state of this asana."
+    "No kumbhaka (holding the breath) while coming into the state."
   ],
   "benefits": [
     "The anal channel, spinal column, ribs, and lower abdomen are purified by Navasana.",

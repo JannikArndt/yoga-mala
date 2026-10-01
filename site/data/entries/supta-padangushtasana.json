@@ -16,6 +16,54 @@
   ],
   "sequence": [
     {
+      "vinyasa": 1,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
       "vinyasa": 7,
       "breath": "exhale-inhale",
       "breath_as_printed": "rechaka and puraka",
@@ -89,7 +137,7 @@
       "vinyasa": 12,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "Raise the right leg and return to the 8th vinyasa of Part 1.",
+      "action": "Raise the right leg back up, holding the big toe, head on the floor.",
       "is_state": false
     },
     {
@@ -124,8 +172,5 @@
   ],
   "images": [],
   "vinyasa_label": "20 in part 1, 28 in part 2",
-  "state_label": "9 and 13 in part 1; 11 and 19 in part 2",
-  "cautions": [
-    "Supta Padangushtasana can be done by all and sundry, except pregnant women."
-  ]
+  "state_label": "9 and 13 in part 1; 11 and 19 in part 2"
 }

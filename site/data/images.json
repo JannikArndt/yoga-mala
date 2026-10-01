@@ -175,12 +175,6 @@
    "caption": "Marichyasana (D)"
   }
  ],
- "navasana": [
-  {
-   "file": "image-V5YUE4GZ.jpg",
-   "caption": "Navasana"
-  }
- ],
  "bhujapidasana": [
   {
    "file": "image-EWPH0RBP.jpg",
@@ -395,6 +389,12 @@
   {
    "file": "image-J5C0YN43.jpg",
    "caption": "Second Surya Namaskara, 7th vinyasa"
+  }
+ ],
+ "utkatasana": [
+  {
+   "file": "image-8WWCCSAI.jpg",
+   "caption": "Second Surya Namaskara, 1st and 17th vinyasa (Utkatasana)"
   }
  ]
 }

@@ -16,18 +16,60 @@
   ],
   "sequence": [
     {
-      "vinyasa": null,
-      "breath": null,
+      "vinyasa": 1,
+      "breath": "inhale",
       "breath_as_printed": null,
-      "action": "Vinyasas 1–6 as in the first Surya Namaskara.",
-      "is_state": false
+      "action": "Arms up, palms together, gaze at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 2,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Fold forward, hands beside the feet, nose to the knees",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 3,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Lift the head",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 4,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Jump back: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 5,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": 6,
+      "breath": "exhale",
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 7,
       "breath": "inhale",
       "breath_as_printed": "puraka",
-      "action": "After the 6th vinyasa, jump into the 1st vinyasa of the second Surya Namaskara, and perform rechaka and puraka as much as possible.",
-      "is_state": true
+      "action": "Jump the feet between the hands, bend the knees, raise the arms over the head, palms together, and gaze at the fingertips. Stay, doing rechaka and puraka as much as possible.",
+      "is_state": true,
+      "drishti": "fingertips"
     },
     {
       "vinyasa": 8,
@@ -39,37 +81,42 @@
     {
       "vinyasa": 9,
       "breath": "exhale",
-      "breath_as_printed": "rechaka",
-      "action": "Throw the body back with the force of the arms, and hold the position, as in the 4th vinyasa of the first Surya Namaskara.",
-      "is_state": false
+      "breath_as_printed": null,
+      "action": "Throw the body back with the force of the arms: Chaturanga Dandasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 10,
       "breath": "inhale",
-      "breath_as_printed": "puraka",
-      "action": "Do the 5th vinyasa of the Surya Namaskara.",
-      "is_state": false
+      "breath_as_printed": null,
+      "action": "Urdhva Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 11,
       "breath": "exhale",
-      "breath_as_printed": "rechaka",
-      "action": "Do the 6th vinyasa of the Surya Namaskara.",
-      "is_state": false
+      "breath_as_printed": null,
+      "action": "Adho Mukha Svanasana",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 12,
       "breath": "inhale",
-      "breath_as_printed": "puraka",
-      "action": "Do the 3rd vinyasa of the Surya Namaskara.",
-      "is_state": false
+      "breath_as_printed": null,
+      "action": "Jump the feet between the hands, lift the head",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": 13,
       "breath": null,
       "breath_as_printed": null,
-      "action": "Do the 2nd vinyasa of the Surya Namaskara.",
-      "is_state": false
+      "action": "Fold, nose to the knees",
+      "is_state": false,
+      "borrowed": true
     },
     {
       "vinyasa": null,
@@ -85,9 +132,5 @@
     "It also prevents pain associated with the vertebral column."
   ],
   "quotes": [],
-  "images": [],
-  "cautions": [
-    "Again, no asana should be performed without following the proper method of vinyasa.",
-    "I consider it my earnest duty to caution the reader and aspirant not to try to learn these methods from books, reflections [photos], or pseudo-yogis."
-  ]
+  "images": []
 }
