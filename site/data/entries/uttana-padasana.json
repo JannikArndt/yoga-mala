@@ -114,6 +114,22 @@
       "action": "Fold, nose to the knees",
       "is_state": false,
       "borrowed": true
+    },
+    {
+      "vinyasa": null,
+      "breath": "inhale",
+      "breath_as_printed": null,
+      "action": "Urdhva Hastasana: arms up, hands together, look at the fingertips",
+      "is_state": false,
+      "borrowed": true
+    },
+    {
+      "vinyasa": null,
+      "breath": null,
+      "breath_as_printed": null,
+      "action": "Samasthiti",
+      "is_state": false,
+      "borrowed": true
     }
   ],
   "while_holding": [],
