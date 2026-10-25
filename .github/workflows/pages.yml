@@ -1,43 +1,70 @@
 name: Deploy to GitHub Pages
 
+# Settings -> Pages -> Source: GitHub Actions. The site is committed pre-built,
+# so "verify" proves the committed files are what the tools generate, and
+# "deploy" publishes them and waits until the live sw.js carries this commit's
+# VERSION. A pull request runs verify only.
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+  pull_request:
+  workflow_dispatch: # started by dependabot-merge.yml after it merges
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  deploy:
+  verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      version: ${{ steps.id.outputs.version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # Rebuilds the data, fails if it differs from what was committed, checks
+      # the entries and the deploy contract. The book is not in the repository,
+      # so the comparison with its text runs locally only.
+      - run: python3 tools/verify.py
+      - id: id
+        run: echo "version=$(python3 tools/live.py --print-version)" >> "$GITHUB_OUTPUT"
+      - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+  deploy:
+    needs: verify
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Only this job may publish.
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-
-      # The site is committed pre-built, so this only guards against the data
-      # files drifting out of sync with the entries they are compiled from.
-      - name: Rebuild the data and fail if it differs from what was committed
-        run: |
-          python3 tools/build_site_data.py
-          git diff --exit-code -- site/data site/sw.js
-
-      # The book is not in the repository, so CI runs the structural checks;
-      # the comparison with the text runs locally where the ebook is unpacked.
-      - name: Check the entries
-        run: python3 tools/verify_entries.py
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      # Pages' CDN may serve the old file for up to ten minutes; hence the
+      # cache-busting query and the long window.
+      - name: Confirm the new version is live
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          WANT: ${{ needs.verify.outputs.version }}
+        run: |
+          url="${PAGE_URL%/}/sw.js"
+          for i in $(seq 1 60); do
+            got="$(curl -sS --max-time 10 "$url?t=$(date +%s)" | sed -n 's/^const VERSION = "\([^"]*\)";.*/\1/p' | head -n1 || true)"
+            if [ "$got" = "$WANT" ]; then echo "LIVE: $got"; exit 0; fi
+            echo "attempt $i: serving ${got:-nothing}, want $WANT"
+            sleep 10
+          done
+          echo "::error::$url never reported VERSION $WANT"
+          exit 1

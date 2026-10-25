@@ -649,6 +649,8 @@ function registerOffline() {
         const worker = registration.installing;
         worker?.addEventListener("statechange", () => {
           if (worker.state === "installed" && navigator.serviceWorker.controller) offerUpdate(worker);
+          // A worker that never installed is reported, not swallowed.
+          if (worker.state === "redundant") setOfflineStatus("The new version could not be saved. Reopen the site to try again.");
         });
       });
       // A home-screen app can stay open for days; look for a new version

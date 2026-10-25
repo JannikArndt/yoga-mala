@@ -1,5 +1,7 @@
 # Yoga Mala — an interactive reader
 
+Live at https://jannikarndt.github.io/yoga-mala/
+
 A static site that presents Sri K. Pattabhi Jois's *Yoga Mala* as something you
 can practice from: the Surya Namaskara, the asanas in the order he teaches them,
 and the eight limbs of Patanjali as he explains them.
@@ -68,12 +70,14 @@ were left alone.
 
 ```sh
 python3 tools/build_site_data.py  # entries + images -> data/mala.json, and sw.js's file list
-python3 tools/verify_entries.py   # check the entries
+python3 tools/verify.py           # what CI runs: rebuild-and-compare, entries, deploy contract
 ```
 
 Run the build after changing *any* file in `site/`, not only the entries: it
 stamps `sw.js` with a hash of every cached file, which is how phones that
 already have the site learn that there is something new to download.
+`tools/verify.py` fails when the committed `mala.json` or `sw.js` are stale (and
+leaves the regenerated files for you to commit).
 
 Reading order and the chapter grouping are declared in `tools/build_site_data.py`.
 To correct a posture, edit its file in `site/data/entries/` (the fields are
@@ -81,16 +85,17 @@ described in `tools/ENTRY_SCHEMA.md`) and re-run both commands.
 
 To check the entries against the text as well, unpack the EPUB into `ebook/`
 (so that `ebook/Text/chapter0006.html` exists), then run
-`python3 tools/extract_book.py` before `verify_entries.py`.
+`python3 tools/extract_book.py` before `tools/verify_entries.py`.
 
 Preview locally with `python3 -m http.server 8765 --directory site`.
 
 ## Deployment
 
-`.github/workflows/pages.yml` publishes `site/` to GitHub Pages on every push to
-`main`, after checking that the committed `mala.json` and `sw.js` still match what
-the build produces and that the entries pass verification. Enable it once under
-**Settings → Pages → Source: GitHub Actions**.
+`.github/workflows/pages.yml` runs `tools/verify.py` on every push and pull
+request, and on `main` publishes `site/` to GitHub Pages, then waits until the
+live `sw.js` carries the committed `VERSION`. Enable it once under
+**Settings → Pages → Source: GitHub Actions**. `python3 tools/live.py` asks
+whether the live site is this tree's version. CLAUDE.md has the whole loop.
 
 ## Credits
 

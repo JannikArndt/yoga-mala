@@ -1,0 +1,15 @@
+# Weekly updates for the action pins. Majors are never taken from here, so
+# every PR this opens may merge itself once the checks pass
+# (.github/workflows/dependabot-merge.yml).
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
